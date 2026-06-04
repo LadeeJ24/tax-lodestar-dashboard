@@ -57,20 +57,30 @@ TEXT_SEARCH_FIELDS = [
 # -----------------------------------------------------------------------------
 DOCTRINAL_QUERIES = {
     "presumption_no_cross_ownership": {
-        "label": "Presumption of no cross-ownership",
+        "label": "Presumption of (j)(2)(iii)(B)(1) — segregation-rule rebuttal",
         "description": (
-            "Rulings touching the rebuttable presumption (Treas. Reg. § 1.382-2T(j)(1)(iii)) "
-            "that public-group members are not cross-owners, and the \"actual knowledge\" override "
-            "in § 1.382-2T(k). Includes Schedule 13D/13G reliance rulings (the practical mechanism "
-            "taxpayers use to satisfy the actual-knowledge inquiry)."
+            "Rulings that rebut the segregation-rule presumption in Treas. Reg. § 1.382-2T(j)(2)(iii)(B)(1) "
+            "(that two public groups created on an equity structure shift do not overlap) by establishing "
+            "Actual Knowledge under § 1.382-2T(k)(2) — typically via Written Inquiries or SEC-filing review. "
+            "Doctrinal hit requires the literal regulatory phrase 'the presumption described in "
+            "§ 1.382-2T(j)(2)(iii)(B)(1) will not apply' (or its 'Treas. Reg.' variant) — surface mechanics "
+            "alone do not match."
         ),
-        "uilc_codes": ["0382.11-09", "0382.11-00"],
-        "citations": ["1.382-2T(j)", "1.382-2T(k)", "382(k)(6)"],
+        # No UILC codes — the broad codes (0382.07-00, 0382.07-05) sweep in general
+        # owner-shift/segregation rulings that don't actually rebut this presumption.
+        # The doctrine is identified ONLY by the precise subsection citation OR the
+        # literal regulatory phrase.
+        "uilc_codes": [],
+        "citations": [
+            "1.382-2T(j)(2)(iii)(B)(1)",
+            "§ 1.382-2T(j)(2)(iii)(B)(1)",
+        ],
         "phrases": [
-            "actual knowledge", "cross-ownership", "cross ownership",
-            "presumption", "duty of inquiry", "schedule 13d", "schedule 13g",
-            "5-percent shareholder", "5% shareholder", "five-percent shareholder",
-            "no ownership change",
+            "presumption described in § 1.382-2T(j)(2)(iii)(B)(1) will not apply",
+            "presumption described in Treas. Reg. § 1.382-2T(j)(2)(iii)(B)(1) will not apply",
+            "presumption described in § 1.382-2T(j)(2)(iii)(B)(1)",
+            "presumption described in Treas. Reg. § 1.382-2T(j)(2)(iii)(B)(1)",
+            "1.382-2T(j)(2)(iii)(B)(1) will not apply",
         ],
         "year_range": None,
     },
@@ -424,7 +434,7 @@ st.caption(
 
 canned_col1, canned_col2, canned_col3 = st.columns(3)
 if canned_col1.button(
-    "1️⃣ Presumption of no cross-ownership",
+    "1️⃣ Presumption rebuttal — § 1.382-2T(j)(2)(iii)(B)(1)",
     use_container_width=True,
     help=DOCTRINAL_QUERIES["presumption_no_cross_ownership"]["description"],
 ):
