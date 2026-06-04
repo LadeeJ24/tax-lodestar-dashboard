@@ -138,6 +138,35 @@ DOCTRINAL_QUERIES = {
         ],
         "year_range": (2008, 2020),
     },
+    "standard_382_representations": {
+        "label": "Standard §382 representations (5-rep boilerplate)",
+        "description": (
+            "Rulings carrying the recurring 5-representation package taxpayers must make to "
+            "obtain §382 segregation-rule / actual-knowledge relief: (1) loss corporation as "
+            "defined in §382(k)(1); (2) single class of outstanding stock; (3) no other "
+            "outstanding interests or obligations that would be treated as stock; (4) no "
+            "actual knowledge of other 5%-owners; (5) the relevant transaction qualifies as a "
+            "tax-free reorganization under §368(a). Matching is OR across the five rep stems "
+            "in the full text — a single hit surfaces the ruling; the §382 rep package "
+            "recurs across most segregation-rule and (k)(2)-actual-knowledge rulings, so "
+            "expect broad recall (this is the point — it is the controlled-vocabulary index "
+            "of which rulings carry which reps)."
+        ),
+        # No UILC codes and no broad citations: §382(k)(1) and §368(a) appear
+        # in nearly every §382 ruling for unrelated reasons (loss-corp definition,
+        # generic reorg references). The doctrinal signal is the REP LANGUAGE itself,
+        # so match precisely on the 5 phrases below.
+        "uilc_codes": [],
+        "citations": [],
+        "phrases": [
+            "loss corporation as defined in section 382(k)(1)",
+            "class of outstanding stock",
+            "outstanding interests or obligations that would be",
+            "no actual knowledge",
+            "tax-free reorganization",
+        ],
+        "year_range": None,
+    },
 }
 
 
@@ -501,7 +530,8 @@ st.caption(
     "rather than naming the doctrine."
 )
 
-canned_col1, canned_col2, canned_col3 = st.columns(3)
+# Row 1
+canned_col1, canned_col2 = st.columns(2)
 if canned_col1.button(
     "1️⃣ Presumption rebuttal — § 1.382-2T(j)(2)(iii)(B)(1)",
     use_container_width=True,
@@ -516,12 +546,21 @@ if canned_col2.button(
 ):
     st.session_state["active_doctrine"] = "section_382_l_5"
 
+# Row 2
+canned_col3, canned_col4 = st.columns(2)
 if canned_col3.button(
     "3️⃣ Actual knowledge, 2008–2020",
     use_container_width=True,
     help=DOCTRINAL_QUERIES["actual_knowledge_2008_2020"]["description"],
 ):
     st.session_state["active_doctrine"] = "actual_knowledge_2008_2020"
+
+if canned_col4.button(
+    "4️⃣ Standard §382 representations (5-rep package)",
+    use_container_width=True,
+    help=DOCTRINAL_QUERIES["standard_382_representations"]["description"],
+):
+    st.session_state["active_doctrine"] = "standard_382_representations"
 
 if st.session_state.get("active_doctrine"):
     if st.button("✕ Clear doctrinal query", type="secondary"):
