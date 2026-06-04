@@ -32,6 +32,7 @@ UILC_CSV = DATA_DIR / "UILC_Codes.csv"
 VOCAB_CSV = DATA_DIR / "Transaction_Vocabulary.csv"
 
 # Fields that contain narrative/searchable text (used across the app)
+# Metadata fields — paraphrased summaries the human extractor wrote
 TEXT_SEARCH_FIELDS = [
     "subject_summary",
     "issues_presented",
@@ -46,6 +47,11 @@ TEXT_SEARCH_FIELDS = [
     "favorable_logic_pivot",
     "compelled_representations",
 ]
+
+# Full-text field — raw pdftotext output of the actual IRS document.
+# Search this whenever you need precise regulatory phrases or subsection citations
+# that the metadata fields may paraphrase away.
+FULL_TEXT_FIELD = "full_text"
 
 # -----------------------------------------------------------------------------
 # Doctrinal Queries — the "why" canon. Each doctrine maps to:
@@ -87,27 +93,49 @@ DOCTRINAL_QUERIES = {
     "section_382_l_5": {
         "label": "§382(l)(5) bankruptcy exception",
         "description": (
-            "Rulings invoking the §382(l)(5) bankruptcy-emergence exception (no limitation if "
-            "qualified creditors + old shareholders own ≥50% post-emergence)."
+            "Rulings invoking the §382(l)(5) bankruptcy-emergence exception — no §382 limitation "
+            "applies if (i) the loss corporation is under court jurisdiction in a title 11 or similar "
+            "case, and (ii) qualified creditors and old shareholders own ≥50% of the new stock. "
+            "Matching prefers literal '§ 382(l)(5)' or '§ 1.382-9' references in the actual ruling text "
+            "(strongest), or the doctrinal phrase 'qualified creditor' (which is the regulatory "
+            "term of art for the (l)(5) creditor-continuity test)."
         ),
-        "uilc_codes": ["0382.07-00", "0382.07-02", "0382.07-03"],
-        "citations": ["382(l)(5)", "§382(l)(5)", "section 382(l)(5)", "1.382-9"],
+        # Drop UILC — the broad 0382.07-00 sweeps general owner-shift rulings
+        "uilc_codes": [],
+        "citations": [
+            "§ 382(l)(5)", "382(l)(5)",
+            "section 382(l)(5)",
+            "§ 1.382-9", "1.382-9",
+        ],
         "phrases": [
-            "382(l)(5)", "qualified creditor", "bankruptcy exception",
-            "title 11", "plan of reorganization",
+            "qualified creditor",
+            "§ 382(l)(5)",
+            "section 382(l)(5)",
+            "382(l)(5) applies",
+            "382(l)(5) bankruptcy",
+            "l)(5) exception",
         ],
         "year_range": None,
     },
     "actual_knowledge_2008_2020": {
-        "label": "Actual knowledge (2008–2020)",
+        "label": "Actual knowledge under § 1.382-2T(k)(2) (2008–2020)",
         "description": (
-            "Rulings during 2008–2020 addressing the \"actual knowledge\" inquiry under "
-            "§ 1.382-2T(k) — i.e., when the loss corporation knows facts that override the "
-            "presumption of no cross-ownership."
+            "Rulings during 2008–2020 establishing Actual Knowledge under § 1.382-2T(k)(2) — "
+            "the regulatory mechanism for overcoming the segregation/presumption rules by "
+            "showing the loss corporation actually knows the relevant ownership facts."
         ),
-        "uilc_codes": ["0382.11-09"],
-        "citations": ["1.382-2T(k)", "1.382-2T(j)"],
-        "phrases": ["actual knowledge", "duty of inquiry"],
+        "uilc_codes": [],
+        "citations": [
+            "§ 1.382-2T(k)(2)", "1.382-2T(k)(2)",
+            "section 1.382-2T(k)(2)",
+        ],
+        "phrases": [
+            "actual knowledge within the meaning of",
+            "actual knowledge of the stock ownership",
+            "acceptable method of determining actual knowledge",
+            "written inquiries",
+            "written questionnaires",
+        ],
         "year_range": (2008, 2020),
     },
 }
@@ -175,10 +203,18 @@ def load_data(_version: str):
     rulings["date_parsed"] = parsed
     rulings["year"] = rulings["date_parsed"].dt.year
 
-    # Build a single haystack column per ruling for fast text search
-    def build_haystack(row):
+    # Two haystacks per ruling:
+    #   _meta_haystack: paraphrased metadata fields (subject_summary, etc.)
+    #   _full_text:     raw pdftotext output of the actual ruling
+    #   _haystack:      union of both — the catch-all that user text search hits
+    def build_meta(row):
         return " | ".join(str(row.get(f, "")) for f in TEXT_SEARCH_FIELDS).lower()
-    rulings["_haystack"] = rulings.apply(build_haystack, axis=1)
+    rulings["_meta_haystack"] = rulings.apply(build_meta, axis=1)
+    if FULL_TEXT_FIELD in rulings.columns:
+        rulings["_full_text"] = rulings[FULL_TEXT_FIELD].astype(str).str.lower()
+    else:
+        rulings["_full_text"] = ""
+    rulings["_haystack"] = rulings["_meta_haystack"] + " || FULL_TEXT || " + rulings["_full_text"]
 
     return rulings, uilc, vocab
 
@@ -289,7 +325,15 @@ def normalize_uilc(code: str) -> str:
 
 
 def match_doctrine(row, doctrine):
-    """Returns (matched: bool, signals: list[str]) explaining WHY it matched."""
+    """Returns (matched: bool, signals: list[str]) explaining WHY it matched.
+
+    Signal types (in order of evidentiary strength):
+      "full-text phrase: <p>" — the literal phrase appears in the actual ruling PDF text
+      "full-text cite: <c>"   — the regulation citation appears in the actual ruling text
+      "cite: <c>"             — the citation appears in the metadata (primary_code_sections, etc.)
+      "meta phrase: <p>"      — the phrase appears in human-written metadata only
+      "UILC <code>"           — the ruling carries that UILC code on its face
+    """
     signals = []
 
     # UILC match
@@ -299,21 +343,28 @@ def match_doctrine(row, doctrine):
     if uilc_hits:
         signals.extend(f"UILC {c}" for c in sorted(uilc_hits))
 
-    # Citation match — search in key_authorities_cited + primary_code_sections + uilc_dictionary_mapping
+    # Citation match — check metadata blob AND the full ruling text
     cite_blob = " ".join([
         str(row.get("key_authorities_cited", "")),
         str(row.get("primary_code_sections", "")),
         str(row.get("uilc_dictionary_mapping", "")),
     ]).lower()
+    full_text = str(row.get("_full_text", "")).lower()
+    meta_text = str(row.get("_meta_haystack", "")).lower()
     for cite in doctrine["citations"]:
-        if cite.lower() in cite_blob:
+        cite_lc = cite.lower()
+        if cite_lc in full_text:
+            signals.append(f"full-text cite: {cite}")
+        elif cite_lc in cite_blob:
             signals.append(f"cite: {cite}")
 
-    # Phrase match — search across all narrative fields
-    haystack = row.get("_haystack", "")
+    # Phrase match — prefer full-text hits over metadata hits
     for phrase in doctrine["phrases"]:
-        if phrase.lower() in haystack:
-            signals.append(f'“{phrase}”')
+        p_lc = phrase.lower()
+        if p_lc in full_text:
+            signals.append(f'full-text phrase: “{phrase}”')
+        elif p_lc in meta_text:
+            signals.append(f'meta phrase: “{phrase}”')
 
     return (len(signals) > 0, signals)
 
@@ -412,10 +463,15 @@ if active_doctrine:
 # Main pane
 # -----------------------------------------------------------------------------
 st.title("Tax Lodestar")
+if "full_text_char_count" in rulings.columns:
+    _ft_chars = int(pd.to_numeric(rulings["full_text_char_count"], errors="coerce").fillna(0).sum())
+else:
+    _ft_chars = int(rulings.get(FULL_TEXT_FIELD, pd.Series([""]*len(rulings))).astype(str).str.len().sum())
 st.markdown(
     "**Subchapter C ruling analytics prototype.** "
     f"Search across {len(rulings)} §382 IRS rulings (PLRs, FSAs, CCAs, TAMs) "
-    "to find patterns the raw IRS database can't surface."
+    f"— metadata **plus** ~{_ft_chars/1000:.0f}K characters of full ruling text — "
+    "to find regulatory language the raw IRS database can't surface."
 )
 
 # Metric cards
@@ -493,28 +549,30 @@ else:
 
     # Active doctrine banner with match-quality breakdown
     if active_doctrine and doctrine_match_signals:
-        # Count how many rulings matched via UILC vs cite vs phrase only
-        uilc_only = cite_only = phrase_only = multi = 0
+        # Tally each ruling by its STRONGEST signal type.
+        # Strength order (high → low):
+        #   full-text phrase > full-text cite > meta cite > meta phrase > UILC only
+        ft_phrase = ft_cite = meta_cite = meta_phrase = uilc_only = 0
         for rn in filtered["ruling_number"]:
             sigs = doctrine_match_signals.get(rn, [])
-            has_uilc = any(s.startswith("UILC") for s in sigs)
-            has_cite = any(s.startswith("cite:") for s in sigs)
-            has_phrase = any(s.startswith("\u201c") for s in sigs)
-            score = sum([has_uilc, has_cite, has_phrase])
-            if score > 1:
-                multi += 1
-            elif has_uilc:
+            if any(s.startswith("full-text phrase") for s in sigs):
+                ft_phrase += 1
+            elif any(s.startswith("full-text cite") for s in sigs):
+                ft_cite += 1
+            elif any(s.startswith("cite:") for s in sigs):
+                meta_cite += 1
+            elif any(s.startswith("meta phrase") for s in sigs):
+                meta_phrase += 1
+            elif any(s.startswith("UILC") for s in sigs):
                 uilc_only += 1
-            elif has_cite:
-                cite_only += 1
-            elif has_phrase:
-                phrase_only += 1
+        total = ft_phrase + ft_cite + meta_cite + meta_phrase + uilc_only
         st.info(
-            f"🎯 **Doctrine:** {active_doctrine['label']}  \n"
-            f"• {multi} ruling(s) matched on multiple signal types (strongest evidence)  \n"
-            f"• {uilc_only} matched via UILC code only  \n"
-            f"• {cite_only} matched via citation only  \n"
-            f"• {phrase_only} matched via doctrinal phrase only (weakest — may be false positives)"
+            f"🎯 **Doctrine:** {active_doctrine['label']} — {total} ruling(s) matched  \n"
+            f"• **{ft_phrase}** with the literal doctrinal phrase in the actual ruling text (strongest)  \n"
+            f"• **{ft_cite}** citing the precise regulation in the actual ruling text  \n"
+            f"• **{meta_cite}** with the citation in metadata only (weaker — review carefully)  \n"
+            f"• **{meta_phrase}** with the phrase only in human metadata (weakest — likely paraphrase noise)  \n"
+            f"• **{uilc_only}** via UILC code only (broadest — review carefully)"
         )
 
     # Render each ruling as a card
@@ -524,14 +582,18 @@ else:
         if active_doctrine:
             sigs = doctrine_match_signals.get(row["ruling_number"], [])
             if sigs:
-                # Show concise signal types in the header
+                # Show concise signal types in the header, strongest first
                 types = []
+                if any(s.startswith("full-text phrase") for s in sigs):
+                    types.append("📝 full-text phrase")
+                if any(s.startswith("full-text cite") for s in sigs):
+                    types.append("📜 full-text cite")
+                if any(s.startswith("cite:") for s in sigs):
+                    types.append("📄 meta cite")
+                if any(s.startswith("meta phrase") for s in sigs):
+                    types.append("💬 meta phrase")
                 if any(s.startswith("UILC") for s in sigs):
                     types.append("🏷️ UILC")
-                if any(s.startswith("cite:") for s in sigs):
-                    types.append("📜 cite")
-                if any(s.startswith("\u201c") for s in sigs):
-                    types.append("💬 phrase")
                 if types:
                     header_badge = "  —  " + " + ".join(types)
 
@@ -582,10 +644,11 @@ else:
                     )
 
             # UILC codes
-            tab1, tab2, tab3, tab4 = st.tabs([
+            tab1, tab2, tab3, tab_ft, tab4 = st.tabs([
                 "UILC Codes",
                 "Code Sections & Authorities",
                 "Timeline Vector",
+                "📝 Full text",
                 "Raw record",
             ])
 
@@ -620,6 +683,82 @@ else:
                     )
                 else:
                     st.caption("No timeline vector data.")
+
+            with tab_ft:
+                full_text = str(row.get(FULL_TEXT_FIELD, ""))
+                if not full_text.strip():
+                    st.caption("No full text available for this ruling.")
+                else:
+                    char_count = int(row.get("full_text_char_count") or len(full_text))
+                    st.caption(
+                        f"Source: pdftotext -layout extraction of IRS PDF — {char_count:,} characters. "
+                        "Highlighted excerpts shown first; full text below."
+                    )
+
+                    # Build excerpt list: every match of every active term + doctrinal phrase/cite
+                    excerpt_terms = []
+                    if active_doctrine:
+                        excerpt_terms += [p for p in active_doctrine["phrases"]]
+                        excerpt_terms += [c for c in active_doctrine["citations"]]
+                    excerpt_terms += [t for t in highlight_list if t]
+                    # de-dupe while preserving order, case-insensitive
+                    seen = set()
+                    excerpt_terms = [
+                        t for t in excerpt_terms
+                        if (t.lower() not in seen and not seen.add(t.lower()))
+                    ]
+
+                    if excerpt_terms:
+                        ft_lower = full_text.lower()
+                        # collect all match offsets across all terms
+                        offsets = []
+                        for term in excerpt_terms:
+                            tl = term.lower()
+                            if not tl:
+                                continue
+                            start = 0
+                            while True:
+                                i = ft_lower.find(tl, start)
+                                if i < 0:
+                                    break
+                                offsets.append((i, i + len(term), term))
+                                start = i + max(1, len(term))
+                        offsets.sort()
+                        # merge nearby offsets into excerpt windows
+                        windows = []
+                        WIN = 250
+                        for start_i, end_i, term in offsets:
+                            ws = max(0, start_i - WIN)
+                            we = min(len(full_text), end_i + WIN)
+                            if windows and ws <= windows[-1][1]:
+                                windows[-1] = (windows[-1][0], max(we, windows[-1][1]), windows[-1][2] + [term])
+                            else:
+                                windows.append((ws, we, [term]))
+                        if windows:
+                            st.markdown(f"**{len(offsets)} match(es) across {len(windows)} excerpt(s):**")
+                            for ws, we, terms in windows[:10]:
+                                excerpt = full_text[ws:we]
+                                prefix = "…" if ws > 0 else ""
+                                suffix = "…" if we < len(full_text) else ""
+                                rendered = highlight_terms(prefix + excerpt + suffix, terms)
+                                st.markdown(rendered, unsafe_allow_html=True)
+                                st.markdown("")
+                            if len(windows) > 10:
+                                st.caption(f"…and {len(windows) - 10} more excerpt(s) below the cutoff. "
+                                           "Use Ctrl-F on the full text to find them.")
+                        else:
+                            st.caption("No matches found in full text for the active terms.")
+                    else:
+                        st.caption("No active search terms or doctrinal query. Showing full text below.")
+
+                    with st.expander("📄 Show entire ruling text", expanded=False):
+                        st.text_area(
+                            "Full text",
+                            value=full_text,
+                            height=400,
+                            label_visibility="collapsed",
+                            key=f"ft_{row['ruling_number']}",
+                        )
 
             with tab4:
                 st.json({
