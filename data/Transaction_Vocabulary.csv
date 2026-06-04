@@ -1,0 +1,33 @@
+order,term,family,term_type
+1,Statutory Merger,§368(a)(1)(A) Reorganizations,transaction
+2,Forward Triangular Merger,§368(a)(1)(A) Reorganizations,transaction
+3,Reverse Triangular Merger,§368(a)(1)(A) Reorganizations,transaction
+4,Cash Merger,§368(a)(1)(A) Reorganizations,transaction
+5,Downstream Merger,§368(a)(1)(A) Reorganizations,transaction
+6,Stock-for-Stock Reorganization,§368(a)(1)(B) Reorganizations,transaction
+7,Asset Reorganization,§368(a)(1)(C) Reorganizations,transaction
+8,§368(a)(1)(D) Reorganization,§368(a)(1)(D) Reorganizations,transaction
+9,Recapitalization,§368(a)(1)(E) Reorganizations,transaction
+10,F Reorganization,§368(a)(1)(F) Reorganizations,transaction
+11,G Reorganization (Bankruptcy),§368(a)(1)(G) Reorganizations,transaction
+12,Spin-Off,§355 Divisive Transactions,transaction
+13,Split-Off,§355 Divisive Transactions,transaction
+14,§351 Contribution,§351 Formation,transaction
+15,Stock Acquisition,M&A Primitives,transaction
+16,Asset Sale,M&A Primitives,transaction
+17,Tender Offer,M&A Primitives,transaction
+18,Leveraged Buyout,M&A Primitives,transaction
+19,IPO,Capital Markets,transaction
+20,Equity Financing Round,Capital Markets,transaction
+21,Preferred Stock Issuance,Capital Markets,transaction
+22,Rights Offering,Capital Markets,transaction
+23,Stock Repurchase,Capital Markets,transaction
+24,Title 11 Filing,Distress / Bankruptcy,transaction
+25,Chapter 11 Plan of Reorganization,Distress / Bankruptcy,transaction
+26,Debt-for-Equity Exchange,Distress / Bankruptcy,transaction
+27,Check-the-Box Election,Structural Elections,transaction
+28,related-party,Flag,flag
+29,cross-border,Flag,flag
+30,consolidated-group,Flag,flag
+31,multi-step,Flag,flag
+32,pre-arranged,Flag,flag

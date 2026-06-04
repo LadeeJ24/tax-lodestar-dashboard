@@ -1,0 +1,970 @@
+ruling_number,document_type,control_number,date_released,date_issued,issuing_office,signatory,precedential_value,uilc_on_document,uilc_dictionary_mapping,primary_code_sections,key_authorities_cited,transaction_type,issues_presented,conclusions,subject_summary,timeline_vector,timeline_vector_raw,favorable_logic_pivot,compelled_representations,migration_status,migration_review
+9910009,FSA,TL-N-640-98,1998-12-02,,,,,"382.11-06
+382.11-07
+1001.02-07","code: 0382.11-00 | title: Definitions and Special Rules [Mapped to Parent Category]
+code: 0382.11-07 | title: Treating Interests As Stock
+code: 1001.02-07 | title: [UNMAPPED — review]","IRC § 108
+Former IRC § 112
+IRC § 382
+IRC § 382(j)
+IRC § 382(k)
+IRC § 382(k)(2)
+IRC § 382(k)(6)(B)
+IRC § 382(k)(6)(B)(i)
+IRC § 382(k)(6)(B)(ii)
+IRC § 382(l)(1)
+IRC § 382(l)(1)(A)
+IRC § 382(l)(1)(B)
+IRC § 1001
+IRC § 1001(a)
+IRC § 1001(b)
+IRC § 1001(c)
+IRC § 1002
+IRC § 1274
+Treas. Reg. § 1.382-2T(f)(18)(i)
+Treas. Reg. § 1.382-2T(f)(18)(ii)
+Treas. Reg. § 1.382-2T(f)(18)(iii)
+Treas. Reg. § 1.382-2T(f)(18)(iii)(A)
+Treas. Reg. § 1.382-2T(f)(18)(iii)(B)
+Treas. Reg. § 1.382-2T(f)(18)(iii)(C)
+Treas. Reg. § 1.382-2T(h)(4)
+Treas. Reg. § 1.382-2T(h)(4)(i)
+Treas. Reg. § 1.382-4(d)(2)
+Treas. Reg. § 1.382-5T(d)(1)
+Treas. Reg. § 1.1001-1(a)
+Treas. Reg. § 1.1001-3
+Treas. Reg. § 1.1001-3(a)
+Treas. Reg. § 1.1001-3(e)(3)(ii)","FI-31-92, 1992-2 C.B. 683
+G.C.M. 37884
+H.R. Conf. Rep. No. 99-841 (1986)
+Pub. L. No. 94-455, § 1901
+Rev. Rul. 73-160, 1973-1 C.B. 365
+Rev. Rul. 81-169, 1981-1 C.B. 429
+Rev. Rul. 87-19, 1987-1 C.B. 249
+Rev. Rul. 89-122, 1989-2 C.B. 200
+T.D. 8675, 1996-2 C.B. 60
+Church of Scientology v. Commissioner, 823 F.2d 1310 (9th Cir. 1982)
+Cottage Savings v. Commissioner, 499 U.S. 554 (1991)
+Emery v. Commissioner, 166 F.2d 27 (2d Cir. 1948)
+Gilbert v. Commissioner, 248 F.2d 399 (2d Cir. 1957)
+Girard Trust v. Commissioner, 166 F.2d 773 (3d Cir. 1948)
+Mutual Loan and Savings Co. v. Commissioner, 184 F.2d 161 (5th Cir. 1950)
+Shafer v. United States, 204 F. Supp. 473 (S.D. Ohio 1962), aff'd 312 F.2d 747 (6th Cir. 1963)
+[Elections & Safe Harbors]
+Stock/Debt Recharacterization Analysis (Treas. Reg. § 1.382-2T(f)(18))",,,,Debt-as-stock analysis under § 1.382-2T(f)(18)(iii); debt modification under § 1001,,"[Month 2 of Year 1 (Date 1): X completes leveraged buyout; borrows $y from Lender via Loan Agreement divided into term loan ($x), fixed rate loan ($s), and revolving credit ($u); concurrently issues warrant to Lender for k shares (g% fully diluted) valued at $k; original shareholders SH1, SH2, SH3 hold 100%] -> [Date 2: First Amendment to Loan Agreement - modifies debt ratios, base compensation definition, and covenant waivers; no material modifications] -> [+Pre-Month 3 Year 4: X partially repays term loan ($q) and fixed rate loan ($p)] -> [Date 3 (in Year 4): Second Amendment - $o of fixed rate principal converted to term loan; $i of revolving converted to term loan; ~$m of term loan principal forgiven; term loan maturity extended from Month 1 Year 7 to Month 4 Year 8; fixed rate maturity accelerated to Month 4 Year 5; warrant modified - shares increased from k to p (i% fully diluted), expiration extended from Date 8 to Date 9, exercise price reduced from $i to $h; X in poor financial condition (liabilities exceed asset value)] -> [Date 4: SH1 and SH2 transfer X stock to Lender; Lender tenders for retirement; X issues two warrants to Lender; Lender assigns one to SH1/SH2; SH3 becomes sole shareholder of X (ownership change)] -> [Date 5: Agreement and plan of merger entered among X, Lender, Acquiring, and Sub (wholly-owned by Acquiring)] -> [Date 6: Closing of Merger - Sub merges into X with X surviving; Acquiring and affiliates acquire k% of X common stock; equityholders receive cash + stock purchase warrants exercisable for d% on fully diluted basis; all pre-merger stock and warrants canceled; Lender continues to hold X debt] -> [+Year 6 and Subsequent: X computes § 382 limitation as $z ($v outstanding Lender debt × c% long-term tax-exempt rate)]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+9914002,FSA,SPRO-121611-98,1998-12-04,,,,,382.08-00,code: 0382.08-00 | title: Built-in Gains and Losses and Section 338 Gains,"IRC § 368(a)(2)(D)
+IRC § 382
+IRC § 382(e)
+IRC § 382(e)(1)
+IRC § 382(h)(8)
+IRC § 382(k)
+IRC § 382(k)(6)(A)
+IRC § 382(k)(6)(B)
+IRC § 1032
+IRC § 1504(a)(4)
+IRC § 1504(a)(4)(C)
+Treas. Reg. § 1.168(j)-1T
+Treas. Reg. § 1.338(b)-1T(f)(3)
+Treas. Reg. § 1.382-2(a)(3)(ii) (proposed)
+Treas. Reg. § 1.382-2T(h)(4)(v)
+Treas. Reg. § 1.382-3(a)
+Treas. Reg. § 1.382-3(a)(1)(ii)
+Treas. Reg. § 1.382-4(d)(2)
+Treas. Reg. § 1.382-4(d)(3)","H.R. Rep. No. 426, 99th Cong., 1st Sess. (1985)
+Notice 88-67, 1988-1 C.B. 555
+Rev. Rul. 82-150, 1982-2 C.B. 110
+TAM-9332004
+Tax Reform Act of 1986, Pub. L. 99-514, § 621(f)(3)
+[Elections & Safe Harbors]
+Section 382(h)(8) 80% Acquisition NUBIG/NUBIL Determination",,,,Application of § 382(h)(8) - 80% acquisitions and NUBIL,,"[Date 1: M issues regulatory action N against LC (a Y entity) requiring LC to O by Date 2; failure to satisfy N could subject LC to Q] -> [+Pre-Date 3: LC and subsidiaries are members of P consolidated group; P (publicly traded) owns all LC common and W stock; P has $A convertible subordinated debentures outstanding; LC has $B subordinated debt outstanding] -> [Date 3: Preliminary step to satisfy N - P exchanges LC W stock for additional LC common stock share-for-share; LC issues new Z stock and warrants to Old Creditors in exchange for C% of $B subordinated debt] -> [Date 2: Proxy solicitation for Merger and Stock Exchange commences] -> [Date 4: Proposed Transaction consummated - P merges into LC subsidiary S under § 368(a)(2)(D) (P shareholders receive LC common + rights; P debenture holders exchange D-E% of debentures for LC common + rights in Debenture Exchange); Old Creditors exchange all Z stock for LC convertible preferred + rights (Stock Exchange); LC common issued to financial advisors] -> [+Immediately Post-Date 4: Rights Offering - rights to acquire LC common, convertible preferred, pure preferred issued to P shareholders, debenture holders, Old Creditors, and Standby Investors; perpetual out-of-money warrants issued to Standby Investors] -> [+F days post-Rights Offering: Rights expiration period ends] -> [+U post-Rights Offering: Standby Investor perpetual warrants become exercisable]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+9918051,PLR,119361-98,1999-02-09,,,,,382.12-03,code: 0382.12-03 | title: Constructive Ownership of Stock,"IRC § 318(a)(1)
+IRC § 318(a)(2)(B)(ii)
+IRC § 368
+IRC § 368(a)(1)(A)
+Former IRC § 382(a)(2) (1954 Code)
+IRC § 382(a)
+IRC § 382(g)(1)
+IRC § 6110(j)(3)
+Treas. Reg. § 1.382-2T(d)
+Treas. Reg. § 1.382-2T(h)(6)(ii)
+Treas. Reg. § 1.382-2T(h)(6)(iii)
+Treas. Reg. § 1.382-2T(h)(6)(iv)
+Treas. Reg. § 1.382-2T(k)(2)","[Elections & Safe Harbors]
+Family Aggregation Rule (Treas. Reg. § 1.382-2T(h)(6))",,,,Family attribution under § 1.382-2T(h)(6); merger of related corporations,,"[Pre-Date 1 (within testing period under § 1.382-2T(d)): Corporation X (State G, Business J, prior NOLs) shareholders are A and B (married); Family group (B, C, D, E, F under § 1.382-2T(h)(6)(ii)) owns 50% of Corporation X stock] -> [Date 1: Sale - A and B sell portion of Corporation X shares to E (B's sibling); Sale represented as not resulting in § 382(g)(1) ownership change; post-Sale Family owns more than 50% of Corporation X] -> [+Subsequent Date: Proposed Merger - Corporation X to merge with and into Corporation Y (State H, Business K) under § 368(a)(1)(A) to achieve operational efficiencies; Corporation Y shareholders are C, D, E, F (Family members)] -> [+Post-Merger: Family ownership of Corporation Y is n%; increase over Family's pre-Sale ownership of Corporation X is less than 50 percentage points] -> [+Subsequent Date: October 9, 1998 - Taxpayer submits PLR request] -> [+Subsequent Date: February 9, 1999 - Ruling issued; Merger does not result in § 382(g)(1) ownership change; Corporation X NOLs not limited]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+9942003,TAM,104480-99,1999-07-06,,,,,382.08-00,code: 0382.08-00 | title: Built-in Gains and Losses and Section 338 Gains,"IRC § 382
+IRC § 382(a)
+IRC § 382(b)(1)
+IRC § 382(g)(1)
+IRC § 382(h)
+IRC § 382(h)(1)
+IRC § 382(h)(1)(A)
+IRC § 382(h)(2)(A)
+IRC § 382(h)(3)
+IRC § 382(h)(3)(A)
+IRC § 382(h)(3)(B)
+IRC § 382(h)(6)(A)
+IRC § 382(h)(7)
+IRC § 6110(j)(3)","H.R. Rep. No. 426, 99th Cong., 1st Sess. (1985)
+Rev. Proc. 71-21, 1971-2 C.B. 549
+Rev. Proc. 99-2, 1999-1 I.R.B. 73
+[Elections & Safe Harbors]
+Section 382(h)(6) Built-In Income Analysis (Pre-Notice 2003-65)",,,,Prepaid income as recognized built-in gain under § 382(h)(6)(A),,"[Pre-Date B: Taxpayer (accrual method, Business A) receives customer prepayments for Service; payments recorded as liability in Account (not income); Taxpayer has elected under Rev. Proc. 71-21 to defer reporting prepaid service income until time of performance (no later than tax period following receipt)] -> [Date B (Change Date): Taxpayer undergoes § 382(g)(1) ownership change; balance in Account approximately $x of prepaid amounts for Service not yet provided; Taxpayer has NUBIG (§ 382(h)(3)) of no less than $y] -> [+Tax Period Immediately Following Change Date: Taxpayer properly reports prepaid amounts as income pursuant to Rev. Proc. 71-21 election and accounting method] -> [+Subsequent Date: July 6, 1999 - TAM issued; prepaid amounts NOT treated as recognized built-in gain (RBIG) under § 382(h)(6)(A) when taken into account in post-change tax period]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+9949002,FSA,TL-N-3698-98,1999-05-17,,,,,"269.07-00
+382.00-00
+1502.21-00","code: 269.07-00 | title: [UNMAPPED — review]
+code: 0382.00-00 | title: Limitation on Net Operating Loss Carryforwards and Certain Built-in Losses Following Ownership Changes
+code: 1502.21-00 | title: [UNMAPPED — review]","IRC § 269
+IRC § 269(a)
+IRC § 269(a)(2)
+IRC § 301(c)(2)
+IRC § 318
+IRC § 354(b)(1)
+IRC § 368
+IRC § 368(a)(1)(F)
+IRC § 368(a)(1)(G)
+IRC § 381
+IRC § 381(a)
+Former IRC § 382(a) (1954 Code)
+Former IRC § 382(a)(1)(A) (1954 Code)
+Former IRC § 382(a)(2) (1954 Code)
+IRC § 382
+IRC § 382(a)
+IRC § 382(b)
+IRC § 382(f)
+IRC § 382(g)(2)
+IRC § 382(g)(3)
+IRC § 382(i)
+IRC § 382(k)(1)
+IRC § 382(k)(6)(C)
+IRC § 382(l)(3)(A)(iv)
+IRC § 384
+IRC § 384(d)(4)
+IRC § 482
+Treas. Reg. § 1.269-1(c)
+Treas. Reg. § 1.269-1(d)
+Treas. Reg. § 1.269-3(a)
+Treas. Reg. § 1.269-3(c)(1)
+Treas. Reg. § 1.382(a)-1(a)
+Treas. Reg. § 1.382(a)-1(h)(5)
+Treas. Reg. § 1.382-2T(c)(1)
+Treas. Reg. § 1.382-2T(c)(3)
+Treas. Reg. § 1.1502-1(g)
+Treas. Reg. § 1.1502-1(g)(3)(i)
+Treas. Reg. § 1.1502-21(d)","H.R. Conf. Rep. No. 99-841 (1986)
+Rev. Rul. 58-603, 1958-2 C.B. 147
+Rev. Rul. 63-40, 1963-1 C.B. 46
+Rev. Rul. 80-46, 1980-1 C.B. 62
+S. Rep. No. 100-445 (1988)
+Tax Reform Act of 1986, Pub. L. 99-514, § 621(f)(3)
+Technical Information Release No. 773 (Oct. 13, 1965)
+Borge v. Commissioner, 405 F.2d 573 (2d Cir. 1968)
+Briarcliff Candy Corp. v. Commissioner, T.C. Memo. 1987-487
+Brick Milling Co. v. Commissioner, T.C. Memo. 1963-305
+Daytona Beach Kennel Club v. Commissioner, 69 T.C. 1015 (1980)
+Exel Corp. v. United States, 451 F.2d 80 (8th Cir. 1971)
+Frederick Steel Co. v. Commissioner, 375 F.2d 351 (6th Cir. 1967)
+Hawaiian Trust Co. v. United States, 291 F.2d 761 (9th Cir. 1961)
+Joseph Weidenhoff, Inc. v. Commissioner, 32 T.C. 1222 (1959)
+Libson Shops, Inc. v. Koehler, 353 U.S. 382 (1957)
+Maxwell Hardware Co. v. Commissioner, 343 F.2d 713 (9th Cir. 1965)
+National Tea Co. v. Commissioner, 793 F.2d 864 (7th Cir. 1986)
+Scroll, Inc. v. Commissioner, T.C. Memo. 1969-154, aff'd 447 F.2d 612 (5th Cir. 1971)
+Southland Corp. v. Campbell, 358 F.2d 333 (5th Cir. 1966)
+United States v. Jackson Oldsmobile, Inc., 237 F. Supp. (M.D. Ga. 1964), aff'd 371 F.2d 808 (5th Cir. 1967)
+Vulcan Materials Co. v. United States, 446 F.2d 690 (5th Cir. 1971), cert. denied 404 U.S. 942
+[Elections & Safe Harbors]
+Pre-1987 § 382(a) / CRCO Limitation (Treas. Reg. § 1.1502-21(d))",,,,§ 269 and CRCO limitations on NOL carryovers; Libson Shops doctrine,,"[Pre-Year 5: Corp2 is common parent of affiliated consolidated group (members include Corp3 fka Name1 in Business1/Business2 and another in Business3); Corp2 files bankruptcy Year 2 and emerges Year 4 with ~$dd consolidated NOL carryovers from Years 1-3 and ~$ee deficit in retained earnings] -> [MonthA Year 5: Corp2 shareholders approve increase in authorized shares from #r to #s; grant option to Partnership to acquire #t shares at $bb per share] -> [Date 1 (in Year 6): Partnership exercises option to acquire #u million Corp2 shares; concurrently makes tender offer at $cc per share] -> [Date 2: Tender offer completed] -> [Date 3: Partnership owns ~%x of Corp2 outstanding stock] -> [+By Date 4: Partnership owns %y of Corp2; pre-1987 § 382 transition rule applies (option treated as exercised in MonthA Year 5 under Tax Reform Act of 1986 § 621(f)(3)); CRCO triggered under Treas. Reg. § 1.1502-1(g); Year 1-3 NOLs subject to § 1.1502-21(d) CRCO limitation] -> [Date 5: Corp3 sells Business1 assets and Name1 name to unrelated purchaser] -> [+After Date 6: Corp3 has no employees, no operating assets; renamed Name2 (shell corporation)] -> [Date 8: Agreement and plan of merger executed among Corp4, Corp1, and Corp7] -> [Date 9: Corp2 (via Corp7, newly formed sub of Corp6) acquires ~%z of Corp4 stock in friendly takeover via reverse triangular merger (Corp7 merges into Corp4); former Corp4 shareholders receive $ff cash per share] -> [+Post-Date 9: Corp2 issues debt securities to retire acquisition debt; distributes excess ~$gg as return of capital under § 301(c)(2)] -> [Date 7: Corp5 (profitable Corp4 sub in Business4) merges into Corp3 (shell) with Corp3 surviving; Corp3 renamed Name3; Corp2 offsets group's CRCO NOL carryovers against Corp5's post-merger income]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0006004,FSA,TL-N-8298-98,1999-06-28,,,,,"382.12-09
+382.12-10
+1272.00-00","code: 0382.12-09 | title: Reduction for Interest Payment
+code: 0382.12-10 | title: Reduction of Carryovers
+code: 1272.00-00 | title: [UNMAPPED — review]","IRC § 163 IRC § 163(e) IRC § 382 IRC § 382(a) IRC § 382(g) IRC § 382(l)(5) IRC § 382(l)(5)(A) IRC § 382(l)(5)(A)(ii) IRC § 382(l)(5)(B) IRC § 382(l)(5)(C) IRC § 382(l)(5)(E) IRC § 382(l)(5)(H) IRC § 383(a) IRC § 108(b) IRC § 108(e)(10)(A) IRC § 108(e)(10)(B) IRC §§ 1271-1275
+Treas. Reg. § 1.382-9(i) Treas. Reg. § 1.1272-1(c) Treas. Reg. § 1.1272-1(j) Treas. Reg. § 1.1275-2(a) Treas. Reg. § 1.1275-2(a)(1) Treas. Reg. § 1.1275-2(c)(3)","H.R. Conf. Rep. No. 99-841 (1986) H.R. Rep. No. 100-795 (1988) S. Rep. No. 100-445 (1988) T.D. 8517, 1994-1 C.B. 36 TAM 9538007 LGM TL-103 Tax Reform Act of 1986 Technical and Miscellaneous Revenue Act of 1988 § 1006(d)(18)
+Gottesman & Co. v. Commissioner, 77 T.C. 1149 (1981)
+[Elections & Safe Harbors]
+Section 382(l)(5) Bankruptcy Exception",,,,Reduction of NOL carryover under § 382(l)(5) - interest deductions on debt converted to stock and treatment of PIK instruments in a title 11 reorganization (two successive bankruptcies),,"[Year1: Creditors file involuntary bankruptcy petitions against Taxpayer; Taxpayer consents and files a joint plan of reorganization (Plan 1)] -> [MonthB Year2 (notes issued MonthC Year2): Plan 1 becomes effective - a substantial portion of pre-reorganization debt is converted into common stock; remaining debt is replaced by Series A and Series B notes (Debt1, due Date1) and Debt2, issued with OID] -> [Date6: First interest payment is due; Taxpayer issues PIK instruments in lieu of cash interest] -> [+Through Date7: Taxpayer issues additional PIK instruments for all interest due] -> [Late Year5: Taxpayer realizes it cannot meet its obligations on the Series A/B notes maturing Date1] -> [Date8: Taxpayer and #m subsidiaries file an SEC registration statement describing the proposed restructuring] -> [Date9: Plan 2 is filed with the Bankruptcy Court; Taxpayer discontinues financial-accounting interest accrual] -> [MonthA Year6: Bankruptcy Court approves Plan 2] -> [Date10: Plan 2 becomes effective - creditors receive cash, new notes, common stock and other property; a § 382(g) ownership change occurs while Taxpayer is under title 11 jurisdiction; Taxpayer reports it qualifies under § 382(l)(5) (no § 382(a) limitation) and reduces pre-change NOLs under § 382(l)(5)(B) and (C) by $nn] -> [Year7 return: Taxpayer revises the NOL reduction downward to $oo] -> [Date11: Tax advisor memorandum takes the position the reduction should be $pp] -> [June 28, 1999: IRS National Office issues FSA TL-N-8298-98 - interest paid/accrued during the recapture period on debt converted to stock is taken into account under § 382(l)(5)(B) regardless of whether an NOL was incurred in that period; issuance of PIK instruments is not a payment, so PIK interest converted to stock under (B) is excluded from the § 382(l)(5)(C) COD computation]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0010003,FSA,TL-N-6531-98,1999-08-20,,,,,"382.08-02
+382.11-05
+382.12-03","code: 0382.08-02 | title: Net Unrealized Built-in Loss
+code: 0382.11-05 | title: Preferred Stock
+code: 0382.12-03 | title: Constructive Ownership of Stock","IRC § 368 IRC § 368(a)(1) IRC § 382 IRC § 382(a) IRC § 382(b) IRC § 382(e) IRC § 382(f) IRC § 382(g) IRC § 382(g)(2) IRC § 382(g)(3) IRC § 382(h)(3) IRC § 382(h)(3)(A) IRC § 382(h)(3)(B) IRC § 382(h)(8) IRC § 382(i) IRC § 382(k)(1) IRC § 382(k)(6)(A) IRC § 382(k)(6)(B) IRC § 382(k)(6)(C) IRC § 382(l)(3)(A)(iv) IRC § 1504(a)(4)
+Treas. Reg. § 1.382-2(a)(3)(ii) Treas. Reg. § 1.382-2(b)(2)(i) Treas. Reg. § 1.382-2(b)(2)(ii) Treas. Reg. § 1.382-4(d) Treas. Reg. § 1.382-4(d)(1) Treas. Reg. § 1.382-4(d)(2) Treas. Reg. § 1.382-4(h)(2)(i) Treas. Reg. § 1.382-4(h)(2)(vi) Treas. Reg. § 1.382-4(h)(2)(vi)(A) Treas. Reg. § 1.382-4(h)(2)(vi)(B)(1) Treas. Reg. § 1.382-4(h)(2)(vi)(C) Temp. Treas. Reg. § 1.382-2T(a)(2)(i) Temp. Treas. Reg. § 1.382-2T(f)(18)(a) Temp. Treas. Reg. § 1.382-2T(h)(4) Temp. Treas. Reg. § 1.382-2T(h)(4)(i) Temp. Treas. Reg. § 1.382-2T(h)(4)(v)","Notice 88-67, 1988-1 C.B. 555 T.D. 8149, 1987-2 C.B. 85 T.D. 8531, 1994-1 C.B. 121 CO-18-90, 57 Fed. Reg. 52,743 (proposed Nov. 4, 1992)
+[Elections & Safe Harbors]
+Convertible Pure Preferred Stock Option-Treatment Election (Treas. Reg. § 1.382-4(h)(2)(vi); Notice 88-67)",,,,Convertible pure preferred stock of a loss corporation - treatment as stock vs. option for § 382(h)(8); option-attribution effective-date election under § 1.382-4(h)(2)(vi),,"[Year1: Taxpayer issues nonvoting preferred stock convertible into common stock and purportedly elects, under Treas. Reg. § 1.382-2(b)(2)(ii) and Notice 88-67, to treat such stock as an option (the precise manner and timing of the election are not shown)] -> [+Also in Year1: Taxpayer experiences a change of ownership in which r% of its stock is acquired (without taking the convertible preferred into account); if the convertible preferred is treated as stock, more than 80% of Taxpayer's stock was acquired in Year1 (implicating § 382(h)(8))] -> [May 17, 1999: Field memorandum requesting advice] -> [August 20, 1999: IRS National Office issues FSA TL-N-6531-98 - Taxpayer was entitled to elect under Treas. Reg. § 1.382-4(h)(2)(vi) to apply Temp. Treas. Reg. §§ 1.382-2T(a)(2)(i) and 1.382-2T(h)(4) for pre-May 17, 1994 periods, so the convertible pure preferred would be treated as an option (deemed issued November 4, 1992), not as stock, unless a deemed conversion would itself produce an ownership change; on the available facts the Office cannot determine whether the stock would be treated as stock for § 382(h)(8)]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0024047,PLR,113612-99,2000-03-21,,,,,0382.01-00,code: 0382.01-00 | title: [UNMAPPED — review],"IRC § 382 IRC § 6110(k)(3)
+Treas. Reg. § 1.382-2(a)(4) Treas. Reg. § 1.382-2T(e)(1)(i) Treas. Reg. § 1.382-2T(e)(1)(ii) Treas. Reg. § 1.382-2T(f)(11) Treas. Reg. § 1.382-2T(h)(2)(i) Treas. Reg. § 1.382-2T(j)(1)(iv) Treas. Reg. § 1.382-2T(j)(2)(ii) Treas. Reg. § 1.382-2T(j)(3) Treas. Reg. § 1.382-2T(j)(3)(i) Treas. Reg. § 1.382-3(j)(2)(iii) Treas. Reg. § 1.382-3(j)(3) Treas. Reg. § 1.382-4(d) Treas. Reg. § 1.382-4(d)(2) Treas. Reg. § 1.382-4(d)(9)","Rev. Proc. 2000-1, 2000-1 I.R.B. 4
+[Elections & Safe Harbors]
+Cash Issuance Exception (Treas. Reg. § 1.382-3(j)(3))
+Segregation / Aggregation Rules (Treas. Reg. § 1.382-2T(j))
+Charter Transfer Restrictions / Escrow Protection Mechanics (NOL Preservation)",,,,ABC Warrants and call notices; LP dissolution and partner segregation; charter transfer restrictions,,"[Before Date C: Company (publicly held State X holding corp; common parent of consolidated loss group engaged in Business L; single class of common) - RIC Fund, Trustee, and LP each own >5% of Company; LP (a partnership due to dissolve early 1999) holds shares but is barred from dissolving over § 382 ownership-change concern; charter contains Charter Transfer Restrictions limiting 5% holders] -> [Date C: Investor purchases P shares of newly issued Company common stock plus a warrant for an additional P shares solely for cash; Investor becomes a first-tier entity; RIC Fund's percentage ownership is thereby reduced below 5%; after Date C only Investor, Trustee and LP are 5% shareholders] -> [+Post-Date C: Company actively pursues the Expansion Plan (strategic acquisitions) and proposes the ABC Warrant Plan (A, B, C call notices stapled to common stock; Escrow Protection Mechanics)] -> [+Within 1 year of ruling: Company intends to issue the A call of the ABC Warrants at a discounted price] -> [+Within 2 years of A call (not later than 3 years from ruling): Company intends to issue the B and C calls] -> [August 6, 1999: Letter requesting rulings] -> [March 16, 2000: Additional information submitted] -> [March 21, 2000: IRS issues PLR-113612-99 - RIC Fund public group aggregated into PUBLIC GROUP; LP distribution is a segregation event (not an owner shift); ABC Warrant calls are not options until a call notice issues; exercise treated as an acquisition solely for cash under § 1.382-3(j)(3); options not deemed exercised on issuance]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0203007,CCA,TL-N-2634-01,"Sept 28, 2001",,,,,"1502.77-00
+1502.98-00
+6229.07-00
+6503.06-00","code: 1502.77-00 | title: [UNMAPPED — review]
+code: 1502.98-00 | title: Discretionary Extension for Regulatory Elections under §382 or §383 Regs
+code: 6229.07-00 | title: [UNMAPPED — review]
+code: 6503.06-00 | title: [UNMAPPED — review]","IRC § 6110(k)(3) IRC § 6213(a) IRC § 6213(f)(1) IRC § 6226(d)(1)(A) IRC § 6231(a)(2)(B) IRC § 6231(b)(1)(D) IRC § 6231(c)(1)(E) IRC § 6501 IRC § 6501(a) IRC § 6503(a)(1) IRC § 6503(a)(2) IRC § 6503(h) § 362(a)(8) Bankruptcy Code § 362(b)(9)(D) Bankruptcy Code § 362(c)(2) Bankruptcy Code § 1141(d) Bankruptcy Code
+Treas. Reg. § 1.1502-75(d)(1) Treas. Reg. § 1.1502-75(d)(2) Treas. Reg. § 1.1502-75(d)(2)(ii) Treas. Reg. § 1.1502-77(d) Temp. Treas. Reg. § 301.6231(a)(2)-1T Temp. Treas. Reg. § 301.6231(a)(2)-1T(a) Temp. Treas. Reg. § 301.6231(c)-7T(a)","Bankruptcy Reform Act of 1994
+Callaway v. Commissioner, 231 F.3d 106 (2d Cir. 2000) Computer Programs Lambda Ltd. v. Commissioner, 89 T.C. 198 (1987) Dubin v. Commissioner, 99 T.C. 325 (1992) Southern Pacific Co. v. Commissioner, 84 T.C. 395 (1985)
+[Elections & Safe Harbors]
+Standard 3-Year Rolling Calculation",,,,Bankruptcy of a Member of a Consolidated Group; downstream merger / successor common parent; TEFRA partnership items conversion; statute of limitations,,"[February of Taxable Year 1: Corp C and Corp B form Partnership with unrelated companies; the Service later determines a disguised sale and issues an FPAA to Partnership for Taxable Year 1; Corp C petitions the Tax Court as the non-TMP partner] -> [Taxable Year 1: Corp D (parent of Corp B and Corp C) files a consolidated return including Corp B, Corp C and U other affiliates (V total members)] -> [Taxable Year 2: Corp D transfers Y subsidiaries to newly formed Corp E and spins off Corp E to Corp D's CEO and a family partnership] -> [Early Taxable Year 3: Persons allegedly injured by Business T products sue, claiming the Taxable Year 2 spinoff was a fraudulent conveyance] -> [October of Taxable Year 3: Corp D merges into Corp A (downstream); on the same date Corp A merges into Corp C (downstream); Corp F merges into Corp C (downstream)] -> [November of Taxable Year 3: Corp C merges into Corp G (downstream merger); Corp G becomes the successor common parent under Treas. Reg. § 1.1502-75(d)(2)(ii)] -> [January 5 of Taxable Year 4: Corp G files a Chapter 11 petition (no subsidiaries included)] -> [March of Taxable Year 4: Corp G sends a letter to the Justice Department asserting it became common parent under § 1.1502-75(d)(2)] -> [August of Taxable Year 4: Corp B files for bankruptcy] -> [May 11, 2001: Memorandum requesting advice] -> [September 28, 2001: Office issues CCA TL-N-2634-01 - bankrupt members' partnership items convert to nonpartnership items; Corp G is successor common parent/agent for pre- and post-merger years; assessment period suspended for the debtor and nondebtor subsidiaries under § 6503(a)(1) and (a)(2)]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,"unparsed_date: Sept 28, 2001"
+0207002,PLR,117357-01,2001-07-17,,,,,0382.01-00,code: 0382.01-00 | title: [UNMAPPED — review],IRC § 6110(k)(3),"[Elections & Safe Harbors]
+Cash Issuance Exception (Treas. Reg. § 1.382-3(j)(3))
+Supplemental Ruling - Extension of ABC Warrant Call Timetable",,,,Supplemental ruling to PLR-113612-99 - extension of timetable for ABC Warrant calls,,"[March 21, 2000: IRS issues the Prior Letter Ruling PLR-113612-99 conditioning the ABC Warrant rulings (7-12) on a timetable - A call within 1 year of the Prior Ruling; B and C calls within 2 years of the A call] -> [+Post-Prior Ruling: Change in market conditions and a failed attempt to acquire a target corporation; Company remains committed to the Expansion Plan and pursues additional targets] -> [March 20, 2001: Letter requesting a supplemental ruling to extend the timetable] -> [July 17, 2001: IRS issues PLR-117357-01 - deletes and replaces the conditional paragraph so that the A call may issue within 3 years of the Prior Ruling and the B and C calls within 4 years of the Prior Ruling; reaffirms rulings 7-12]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0207014,PLR,152297-01,2001-11-15,,,,,382.07-03,code: 0382.07-03 | title: Equity Structure Shift,"IRC § 382 IRC § 382(g) IRC § 382(k)(1) IRC § 383 IRC § 501(c)(3) IRC § 6110(k)(3)
+Treas. Reg. § 1.382-2T","Rev. Proc. 2000-1, 2000-1 I.R.B. 1
+[Elections & Safe Harbors]
+Standard 3-Year Rolling Calculation",,,,Tax-exempt § 501(c)(3) organizations - internal restructuring distribution of subsidiary stock; no ownership change,,"[Date 1: Tax-Exempt 1 (State X § 501(c)(3) nonprofit) is founded to manage the Business A activities of its affiliates] -> [Date 2: Tax-Exempt 2 (State X § 501(c)(3) nonprofit) is established; a majority of its board is chosen by Tax-Exempt 1; Tax-Exempt 1 is the sole member of Tax-Exempt 2] -> [Date 3: Company (State X corporation) is incorporated; its single class of stock is owned entirely by Tax-Exempt 2; Company is a loss corporation under § 382(k)(1)] -> [Date 4: Tax-Exempt 1 consolidates certain Business B services (including Company's) into Affiliate; thereafter Company performs consulting/support services and owns a % of LLC] -> [+Proposed Transaction: Tax-Exempt 2 distributes all Company stock to Tax-Exempt 1 to improve administrative efficiency; no change to the geographic area, communities, or classes of beneficiaries served] -> [September 17, 2001: Letter requesting rulings] -> [November 15, 2001: IRS issues PLR-152297-01 - the distribution does not result in an ownership change under § 382(g)/§ 1.382-2T, and the § 383 limitation does not apply]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0217009,TAM,130855-01,2001-12-04,,,,,382.08-01,code: 0382.08-01 | title: Net Unrealized Built-in Gain,IRC § 267 IRC § 382 IRC § 382(a) IRC § 382(h)(1)(A) IRC § 382(h)(1)(B) IRC § 382(h)(2)(A) IRC § 382(h)(2)(B) IRC § 382(h)(3)(A) IRC § 382(h)(6) IRC § 382(h)(6)(A) IRC § 382(h)(6)(C) IRC § 448 IRC § 465 IRC § 481 IRC § 6110(k)(3),"FSA TL-N-5525-93 (July 8, 1993) H.R. Rep. No. 99-841 (1986) H.R. Rep. No. 100-495 (1987) Rev. Proc. 98-2, 1998-1 I.R.B. 74 S. Rep. No. 99-313 (1986) S. Rep. No. 100-445 (1988) Staff of Joint Committee, General Explanation of TRA 1986
+[Elections & Safe Harbors]
+Section 382(h)(6) Built-In Income Analysis (Pre-Notice 2003-65)",,,,Income from existing patient base (wasting asset) not treated as recognized built-in gain under § 382(h)(6),,"[Change Date: X (common parent of an affiliated consolidated group providing products and services) undergoes a § 382 ownership change as a result of its initial public offering; stock FMV ~$a; § 382 limitation ~$b; NOL carryforwards $c; the existing patient base is held with a book and tax basis of zero] -> [Years 1, 2, 3 (postchange period): X generates taxable income (~$e, $f, $g) from providing products and services to the existing patient base; the income cannot be offset by NOLs because of the § 382 limitation] -> [+Subsequent (within the limitations period): Y merges into X; the surviving entity is renamed Z and continues the same business; Z requests refunds for Years 1, 2, 3, asserting the § 382 limitation should be increased by treating patient-base income as RBIG under § 382(h)(6)] -> [+Examination: the IRS Agent takes the position that no portion of the wasting-asset (patient base) income is RBIG] -> [December 4, 2001: National Office issues TAM-130855-01 - no portion of the income from the existing patient base is treated as recognized built-in gain under § 382(h)(6)]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0220016,PLR,165588-01,2002-02-14,,,,,"382.02-05
+9100.00-00","code: 0382.02-05 | title: Closing of the Books
+code: 9100.00-00 | title: Relief for Late-Filed Regulatory Elections (General Discretionary Authority)","IRC § 382 IRC § 382(g) IRC § 6110(k)(3) IRC § 6501(a)
+Treas. Reg. § 1.382-2T(a)(1) Treas. Reg. § 1.382-2T(a)(2)(ii) Treas. Reg. § 1.382-6(a) Treas. Reg. § 1.382-6(b) Treas. Reg. § 1.382-6(b)(1) Treas. Reg. § 1.382-6(b)(2) Treas. Reg. § 1.1502-91(c)(1) Treas. Reg. § 1.1502-92(b)(1)(i) Treas. Reg. § 301.9100-1 Treas. Reg. § 301.9100-1(a) Treas. Reg. § 301.9100-1(c) Treas. Reg. § 301.9100-2 Treas. Reg. § 301.9100-3 Treas. Reg. § 301.9100-3(a) Treas. Reg. § 301.9100-3(b)(1)(i) Treas. Reg. § 301.9100-3(c)","[Elections & Safe Harbors]
+Closing-of-the-Books Election (Treas. Reg. § 1.382-6(b))
+9100 Relief (Extension of Time for Election)",,,,§ 9100 relief - late closing-of-the-books election under § 1.382-6(b) following merger ownership change,,"[Date 1: Acquirer (State Y LLC taxable as a partnership, organized by Investment Firm) forms Merger Sub (State Y corporation)] -> [Date 2: Parent (State X corp; common parent of a consolidated loss group providing A and B services) and Merger Sub enter an agreement and plan of merger; Parent obtains shareholder approval] -> [Date 3: Merger Sub merges with and into Parent (Parent survives); Acquirer acquires ~y% of Parent's common stock for cash (remaining z% retained by management/prior shareholders); an ownership change under § 382(g) and §§ 1.382-2T(a)(1) and 1.1502-92(b)(1)(i) occurs for Parent and the Group] -> [Date 4: Parent's taxable year ends] -> [Date 5: Parent files its consolidated return for the taxable year ending Date 4; the closing-of-the-books Election under § 1.382-6(b) was due on Date 5 but, for various reasons, was not filed] -> [Date 6: Tax Advisor discovers and informs Parent that the Election was not filed] -> [November 30, 2001: Letter requesting a § 301.9100 extension of time to file the Election] -> [January 10, 2002: Additional information submitted] -> [February 14, 2002: IRS issues PLR-165588-01 granting 9100 relief - 45-day window from the letter date to file the Election; 120-day window to file/amend affected returns]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0238025,CCA,POSTF-149523-01,2002-06-14,,,,,"382.01-00
+7701.00-00
+269.10-00
+482.00-00","code: 382.01-00 | title: [UNMAPPED — review]
+code: 7701.00-00 | title: [UNMAPPED — review]
+code: 269.10-00 | title: [UNMAPPED — review]
+code: 482.00-00 | title: [UNMAPPED — review]","IRC § 269 IRC § 269(b) IRC § 269(b)(1) IRC § 269(b)(2) IRC § 332 IRC § 338 IRC § 338(d)(3) IRC § 381(c) IRC § 382 IRC § 382(a) IRC § 382(b)(1) IRC § 382(c)(1) IRC § 382(e)(1) IRC § 382(e)(3) IRC § 382(g)(1) IRC § 382(g)(2) IRC § 382(h)(1)(B) IRC § 382(h)(2)(B) IRC § 382(h)(3)(A)(i) IRC § 382(h)(3)(B) IRC § 382(i) IRC § 382(k)(1) IRC § 382(k)(2) IRC § 382(k)(3) IRC § 382(l)(3)(A) IRC § 382(l)(8) IRC § 482 IRC § 1504(a)(4) IRC § 6110(k)(3) IRC § 7701
+Treas. Reg. § 1.269-7 Treas. Reg. § 1.368-1(d) Treas. Reg. § 1.368-1(d)(2) Treas. Reg. § 1.368-1(d)(3) Treas. Reg. § 1.382-2(a)(5) Treas. Reg. § 1.382-2T(f)(4) Treas. Reg. § 1.382-2T(g)(1) Treas. Reg. § 1.382-2T(h)(2) Treas. Reg. § 301.7701-1(a)(1) Treas. Reg. § 301.7701-2(a) Treas. Reg. § 301.7701-2(b) Treas. Reg. § 301.7701-3 Treas. Reg. § 301.7701-3(a) Treas. Reg. § 301.7701-3(c) Treas. Reg. § 301.7701-3(c)(1)(iii) Treas. Reg. § 301.7701-3(g)(1)(iii) Treas. Reg. § 301.7701-3(g)(3)(iii) Treas. Reg. § 301.7701-4","S. Rep. No. 99-313 (1986)
+General Electric Co. v. United States, 3 Cl. Ct. 289 (1983)
+[Elections & Safe Harbors]
+Check-the-Box Entity Classification Election (Treas. Reg. § 301.7701-3)
+Standard 3-Year Rolling Calculation (§ 382 limitation on RBIL)",,,,Check-the-box election for foreign sub; § 382/§ 269(b)/§ 482 application to recognition of built-in losses on disposition of foreign assets,,"[Date 1: USCo (U.S. corporation, publicly traded, no 5% shareholder) purchases the worldwide business operations of Company 1 for ~$Amount A; Company 1's shareholders end up owning <50% (Percent A) of USCo; ~$Amount E is apportioned to the stock of Country A Co, which becomes a CFC of USCo; Country A Co's adjusted asset basis exceeds FMV (NUBIL), and the purchase causes a § 382(g) ownership change of Country A Co (USCo ownership 0 -> Percent B)] -> [+Less than 2 years after Date 1 - Step (i): Country A Co forms wholly owned Country A Sub (incorporation history disputed - Date 4/Date 5)] -> [Date 6 - Step (ii): Country A Co and Country A Sub file Forms 8832 checking the box to be disregarded entities, each specifying effective Date 7 (a date more than 75 days before Date 6; the specified date is rejected and filing date Date 6 governs)] -> [Date 8 - Step (iii): USCo/Country A Co transfers the Division 1 assets and liabilities to Country A Sub] -> [Date 9 - Step (iv): Country A Co sells the Country A Sub stock to unrelated Foreign Co; steps (ii)-(iv) occur within the same month] -> [Taxable Year 2: USCo treats the sale as an asset sale and reports a $Amount N loss (RBIL)] -> [March 1, 2002: Memorandum requesting advice] -> [June 14, 2002: IRS issues CCA POSTF-149523-01 - the check-the-box election is effective on filing date Date 6; § 382 limits the loss USCo can offset; § 269(b)(1) may apply; § 482 reallocation is not appropriate]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0329020,PLR,106576-03,2003-04-07,,,,,"382.02-05
+9100.22-00","code: 0382.02-05 | title: Closing of the Books
+code: 9100.22-00 | title: Discretionary Extension for Regulatory Elections under §382 or §383 Regs","IRC § 172 IRC § 338 IRC § 382 IRC § 382(b) IRC § 382(g) IRC § 382(k)(1) IRC § 6110(k)(3) IRC § 6501(a)
+Treas. Reg. § 1.382-2(a)(1) Treas. Reg. § 1.382-2T(a)(2)(ii) Treas. Reg. § 1.382-6(a) Treas. Reg. § 1.382-6(b) Treas. Reg. § 1.382-6(b)(1) Treas. Reg. § 1.382-6(b)(2) Treas. Reg. § 301.9100-1 Treas. Reg. § 301.9100-1(a) Treas. Reg. § 301.9100-1(c) Treas. Reg. § 301.9100-2 Treas. Reg. § 301.9100-3 Treas. Reg. § 301.9100-3(a) Treas. Reg. § 301.9100-3(b)(1)(i) Treas. Reg. § 301.9100-3(b)(1)(v) Treas. Reg. § 301.9100-3(c)","[Elections & Safe Harbors]
+Closing-of-the-Books Election (Treas. Reg. § 1.382-6(b))
+9100 Relief (Extension of Time for Election)",,,,§ 9100 relief - late closing-of-the-books election under § 1.382-6(b) following preferred stock issuance,,"[Date 1: Lossco (State C corporation engaged in Business I; accrual method; calendar-year) issues X shares of preferred stock, resulting in an ownership change under § 382(g)] -> [Date 2: Lossco's tax year ends; the net operating loss for the year was $h] -> [Date 3: Extended due date for Lossco's Federal income tax return - the closing-of-the-books Election under § 1.382-6(b) was due but, for various reasons, was not filed] -> [+Post-Date 3: Failure discovered; Lossco reasonably relied on a qualified tax professional who failed to make or advise the Election (§ 301.9100-3(b)(1)(v)); period of limitations under § 6501(a) still open] -> [January 29, 2003: Letter requesting a § 301.9100-3 extension of time] -> [March 4, 2003 and March 20, 2003: Additional information submitted] -> [April 7, 2003: IRS issues PLR-106576-03 granting 9100 relief - 45-day window from the letter date to file the Election; 120-day window to file/amend affected returns]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0442011,PLR,111787-03,2003-10-23,,,,,"382.12-08
+468B.02-00","code: 0382.12-08 | title: Title 11 or Similar Case
+code: 468B.02-00 | title: [UNMAPPED — review]","IRC § 1(e) IRC § 83(b) IRC § 104(a) IRC § 108(e)(2) IRC § 162 IRC § 382 IRC § 382(d)(1) IRC § 382(g) IRC § 382(g)(2) IRC § 382(h)(4) IRC § 382(h)(6)(B) IRC § 382(l)(5)(A) IRC § 382(l)(5)(H) IRC § 468B(d)(3) IRC § 1032 IRC § 1504(a)(3) IRC § 1504(a)(3)(B) IRC § 6041 IRC § 6110(k)(3) § 524(g) Bankruptcy Code
+Treas. Reg. § 1.382-2T(e) Treas. Reg. § 1.382-2T(j)(2) Treas. Reg. § 1.382-6(g)(2) Treas. Reg. § 1.382-9(j) Treas. Reg. § 1.468B-1 Treas. Reg. § 1.468B-2(e) Treas. Reg. § 1.468B-3(a)(1) Treas. Reg. § 1.468B-3(b) Treas. Reg. § 1.468B-3(e) Treas. Reg. § 1.1502-76(b)(1)(ii)","[Elections & Safe Harbors]
+Section 382(l)(5) Bankruptcy Exception",,,,§ 382(l)(5) bankruptcy; Personal Injury Trust funded with stock/cash/notes as qualified settlement fund; consolidated group implications,,"[Date 1 to Date 2: Taxpayer (State A accrual, calendar-year corp; wholly owned subsidiary of Holding 2; member of Holding 1 consolidated group) manufactures and sells Products containing Item] -> [Date 3: Taxpayer named as defendant in numerous Item-related personal injury and wrongful death lawsuits; files voluntary Chapter 11 petition to invoke § 524(g) Bankruptcy Code court-supervised reorganization] -> [Date 4: Taxpayer files Plan of reorganization with Bankruptcy Court; operates as debtor in possession] -> [Effective Date: Plan implemented - existing capital stock held by Holding 2 cancelled; Holding 2 receives New Warrants in New Common Stock; p shares Restricted Stock and q Compensatory Options awarded to management; PI Trust funded with cash, Plan Notes, New Common Stock (>50% of New Common Stock) and insurance rights as qualified settlement fund under § 1.468B-1; Taxpayer undergoes § 382(g)(1) ownership change; Taxpayer disaffiliated from Old Group; taxable year terminates; Taxpayer becomes common parent of New Group] -> [+After Effective Date: 144A Offering net cash proceeds transferred to PI Trust and Unsecured Claim holders in lieu of Plan Notes] -> [February 7, 2003: Letter requesting private letter ruling] -> [+Subsequent: Additional correspondence March 25, April 9, May 13, June 17, July 16, August 13, October 2, and October 20, 2003] -> [October 23, 2003: IRS issues PLR-111787-03 ruling (inter alia) New Common Stock transferred to PI Trust treated as transferred to and owned by PI Trust beneficiaries for § 382(l)(5)(A); subsequent ownership change on PI Trust's sale of New Common Stock will not qualify for § 382(l)(5) if it occurs within the 2-year period following the Effective Date; Taxpayer had not yet decided whether to make a § 382(l)(5)(H) election]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0445013,PLR,119334-04,2004-07-08,,,,,"382.12-16
+9100.22-00","code: 0382.12-16 | title: Controlled Groups
+code: 9100.22-00 | title: Discretionary Extension for Regulatory Elections under §382 or §383 Regs","IRC § 382 IRC § 382(a) IRC § 382(b) IRC § 382(b)(1) IRC § 957(a) IRC § 6110(k)(3)
+Treas. Reg. § 1.382-8 Treas. Reg. § 1.382-8(c)(1) Treas. Reg. § 1.382-8(c)(2) Treas. Reg. § 1.382-8(e)(2) Treas. Reg. § 1.382-8(e)(3) Treas. Reg. § 1.382-8(h) Treas. Reg. § 301.9100-1 Treas. Reg. § 301.9100-1(a) Treas. Reg. § 301.9100-1(c) Treas. Reg. § 301.9100-2 Treas. Reg. § 301.9100-3 Treas. Reg. § 301.9100-3(a) Treas. Reg. § 301.9100-3(b)(1)(v) Treas. Reg. § 301.9100-3(c)","[Elections & Safe Harbors]
+9100 Relief (Extension of Time for Election)",,,,§ 9100 relief - late restore-value election under § 1.382-8(h) for foreign component members,,"[Year (pre-Date): Parent is State corporation and common parent of affiliated group filing consolidated Federal income tax return; all Electing Subs are component members of Parent's controlled group under § 1.382-8(e)(2) and (3); Electing Subs are CFCs under § 957(a), not engaged in U.S. trade or business, not filing U.S. returns] -> [Date: Parent experiences § 382 ownership change; § 1.382-8(c)(1) requires reducing each component member's stock value by value owned in other component members; Election under § 1.382-8(h) to restore value required to be filed with Parent's income tax return for tax year ending Date] -> [+Year (same): Parent's consolidated group generates NOL] -> [+Tax Return Due Date: For various reasons Parent and Electing Subs fail to timely make the Election; Parent reasonably relied on qualified tax professional who failed to make or advise the Election] -> [March 31, 2004: Letter requesting 9100 relief under § 301.9100-3] -> [+Subsequent: Additional information submitted May 11, 2004 and June 14, 2004] -> [July 8, 2004: IRS issues PLR-119334-04 granting 9100 relief; 60-day window from letter date for Parent and Electing Subs to file the Election; conditioned on aggregate tax liability not being lower (taking into account time value of money)]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0445020,PLR,153043-03,2003-11-12,,,,,"382.07-00
+382.11-07
+382.12-08","code: 0382.07-00 | title: Ownership Change
+code: 0382.11-07 | title: Treating Interests As Stock
+code: 0382.12-08 | title: Title 11 or Similar Case","IRC § 382 IRC § 382(g) IRC § 6110(k)(3)
+Treas. Reg. § 1.382-2T(f)(18)(iii)","[Elections & Safe Harbors]
+Standard 3-Year Rolling Calculation",,,,§ 382 bankruptcy / Plan of liquidation - replacement of common and preferred stock with new shares issued to grantor trusts; creditor interests not 'stock',,"[Date 1: Taxpayer (State X corp, common parent of consolidated calendar-year group engaged in Business A, B and C) and g affiliates file voluntary Chapter 11 petitions in Bankruptcy Court; additional affiliates subsequently file (collectively Debtors), administratively consolidated; Debtors operate as debtors in possession] -> [Date 2: Debtors file Bankruptcy Plan (plan of liquidation) and Disclosure Statement; estimate > $i valid claims and ~$j total recoveries] -> [Date 3: Amended Bankruptcy Plan and Amended Disclosure Statement filed; each class of Taxpayer common/preferred stock to be replaced with newly issued Exchanged Taxpayer Common/Preferred Stock of same priority and entitlement, issued to grantor trusts (Common Equity Trust and Preferred Equity Trust); creditors to receive Member 8/9/10 stock, sale proceeds, causes of action, and cash] -> [Effective Date: earliest date all conditions satisfied (Confirmation Date + 10 days without stay; implementing actions/documents effected; requisite consents for Member 8, 9 and 10 stock obtained)] -> [Discharge Date: latest of Effective Date, entry of final order resolving all claims, and final distribution; all claims and equity interests discharged] -> [September 5, 2003: Letter requesting ruling under § 382] -> [November 12, 2003: IRS issues PLR-153043-03 ruling the replacement of stock and issuance to the grantor trusts does not result in an owner shift under § 382(g), and creditor interests received in satisfaction of claims are not 'stock' under § 1.382-2T(f)(18)(iii); neither confirmation nor consummation of the Plan results in a § 382(g) ownership change]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0509001,PLR,112423-04,2004-03-11,,,,,"382.07-00
+382.11-07
+382.12-08","code: 0382.07-00 | title: Ownership Change
+code: 0382.11-07 | title: Treating Interests As Stock
+code: 0382.12-08 | title: Title 11 or Similar Case",IRC § 382 IRC § 382(g) IRC § 6110(k)(3),"[Elections & Safe Harbors]
+Standard 3-Year Rolling Calculation",,,,Supplemental ruling to PLR-153043-03 - Fifth Amended Bankruptcy Plan does not adversely affect § 382 rulings,,"[November 12, 2003: IRS issues Original Letter Ruling (PLR-153043-03) holding replacement of Taxpayer stock and issuance to the Common/Preferred Equity Trusts does not result in an owner shift under § 382(g) and creditor interests are not 'stock'] -> [Date 2 and Date 3 (per Original Letter Ruling): Bankruptcy Plan/Disclosure Statement and Amended Bankruptcy Plan/Amended Disclosure Statement filed; further amendments filed before issuance of Original Letter Ruling (incorporated by reference)] -> [Date 4 (after Original Letter Ruling): Fifth Amended Bankruptcy Plan filed with Bankruptcy Court] -> [February 18, 2004: Letter requesting supplemental ruling whether the Fifth Amended Bankruptcy Plan adversely affects the Original Letter Ruling] -> [March 11, 2004: IRS issues PLR-112423-04 ruling the modifications described in the Fifth Amended Bankruptcy Plan will not adversely affect qualification of the transaction under § 382 and have no adverse effect on the Original Letter Ruling, which remains in full force and effect]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0511008,PLR,146813-04,2004-12-06,,,,,382.12-06,code: 0382.12-06 | title: Fluctuation in Value,IRC § 382 IRC § 382(g)(1) IRC § 382(l)(3)(C) IRC § 1504(a)(4) IRC § 6110(k)(3),"[Elections & Safe Harbors]
+Hold Constant Principle (§ 382(l)(3)(C) / Notice 2010-50)",,,,Hold Constant Principle - factoring out value fluctuations under § 382(l)(3)(C); preferred stock value relative to common,,"[Immediately prior to Date 1: Taxpayer has a shares of Common Stock outstanding; one class of Common Stock and (following Date 1) one class of Preferred Stock] -> [Date 1: Common Stock closes at $b/share; Taxpayer issues c shares of Preferred Stock to Preferred Shareholders for $d aggregate (convertible into Common at $e/share, yielding f shares if fully converted); Preferred Shareholders also receive an Option to purchase ~$g of additional Preferred Stock (subsequently expired unexercised); no Preferred outstanding prior to Date 1; Preferred constitutes stock for § 382] -> [+Following Date 1: Taxpayer's business deteriorates; Common Stock market price declines relative to Preferred] -> [Date 2: Common Stock falls to $h/share] -> [Date 3: Taxpayer files for relief under Chapter 11] -> [Date 4: Taxpayer emerges from bankruptcy under a plan - existing Common and Preferred Stock cancelled, most new common stock distributed to creditors and a new investor; Taxpayer experiences § 382(g)(1) ownership change] -> [+Analysis Period (Date 1 through immediately before Date 4): Taxpayer issues i additional Common shares; further testing dates arise from 5% shareholder purchases/sales; non-publicly-traded Preferred value estimated on testing dates] -> [August 31, 2004: Letter requesting ruling under § 382(l)(3)(C)] -> [+Subsequent: Additional information submitted October 20, 2004] -> [December 6, 2004: IRS issues PLR-146813-04 holding Taxpayer may apply the Hold Constant Principle on all Analysis Period testing dates - the value of any 5% shareholder's stock relative to all other Taxpayer stock considered to remain constant since the acquisition date (and since the subsequent issuance date for later-issued stock)]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0513016,PLR,150389-04,2004-12-14,,,,,"382.00-00
+9100.00-00","code: 0382.00-00 | title: Limitation on Net Operating Loss Carryforwards and Certain Built-in Losses Following Ownership Changes
+code: 9100.00-00 | title: Relief for Late-Filed Regulatory Elections (General Discretionary Authority)","IRC § 382 IRC § 382(a) IRC § 382(b) IRC § 382(b)(1) IRC § 6110(k)(3)
+Treas. Reg. § 1.382-8 Treas. Reg. § 1.382-8(c)(1) Treas. Reg. § 1.382-8(c)(2) Treas. Reg. § 1.382-8(f) Treas. Reg. § 1.382-8(h) Treas. Reg. § 1.1502-91(c)(1) Treas. Reg. § 301.9100-1 Treas. Reg. § 301.9100-1(a) Treas. Reg. § 301.9100-1(c) Treas. Reg. § 301.9100-2 Treas. Reg. § 301.9100-3 Treas. Reg. § 301.9100-3(a) Treas. Reg. § 301.9100-3(b)(1)(v) Treas. Reg. § 301.9100-3(c)","[Elections & Safe Harbors]
+9100 Relief (Extension of Time for Election)",,,,§ 9100 relief - late restore-value election under § 1.382-8(h) following IPO ownership change,,"[Year 1 to Date 1: Parent Group owned by Foreign] -> [Date 1: Parent (State X corp) is common parent of consolidated Parent Group and owns 50% or more of each Electing Subsidiary (foreign corps, not engaged in U.S. trade or business); Domestic Subsidiary (sub of an Electing Subsidiary) holds only stock of a Parent Group member; Q of Parent's V outstanding shares sold in IPO, reducing Foreign's ownership from W% to Y% (>50 percentage-point decrease); Parent Group has consolidated NOL carryovers of $Z and is a loss group under § 1.1502-91(c)(1); ownership change under § 382 occurs; § 1.382-8(c)(1) reduces component members' stock values] -> [Date 2: Election under § 1.382-8(h) to restore value of Electing Subsidiaries was due; for various reasons Parent and Electing Subsidiaries fail to timely file; reasonable reliance on qualified tax professional who failed to make or advise the Election] -> [September 23, 2004: Letter requesting 9100 relief under § 301.9100-3] -> [December 14, 2004: IRS issues PLR-150389-04 granting 9100 relief; 45-day window from letter date to file the § 1.382-8(h) statement; conditioned on aggregate tax liability not being lower (taking into account time value of money)]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0513017,PLR,150390-04,2004-12-14,,,,,"382.00-00
+9100.00-00","code: 0382.00-00 | title: Limitation on Net Operating Loss Carryforwards and Certain Built-in Losses Following Ownership Changes
+code: 9100.00-00 | title: Relief for Late-Filed Regulatory Elections (General Discretionary Authority)","IRC § 382 IRC § 382(a) IRC § 382(b) IRC § 382(b)(1) IRC § 6110(k)(3)
+Treas. Reg. § 1.382-8 Treas. Reg. § 1.382-8(c)(1) Treas. Reg. § 1.382-8(c)(2) Treas. Reg. § 1.382-8(f) Treas. Reg. § 1.382-8(h) Treas. Reg. § 1.1502-91(c)(1) Treas. Reg. § 301.9100-1 Treas. Reg. § 301.9100-1(a) Treas. Reg. § 301.9100-1(c) Treas. Reg. § 301.9100-2 Treas. Reg. § 301.9100-3 Treas. Reg. § 301.9100-3(a) Treas. Reg. § 301.9100-3(b)(1)(v) Treas. Reg. § 301.9100-3(c)","[Elections & Safe Harbors]
+9100 Relief (Extension of Time for Election)",,,,§ 9100 relief - late restore-value election under § 1.382-8(h) following cash tender / acquisition,,"[Before Date 2: Parent (State X corp, common parent of Parent Group) is Q% owned by Foreign and W% owned by public; owns 50% or more of each Electing Subsidiary (foreign corps, not engaged in U.S. trade or business); Domestic Subsidiary holds only stock of a Parent Group member; Acquiror (State X corp) is parent of Acquiror Group] -> [Date 1: Acquiror forms Acquisition Subsidiary solely to acquire Parent] -> [Date 2: Acquisition Subsidiary acquires Y% of Parent's outstanding stock in a cash tender offer (the Acquisition), increasing ownership by >50 percentage points; Parent Group has consolidated NOL carryovers of $Z and is a loss group under § 1.1502-91(c)(1); ownership change under § 382 occurs; § 1.382-8(c)(1) reduces component members' stock values] -> [Date 3: Acquisition Subsidiary merges with and into Parent; minority shareholders receive cash; Parent becomes wholly-owned subsidiary of Acquiror] -> [Date 4: Election under § 1.382-8(h) to restore value of Electing Subsidiaries was due; for various reasons Parent and Electing Subsidiaries fail to timely file; reasonable reliance on qualified tax professional who failed to make or advise the Election] -> [September 23, 2004: Letter requesting 9100 relief under § 301.9100-3] -> [December 14, 2004: IRS issues PLR-150390-04 granting 9100 relief; 45-day window from letter date to file the § 1.382-8(h) statement; conditioned on aggregate tax liability not being lower (taking into account time value of money)]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0513027,TAM,136208-04,2004-12-22,,,,,"382.00-00
+382.05-00","code: 0382.00-00 | title: Limitation on Net Operating Loss Carryforwards and Certain Built-in Losses Following Ownership Changes
+code: 0382.05-00 | title: Value of Old Loss Corporation","IRC § 368(a)(2)(E) IRC § 382 IRC § 382(b) IRC § 382(d) IRC § 382(d)(2) IRC § 382(e) IRC § 382(e)(1) IRC § 382(k)(2) IRC § 382(k)(3) IRC § 382(k)(5) IRC § 6110(k)(3)
+Treas. Reg. § 1.1502-91(c)(1) Treas. Reg. § 20.2031-2(e) Treas. Reg. § 25.2512-2(e)","FS-TL-N-6884-92 (1992 FSA) H.R. Conf. Rep. No. 99-841 (1986) PLR 9332004 Rev. Rul. 59-60, 1959-1 C.B. 237
+Amerada Hess Corp. v. Commissioner, 517 F.2d 75 (3d Cir. 1975) American Steel Foundries v. United States, 61-1 USTC ¶9374 (Ct. Cl. 1961) Bankers Trust Co. v. United States, 207 Ct. Cl. 422 (1975) Batterman v. Commissioner, 142 F.2d 448 (6th Cir. 1944) Berry Petroleum v. Commissioner, 104 T.C. 584 (1995) Blumenthal v. Commissioner, 21 B.T.A. 901 (1930) Campbell v. United States, 661 F.2d 209 (Ct. Cl. 1981) Commissioner v. Shattuck, 97 F.2d 790 (7th Cir. 1938) Danon v. Commissioner, 49 T.C. 108 (1967) Dellacroce v. Commissioner, 83 T.C. 269 (1984) Estate of Bennett v. Commissioner, T.C. Memo. 1993-34 Estate of Gilford v. Commissioner, 88 T.C. 38 (1987) Estate of Grootemaat v. Commissioner, T.C. Memo. 1979-49 Estate of McKitterick v. Commissioner, 42 B.T.A. 130 (1940) Frizzelle Farms, Inc. v. Commissioner, 61 T.C. 737 (1974) Hazeltine Corporation v. Commissioner, 89 F.2d 513 (3d Cir. 1937) Heiner v. Crosby, 24 F.2d 191 (3d Cir. 1928) L.B. Maytag v. Commissioner, 187 F.2d 962 (10th Cir. 1951) Meyer v. Commissioner, 46 T.C. 65 (1966) Morris v. Commissioner, 70 T.C. 959 (1978) Pope and Talbot, Inc. v. Commissioner, 162 F.3d 1236 (9th Cir. 1999) Robinson v. Commissioner, 82 T.C. 467 (1984) Staley v. Commissioner, 41 B.T.A. 752 (1940) Strong v. Rogers, 72 F.2d 455 (3d Cir. 1934) United States v. Cartwright, 411 U.S. 546 (1973) Walter v. Duffy, 287 F. 41 (3d Cir. 1923)
+[Elections & Safe Harbors]
+Standard 3-Year Rolling Calculation",,,,§ 382 valuation - market capitalization vs. asset accumulation method; exceptional circumstances; control premium,,"[Year 1: Taxpayer incorporated in State A] -> [January Year 2: Taxpayer becomes publicly traded on Exchange] -> [Year 3: Taxpayer forms wholly-owned subsidiary Corp A to develop Therapy 4] -> [Year 4: Taxpayer engaged in four development efforts (Therapy 1, 2, 3 and Technology 1); per Form 10-K no revenues generated or expected for several years] -> [Date of Year 4 (Change Date): Taxpayer acquires all Corp B stock in a purported § 368(a)(2)(E) reorganization; Corp B shareholders and rights holders receive ff Taxpayer common shares (each Corp B common share converts into zz Taxpayer shares); former Corp B shareholders own < 50% (ll%) of Taxpayer; Taxpayer common trades low $qq / high $dd / mean $ss; both Taxpayer and Corp B undergo § 382 ownership change; consolidated Group (Taxpayer as common parent) is a loss group under § 1.1502-91(c)(1)] -> [Year 5: Corp A completes IPO, reducing Taxpayer's ownership of Corp A from 100% to oo%] -> [Year 6 (post-change year): Taxpayer disposes of over nn% of remaining Corp A shares; Group computes § 382 limitation; Taxpayer hires Firm to value Taxpayer and Corp B stock as of the change date using the asset accumulation method rather than the market capitalization approach] -> [+Upon examination of Year 6 return: IRS Examination Office rejects Taxpayer's § 382 limitation computation and applies the market capitalization approach (subject to adjustments)] -> [December 22, 2004: National Office issues TAM-136208-04 concluding market capitalization on the change date, taking into account exceptional circumstances if any, is the appropriate methodology to determine the § 382(e) value of Taxpayer's and Corp B's stock]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0518050,PLR,155081-04,2005-01-14,,,,,"382.12-16
+9100.22-00","code: 0382.12-16 | title: Controlled Groups
+code: 9100.22-00 | title: Discretionary Extension for Regulatory Elections under §382 or §383 Regs","IRC § 382 IRC § 382(a) IRC § 382(b) IRC § 382(b)(1) IRC § 6110(k)(3)
+Treas. Reg. § 1.382-8 Treas. Reg. § 1.382-8(c)(1) Treas. Reg. § 1.382-8(c)(2) Treas. Reg. § 1.382-8(f) Treas. Reg. § 1.382-8(h) Treas. Reg. § 301.9100-1 Treas. Reg. § 301.9100-1(a) Treas. Reg. § 301.9100-1(c) Treas. Reg. § 301.9100-2 Treas. Reg. § 301.9100-3 Treas. Reg. § 301.9100-3(a) Treas. Reg. § 301.9100-3(b)(1)(v) Treas. Reg. § 301.9100-3(c)","[Elections & Safe Harbors]
+9100 Relief (Extension of Time for Election)",,,,§ 9100 relief - late restore-value election under § 1.382-8(h) for foreign subsidiaries; merger with successor,,"[Year (pre-Date 1): Parent is State corporation and common parent of affiliated group filing consolidated Federal income tax return; Electing Subs are component members of Parent's controlled group under § 1.382-8(e)(2) and (3); Electing Subs are CFCs under § 957(a), not engaged in U.S. trade or business, not filing U.S. returns] -> [Date 1: Parent experiences § 382 ownership change; § 1.382-8(c)(1) requires reducing component members' stock values by value owned in other component members; Election under § 1.382-8(h) to restore value of Electing Subs to Parent required to be filed with Parent's return for tax year ending Date 1] -> [+Year (same): Parent's consolidated group generates NOL] -> [+Tax Return Due Date: For various reasons, Parent and Electing Subs fail to timely make Election; Parent reasonably relied on qualified tax professional who failed to make or advise Election] -> [Date 2: Parent merges into Parent's Successor] -> [October 18, 2004: Letter requesting 9100 relief under § 301.9100-3] -> [+Subsequent: Additional information submitted December 6, 2004 and January 10, 2005] -> [January 14, 2005: IRS issues PLR-155081-04 granting 9100 relief; 45-day window from letter date for Parent (by Parent's Successor) and Electing Subs to file Election; conditioned on aggregate tax liability not being lower (taking into account time value of money)]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0520011,PLR,145219-04,2005-02-18,,,,,382.00-00,code: 0382.00-00 | title: Limitation on Net Operating Loss Carryforwards and Certain Built-in Losses Following Ownership Changes,IRC § 382 IRC § 382(g) IRC § 382(h) IRC § 382(l)(3)(C) IRC § 6110(k)(3),"[Elections & Safe Harbors]
+Hold Constant Principle (§ 382(l)(3)(C) / Notice 2010-50)",,,,Hold Constant Principle under § 382(l)(3)(C); recognized built-in items under § 382(h) following bankruptcy,,"[Pre-Date 1: Parent has single class of common stock outstanding; Taxpayer (common parent of affiliated consolidated calendar-year accrual group, indirectly wholly owned by Parent) holds 100% of Sub1 and Sub2; Sub1 holds 100% of Sub3] -> [Date 1: Parent issues a shares of Preferred Stock to Company X (indirect subsidiary of Company Y) for $b aggregate ($c per share); Preferred Stock constitutes stock for § 382 purposes; Company X has continuously held the Preferred Stock since issuance] -> [+Following Date 1 (Year 1): Sub1 and Sub3 increase tax reserves by ~$d and $e respectively; deductions contribute significantly to Taxpayer Group's Year 1 NOL of ~$f] -> [+Year 2: Sub1 and Sub3 increase tax reserves by ~$g and $h; deductions contribute to Taxpayer Group's Year 2 NOL of ~$i; Parent common stock declines in value relative to Preferred Stock due to reserve additions and business deterioration; post-Year 1 Parent common never trades above $j] -> [+During period Date 1 through Date 2 (Parent Owner Shifts): (1) ~k shares of Parent common acquired by employees/directors via stock purchase plans; (2) l restricted shares vest - m shares issued on Date 3 (trading ~$n) and o shares issued on/about Date 4 (trading ~$p/share); (3) higher-tier entities dispose of q shares] -> [Date 2: Taxpayer files Chapter 11 petition with bankruptcy court] -> [+Subsequent (Future): Taxpayer expected to emerge under Plan resulting in Plan Ownership Change under § 382(g); Sub1 expected to realize Commutation Income from extinguishing contract obligations below reserved amounts] -> [August 20, 2004: Letter requesting rulings under §§ 382(l)(3)(C) and 382(h)] -> [+Subsequent: Additional information submitted February 15, 2005] -> [February 18, 2005: IRS issues PLR-145219-04 holding Taxpayer may apply Hold Constant Principle under § 382(l)(3)(C) with respect to Parent Owner Shifts; on any testing date, value of 5% shareholder's stock relative to all other Taxpayer stock considered to remain constant since acquisition date, with same treatment for stock issued subsequent to acquisition]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0542022,PLR,133469-05,2005-07-12,,,,,"382.00-00
+9100.22-00","code: 0382.00-00 | title: Limitation on Net Operating Loss Carryforwards and Certain Built-in Losses Following Ownership Changes
+code: 9100.22-00 | title: Discretionary Extension for Regulatory Elections under §382 or §383 Regs","IRC § 382 IRC § 382(a) IRC § 382(b) IRC § 382(b)(1) IRC § 957(a) IRC § 6110(k)(3)
+Treas. Reg. § 1.382-8 Treas. Reg. § 1.382-8(c)(1) Treas. Reg. § 1.382-8(c)(2) Treas. Reg. § 1.382-8(h) Treas. Reg. § 301.9100-1 Treas. Reg. § 301.9100-1(a) Treas. Reg. § 301.9100-1(c) Treas. Reg. § 301.9100-2 Treas. Reg. § 301.9100-3 Treas. Reg. § 301.9100-3(a) Treas. Reg. § 301.9100-3(b)(1)(v) Treas. Reg. § 301.9100-3(c)","[Elections & Safe Harbors]
+9100 Relief (Extension of Time for Election)",,,,§ 9100 relief - late restore-value election under § 1.382-8(h) for controlled foreign subsidiary,,"[End of Year 1: Parent is parent of controlled group (Parent Group); Parent directly or indirectly owns 50% or more of Electing Subsidiary stock; Electing Subsidiary is foreign entity treated as corporation for federal tax purposes; Electing Subsidiary not engaged in U.S. trade or business] -> [Date 1: Parent undergoes ownership change under § 382; Parent's NOL carryovers subject to § 382(b) limitation for Year 1; pursuant to § 1.382-8(c)(1), value of Parent stock reduced by value of directly-owned Electing Subsidiary stock] -> [Date 2: Election under § 1.382-8(h) to restore value of Electing Subsidiary was due] -> [+Date 2 Due Date: For various reasons, Parent and Electing Subsidiary failed to timely file Election; Parent and Electing Subsidiary reasonably relied on qualified tax professional who failed to make or advise the Election] -> [March 30, 2005: Letter requesting 9100 relief under § 301.9100-3] -> [+Subsequent: Additional information submitted June 6 and June 8, 2005] -> [July 12, 2005: IRS issues PLR-133469-05 granting 9100 relief; 45-day window from letter date to file § 1.382-8(h) statement; conditioned on aggregate tax liability not being lower (taking into account time value of money)]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0542023,PLR,135797-05,2005-07-12,,,,,"382.00-00
+9100.22-00","code: 0382.00-00 | title: Limitation on Net Operating Loss Carryforwards and Certain Built-in Losses Following Ownership Changes
+code: 9100.22-00 | title: Discretionary Extension for Regulatory Elections under §382 or §383 Regs","IRC § 382
+IRC § 382(a)
+IRC § 382(b)
+IRC § 382(b)(1)
+IRC § 6110(k)(3)
+Treas. Reg. § 1.382-8
+Treas. Reg. § 1.382-8(c)(1)
+Treas. Reg. § 1.382-8(c)(2)
+Treas. Reg. § 1.382-8(h)
+Treas. Reg. § 301.9100-1
+Treas. Reg. § 301.9100-1(a)
+Treas. Reg. § 301.9100-1(c)
+Treas. Reg. § 301.9100-2
+Treas. Reg. § 301.9100-3
+Treas. Reg. § 301.9100-3(a)
+Treas. Reg. § 301.9100-3(b)(1)(v)
+Treas. Reg. § 301.9100-3(c)","[Elections & Safe Harbors]
+9100 Relief (Extension of Time for Election)",,,,§ 9100 relief - late restore-value election under § 1.382-8(h),,"[End of Year 1: Parent is parent of controlled group (Parent Group); Parent directly or indirectly owns 50% or more of Electing Subsidiary stock; Electing Subsidiary is foreign entity treated as corporation for federal tax purposes; Electing Subsidiary not engaged in U.S. trade or business] -> [Date 1: Parent undergoes ownership change under § 382; Parent's NOL carryovers subject to § 382(b) limitation for Year 1; pursuant to § 1.382-8(c)(1), value of Parent stock reduced by value of directly-owned Electing Subsidiary stock] -> [Date 2: Election under § 1.382-8(h) to restore value of Electing Subsidiary was due] -> [+Date 2 Due Date: For various reasons, Parent and Electing Subsidiary failed to timely file Election; Parent and Electing Subsidiary reasonably relied on qualified tax professional who failed to make or advise the Election] -> [March 30, 2005: Letter requesting 9100 relief under § 301.9100-3 (companion request to PLR-133469-05)] -> [+Subsequent: Additional information submitted June 6 and June 8, 2005] -> [July 12, 2005: IRS issues PLR-135797-05 granting 9100 relief; 45-day window from letter date to file § 1.382-8(h) statement; conditioned on aggregate tax liability not being lower (taking into account time value of money)]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0603012,PLR,132741-05,2005-10-11,,,,,"382.12-16
+9100.22-00","code: 0382.12-16 | title: Controlled Groups
+code: 9100.22-00 | title: Discretionary Extension for Regulatory Elections under §382 or §383 Regs","IRC § 382
+IRC § 382(a)
+IRC § 382(b)(1)
+IRC § 382(l)(5)
+IRC § 957(a)
+IRC § 6110(k)(3)
+IRC § 6501(a)
+Treas. Reg. § 1.382-8
+Treas. Reg. § 1.382-8(c)(1)
+Treas. Reg. § 1.382-8(c)(2)
+Treas. Reg. § 1.382-8(e)(2)
+Treas. Reg. § 1.382-8(e)(3)
+Treas. Reg. § 1.382-8(h)
+Treas. Reg. § 301.9100-1
+Treas. Reg. § 301.9100-1(a)
+Treas. Reg. § 301.9100-1(b)
+Treas. Reg. § 301.9100-1(c)
+Treas. Reg. § 301.9100-2
+Treas. Reg. § 301.9100-3
+Treas. Reg. § 301.9100-3(a)
+Treas. Reg. § 301.9100-3(c)","[Elections & Safe Harbors]
+9100 Relief (Extension of Time for Election)",,,,§ 9100 relief - late restore-value election under § 1.382-8(h) for controlled foreign subsidiary,,"[Pre-Date 2: Parent (State A corporation, common parent of affiliated group filing consolidated Federal return) controls Electing Sub which is component member of Parent's controlled group under § 1.382-8(e)(2) and (3) and CFC under § 957(a); Electing Sub not engaged in U.S. trade or business, not filing U.S. returns] -> [Date 2: Parent experiences § 382 ownership change; Parent's consolidated group has pre-existing NOL; pursuant to § 1.382-8(c)(1), Parent's value reduced for § 382 limitation computation] -> [Date 3 (Parent's tax year-end): Election under § 1.382-8(h) required to be filed with Parent's income tax return for tax year ending Date 3] -> [Date 4 (last day for timely filing): Election deadline passes; for various reasons, Parent and Electing Sub fail to file valid election; Parent and Electing Sub reasonably relied on qualified tax professional who failed to make or advise Election] -> [+Post-Date 4: Failure to file valid Election discovered; period of limitations under § 6501(a) has not expired for the year or subsequent years] -> [May 24, 2005: Letter requesting 9100 relief under §§ 301.9100-1 through 301.9100-3] -> [+Subsequent: Additional correspondence submitted September 29 and October 6, 2005] -> [October 11, 2005: IRS issues PLR-132741-05 granting 9100 relief; 60-day window from letter date to file Election; Election must commence with prescribed statutory language per § 1.382-8(h) and be attached to amended return for ownership change year; conditioned on aggregate tax liability not being lower]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0622011,PLR,128614-05,2006-02-02,,,,,382.12-06,code: 0382.12-06 | title: Fluctuation in Value,"IRC § 382
+IRC § 382(g)(1)
+IRC § 382(i)
+IRC § 382(l)(3)(C)
+IRC § 1504(a)(4)
+IRC § 6110(k)(3)
+Treas. Reg. § 1.382-2(a)(4)
+Treas. Reg. § 1.382-2T(d)
+Treas. Reg. § 1.1502-91(c)(1)(i)","[Elections & Safe Harbors]
+Hold Constant Principle (§ 382(l)(3)(C) / Notice 2010-50)",,,,Hold Constant Principle - factoring out value fluctuations under § 382(l)(3)(C); recapitalizations disregarded,,"[Date 1: Taxpayer's group is a loss group under Treas. Reg. § 1.1502-91(c)(1)(i); outstanding instruments include Voting Common Stock, Non-Voting Common Stock (collectively Common Stock), Series 1-A Warrants, Series 2-A Warrants, and Series A Preferred Stock; Common Stock and Series 1-A Warrants have declined in value relative to Series A Preferred (increasing Series A Preferred shareholders' equity percentage without actual owner shifts)] -> [Date 2: Taxpayer has a shares Common Stock outstanding; Common Stock close price $b/share] -> [Date 3 (day after Date 2): Taxpayer issues and sells c shares Series A Preferred, d Series 1-A Warrants, e Series 2-A Warrants, f shares Series B preferred, g Series 1-B Warrants, h Series 2-B Warrants to entities X, Y and Z; Series 1-A and 1-B Warrants exercisable for i Voting Common and j Non-Voting Common shares at $k if trading price ≥ $l; Common close price $m; deep-in-the-money 1-A and 1-B Warrants treated as stock for § 382 owner shift analysis; § 382(g)(1) ownership change occurs on Date 3] -> [+Following Date 3 (Analysis Period): Multiple testing dates arise from (1) Common Stock issuance for assets/stock; (2) option exercises; (3) Series A Preferred issued in lieu of cash dividends; (4) Series 1-A Warrant exercises; (5) additional Series 1-A Warrant issuances; (6) Non-Voting Common issuances; (7) 5% shareholder Common Stock acquisitions; (8) 5% shareholder Common Stock sales; (9) Common Stock offerings; (10) Common Stock redemptions; (11) Common Stock issuance in lawsuit settlement] -> [+Following Date 3: First Recapitalization - Series B/Series 1-B/Series 2-B converted into equal number of Series A/Series 1-A/Series 2-A; Second Recapitalization - every n shares Common converted into 1 share Common] -> [Date 4: Taxpayer completes private placement issuance of o shares Common for $p to institutional investors (Completed Issuance); end of Analysis Period] -> [May 23, 2005: Letter requesting ruling under § 382(l)(3)(C)] -> [February 2, 2006: IRS issues PLR-128614-05 holding Taxpayer may apply Hold Constant Principle on testing dates within Analysis Period (and future testing dates where testing period includes any portion of Analysis Period); 5% shareholder's stock value relative to all other Taxpayer stock considered to remain constant since acquisition date; value-for-value recapitalizations (including First and Second Recapitalizations) disregarded - exchanging shareholder deemed to acquire new stock as of date of original stock acquisition]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0622013,PLR,136651-05,2006-01-27,,,,,"382.00-00
+382.07-00
+382.07-02","code: 0382.00-00 | title: Limitation on Net Operating Loss Carryforwards and Certain Built-in Losses Following Ownership Changes
+code: 0382.07-00 | title: Ownership Change
+code: 0382.07-02 | title: Owner Shift","IRC § 108(b)
+IRC § 382
+IRC § 382(a)
+IRC § 382(g)
+IRC § 382(k)(1)
+IRC § 382(l)(5)
+IRC § 6110(k)(3)
+Securities and Exchange Act of 1934
+Treas. Reg. § 1.382-2T(j)(3)(i)
+Treas. Reg. § 1.382-2T(k)(1)(i)
+Treas. Reg. § 1.382-2T(k)(1)(ii)
+Treas. Reg. § 1.382-2T(k)(3)","Rev. Proc. 04-1, 2004-1 I.R.B. 7
+[Elections & Safe Harbors]
+Section 382(l)(5) Bankruptcy Exception",,,,Duty of inquiry / actual knowledge for street-name stock and 5% shareholder identification post-bankruptcy; charter transfer restrictions,,"[Pre-Date 1, Year 3 (Years 1-2): Company (State corporation, common parent of consolidated group, publicly traded on v Stock Exchange, fiscal/tax year ending September 30, producing x and y) experiences poor z Industry market conditions; incurs significant NOLs] -> [Date 1, Year 3: Company and subsidiaries file Chapter 11 bankruptcy] -> [Date 2, Year 4 (Reorganization consummated): Plan requires Company to issue stock to former creditors in exchange for senior secured Bonds and cancel previously outstanding stock; § 382(g) ownership change occurs; 100% of new stock held in street name; stock traded over-the-counter (pink sheet); post-bankruptcy common shares not SEC-registered, not on established securities exchange] -> [+Post-Date 2, Year 4: Company surveys unofficial bondholders' committee roster to determine post-Reorganization shareholders for § 382(l)(5)/(l)(6) qualification; mails inquiry letters regarding ≥5% ownership and Bond acquisition dates; follow-up calls to non-responders; many brokerage firms fail/refuse to respond; uses online research tools; receives written responses from majority of bondholders solicited; concludes (l)(5) exception applies] -> [+Post-Reorganization: Company struggles to identify 5% shareholders because record holders are brokers/banks holding in street name; § 1.382-2T(k)(1)(i)/(ii) presumptions inapplicable due to delisting; identifies owner shifts via (i) board of directors conversations, (ii) 5% shareholders contacting Company directly, (iii) inadvertent SEC Schedules 13D/13G, (iv) NOBO list from proxy solicitation (only one already-known 5% shareholder identified), (v) limited SEC Form 13F responses (one institutional investment manager response, no 5% holders); determines a%-b% owner shift subsequent to Date 2, Year 4] -> [Date 3, Year 5: Company adopts Charter Amendment imposing transfer restrictions making sale/transfer to ≥5% shareholder null and void ab initio absent Board waiver and NOL-protection opinion; approved by shareholders representing just over c%; one ≥5% shareholder (Nonvoting Shareholder) did not vote and may not be bound under State law] -> [June 8, 2005: Letter requesting rulings under § 382] -> [+Subsequent: Additional information submitted December 15, 2005, January 10, 2006, and January 27, 2006] -> [January 27, 2006: IRS issues PLR-136651-05 ruling (1) for February 19, 2004 through February 2, 2005, Company may rely on actual knowledge of 5% shareholders gained through described inquiry methods (unofficial bondholders list, director surveys, direct contacts, inadvertent 13D/13G filings, NOBO list, Form 13F, stock transfer records) to determine testing dates/ownership changes; (2) from February 3, 2005 forward, transferees in contravention of enforceable Charter Amendment not considered as acquiring ownership; Company may satisfy § 1.382-2T(k)(3) duty of inquiry through periodic information requests using same procedures]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0718001,PLR,101318-07,2007-01-23,,,,,"1502.98-00
+9100.22-00","code: 1502.98-00 | title: Discretionary Extension for Regulatory Elections under §382 or §383 Regs
+code: 9100.22-00 | title: Discretionary Extension for Regulatory Elections under §382 or §383 Regs","IRC § 6110(k)(3)
+IRC § 6501(a)
+Treas. Reg. § 1.1502-91(d)(1)(ii)
+Treas. Reg. § 1.1502-91(d)(2)(ii)
+Treas. Reg. § 1.1502-91(d)(4)
+Treas. Reg. § 1.1502-91(d)(4)(i)
+Treas. Reg. § 1.1502-96(e)
+Treas. Reg. § 1.1502-96(e)(2)
+Treas. Reg. § 1.1502-96(e)(3)
+Treas. Reg. § 301.9100-1
+Treas. Reg. § 301.9100-1(a)
+Treas. Reg. § 301.9100-1(b)
+Treas. Reg. § 301.9100-1(c)
+Treas. Reg. § 301.9100-2
+Treas. Reg. § 301.9100-3
+Treas. Reg. § 301.9100-3(a)
+Treas. Reg. § 301.9100-3(b)(1)(v)
+Treas. Reg. § 301.9100-3(c)","[Elections & Safe Harbors]
+9100 Relief (Extension of Time for Election)",,,,§ 9100 relief - late § 1.1502-91(d)(4) election to treat loss subgroup parent requirement as satisfied,,"[Pre-Date 2: Taxpayer is common parent of a consolidated group; Subsidiary1 and Subsidiary2 are members of unrelated seller's affiliated group and affiliated with each other immediately before Acquisition] -> [Date 2: Acquisition - Taxpayer purchases all issued and outstanding stock of Subsidiary1 and Subsidiary2 from unrelated seller; Subsidiary1 and Subsidiary2 become members of Taxpayer's consolidated group simultaneously] -> [Date 1 (tax year ended): Taxpayer's consolidated group consists of Taxpayer, Subsidiary1, and Subsidiary2; election under § 1.1502-91(d)(4) to treat loss subgroup parent requirement as satisfied for Subsidiary1 and Subsidiary2 should be filed with timely-filed return per § 1.1502-96(e)(3)] -> [Date 3 (timely return filing date): Taxpayer's return for tax year ended Date 1 timely filed; § 1.1502-91(d)(4) election not made; Taxpayer reasonably relied on qualified tax professional who failed to make or advise the election] -> [+Post-Date 3: Failure to file valid election discovered; period of limitations under § 6501(a) has not expired for the taxable year or subsequent years] -> [December 19, 2006: Letter requesting 9100 relief under §§ 301.9100-1 through 301.9100-3] -> [January 23, 2007: IRS issues PLR-101318-07 granting 9100 relief; 45-day window from letter date to file election under § 1.1502-91(d)(4) and § 1.1502-96(e); Taxpayer's return must be amended to attach prescribed election statement; conditioned on consolidated group's aggregate tax liability not being lower (taking into account time value of money)]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0720012,PLR,144944-06,2007-01-25,,,,,"382.07-00
+382.09-01","code: 0382.07-00 | title: Ownership Change
+code: 0382.09-01 | title: 3-Year Period","IRC § 368(a)(1)(E)
+IRC § 382
+IRC § 382(a)
+IRC § 382(g)
+IRC § 382(g)(1)
+IRC § 382(i)(1)
+IRC § 382(i)(2)
+IRC § 382(k)(1)
+IRC § 382(l)(5)
+IRC § 382(l)(5)(D)
+IRC § 1504(a)(2)
+IRC § 6110(k)(3)
+Treas. Reg. § 1.382-2T(d)(2)
+Treas. Reg. § 1.382-2T(f)(19)
+Treas. Reg. § 1.382-9(d)(1)
+Treas. Reg. § 1.382-9(d)(2)","[Elections & Safe Harbors]
+Section 382(l)(5) Bankruptcy Exception",,,,Testing period start date following bankruptcy reorganization ownership change (subsequently modified by PLR 0748015),,"[Year 1 (tax year ending): Taxpayer (privately held State A calendar-year accrual corporation) begins incurring losses and generates NOL carryforward] -> [Date 1: Taxpayer files voluntary Chapter 11 petition under Bankruptcy Code] -> [Date 2: Bankruptcy court confirms Taxpayer's plan of reorganization; Reorganization qualifies as tax-free reorganization under § 368(a)(1)(E); entails issuance of new Taxpayer common stock to prior creditors in satisfaction of claims] -> [Date 3 (first day following Date 2): Taxpayer requests this date as testing period commencement for any subsequent ownership change] -> [Date 4 (effective): Taxpayer emerges from bankruptcy under Plan; existing common stock cancelled; new common stock distributed to creditors and new investors; investors contribute cash to Taxpayer for voting preferred stock] -> [Date 5 and Date 6: Taxpayer obtains working capital loans from stockholders; issues promissory notes with convertible warrants (Date 6 Notes); none of convertible warrants ever exercised] -> [Date 7: Taxpayer obtains additional working capital loans from lenders (Date 7 loans); as condition of bank consent, principal of Date 6 Notes required to be converted to stock effective as of Date 7] -> [Year 2: Taxpayer files Year 2 federal return; statute of limitations open] -> [September 14, 2006: Letter requesting ruling] -> [+Subsequent: Additional information submitted November 29 and December 12, 2006] -> [January 25, 2007: IRS issues PLR-144944-06 ruling (1) confirmation of bankruptcy plan on Date 2 results in § 382(g) ownership change due to >50% change in 5% shareholder ownership; (2) per § 382(i)(2) and Treas. Reg. § 1.382-2T(d)(2), testing period for determining whether Date 6 Notes conversion into stock and Date 4 investors' receipt of voting preferred constitutes subsequent ownership change begins on Date 3 (first day following Date 2 bankruptcy confirmation)]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0748015,PLR,129087-07,2007-08-21,,,,,"382.07-00
+382.09-01","code: 0382.07-00 | title: Ownership Change
+code: 0382.09-01 | title: 3-Year Period","IRC § 368(a)(1)(E)
+IRC § 382(g)
+IRC § 382(i)(2)
+IRC § 382(l)(5)
+IRC § 6110(k)(3)
+Treas. Reg. § 1.382-2T(d)(2)","[Elections & Safe Harbors]
+Section 382(l)(5) Bankruptcy Exception",,,,Supplemental ruling - modification of PLR-144944-06; testing period begins day after effective date of reorganization,,"[Date 2 (per Prior Letter Ruling PLR-144944-06): Bankruptcy court confirms Taxpayer's plan of reorganization] -> [Date 4 (effective date, added by modification): Plan of reorganization becomes effective; bankruptcy reorganization becomes effective; new common stock issued to both creditors and new investors; preferred stock issued to new investors; qualified creditors that became >5% shareholders own >50% of total value of new Taxpayer stock] -> [Date 6: Lenders' conversion of Date 6 Notes into Taxpayer stock] -> [January 25, 2007: IRS issues PLR-144944-06 (Prior Letter Ruling) treating Date 2 as ownership change date] -> [August 21, 2007: IRS issues PLR-129087-07 modifying Prior Letter Ruling - (1) § 382(g) 'change in ownership' now ruled to occur on Date 4 (effective date of reorganization) rather than Date 2 (confirmation date), based on 50% change in 5% shareholder ownership resulting from issuance of new common and preferred stock to creditors/investors; (2) per § 382(i)(2) and Treas. Reg. § 1.382-2T(d)(2), testing period for subsequent ownership change from Date 6 Notes conversion begins first day following Date 4; no opinion expressed on whether § 382(l)(5) exception met with respect to Date 4 ownership change]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0810008,PLR,137252-07,2007-12-04,,,,,"382.07-00
+382.12-03
+501.03-11","code: 0382.07-00 | title: Ownership Change
+code: 0382.12-03 | title: Constructive Ownership of Stock
+code: 501.03-11 | title: [UNMAPPED — review]","IRC § 368
+IRC § 368(a)(1)(A)
+IRC § 368(a)(1)(D)
+IRC § 382
+IRC § 382(g)
+IRC § 382(k)(1)
+IRC § 384
+IRC § 501(c)(3)
+IRC § 509(a)(3)
+IRC § 1502
+IRC § 6110(k)(3)","[Elections & Safe Harbors]
+Standard 3-Year Rolling Calculation",,,,Internal restructuring of nonprofit healthcare group - no owner shift / ownership change under § 382(g),,"[Pre-Date 2: Taxpayer was wholly-owned subsidiary of Sub2 and joined Sub2 consolidated group; Taxpayer incurred $b NOLs while in Sub2 group] -> [Date 3 (effective): Taxpayer left Sub2 consolidated group via transactions not covered by ruling] -> [+Post-Date 3: Taxpayer incurred ~$c NOL carryovers as non-member of any group; Taxpayer is loss corporation under § 382(k)(1); during 3-year period ending on Distribution day, Sub1 owns 100% of Taxpayer and Parent is sole voting member of Sub1] -> [Date 4 (taxable year): Proposed Transactions to occur - more than 5 years after Date 3] -> [Date 4 - Step (i) Distribution: Sub1 distributes all Taxpayer stock to Parent (its sole voting member); no consideration received] -> [Date 4 - Step (ii) Contribution: Parent contributes all Taxpayer stock to Sub2] -> [+Subsequent Date (after Distribution and Contribution; not necessarily during Date 4 taxable year) - Step (iii) Taxpayer Merger: Taxpayer merges into Sub2 with Sub2 surviving; intended as §§ 368(a)(1)(A) and (a)(1)(D) reorganization] -> [August 15, 2007: Letter requesting rulings] -> [December 4, 2007: IRS issues PLR-137252-07 ruling no owner shift or ownership change under § 382(g) results from Distribution, Contribution, or Taxpayer Merger]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0818020,PLR,143620-07,2008-01-29,,,,,382.12-08,code: 0382.12-08 | title: Title 11 or Similar Case,"IRC § 318
+IRC § 382
+IRC § 382(a)
+IRC § 382(g)(1)
+IRC § 382(k)(1)
+IRC § 382(l)
+IRC § 382(l)(3)
+IRC § 382(l)(5)
+IRC § 382(l)(5)(A)
+IRC § 382(l)(5)(A)(ii)
+IRC § 382(l)(5)(B)
+IRC § 382(l)(5)(C)
+IRC § 6110(k)(3)
+Section 13(d)(3) Securities Exchange Act of 1934
+17 CFR 240.13d-1(b)(1)(ii)(E)
+Treas. Reg. § 1.382-2T(k)(1)(i)
+Treas. Reg. § 1.382-3(a)(1)
+Treas. Reg. § 1.382-3(a)(1)(i)
+Treas. Reg. § 1.382-9(b)
+Treas. Reg. § 1.382-9(d)
+Treas. Reg. § 1.382-9(d)(1)
+Treas. Reg. § 1.382-9(d)(3)(ii)(A)","[Elections & Safe Harbors]
+Section 382(l)(5) Bankruptcy Exception",,,,§ 382(l)(5) bankruptcy - reliance on Schedules 13D/13G; investment advisers; backstop purchaser shares; qualified creditors,,"[Date 1: Company (publicly traded, loss corporation, common parent of consolidated group including Sub 1 and Sub 2) and all domestic subsidiaries (other than Sub 1 and Sub 2) file voluntary Chapter 11 petitions in U.S. Bankruptcy Court] -> [+Pre-Date 2: Subscription rights issued to Class X and Class Y creditors permitting purchase of B shares at significant discount to anticipated market price; backstop purchaser agreement entered by subset of Class X creditors] -> [Date 3 (before Date 2): Subscription price deposit deadline with Bankruptcy Court's appointed agent] -> [Date 2 (Emergence Date): Company emerges from Chapter 11; pre-petition capital stock extinguished; D shares (A + B + C) issued - A shares directly for debt to Class X and Y creditors, B shares via subscription rights, C shares to backstop purchasers; ownership change under § 382(g)(1) occurs] -> [+Shortly after Date 2: Entity A files Schedule 13D (Entity B and Entity C each >5%); Entity D and Entity E file Schedule 13D (only Entity F >5%); Entity I files Schedule 13G (no fund >5%); Entity J files Schedule 13D (no fund >5%); W shares (>50% of D shares) determined to be owned by <5% beneficial owners (excluding backstop purchaser shares)] -> [September 25, 2007: Letter requesting rulings] -> [+Subsequent: Additional information submitted January 2 and January 28, 2008] -> [January 29, 2008: IRS issues PLR-143620-07 ruling Entity A/D/E/I/J are not Economic Owners; Company may rely on absence of 13D/13G filings; Class X and Y creditors (except Entity B, C, F) are qualified creditors under § 1.382-9(d); ownership change qualifies under § 382(l)(5)(A) with § 382(a) limitation not applying; Company will reduce tax attributes under § 382(l)(5)(B) and (C)]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0822013,PLR,139915-07,2008-02-12,,,,,"382.00-00
+382.11-09","code: 0382.00-00 | title: Limitation on Net Operating Loss Carryforwards and Certain Built-in Losses Following Ownership Changes
+code: 0382.11-09 | title: 5-Percent Shareholder","IRC § 382
+IRC § 382(g)
+IRC § 382(k)(1)
+IRC § 382(k)(7)
+IRC § 382(l)(3)(A)(iv)
+IRC § 6110(k)(3)
+Treas. Reg. § 1.382-2T(k)(1)(i)
+Treas. Reg. § 1.382-3(a)(1)(i)
+Treas. Reg. § 1.382-4
+Treas. Reg. § 1.1502-92(b)","[Elections & Safe Harbors]
+Standard 3-Year Rolling Calculation",,,,Reliance on Schedules 13D/13G; economic ownership; investment advisers not treated as 5% shareholders,,"[Date 1: Old Lossco and majority of domestic subsidiaries (collectively, Debtors) file voluntary Chapter 11 petitions in U.S. Bankruptcy Court] -> [Date 2: Old Lossco forms Taxpayer] -> [Date 3: Taxpayer files Chapter 11 petition] -> [Date 4: Old Lossco files Plan with Bankruptcy Court providing for reorganization of Old Lossco into Taxpayer] -> [Date 5: Bankruptcy Court confirms Plan] -> [Date 6: Substantially all Debtors emerge from Chapter 11; pursuant to Plan, Old Lossco transfers substantially all assets to Taxpayer in exchange for Taxpayer common stock and assumption of Old Lossco liabilities, then liquidates; Taxpayer becomes common parent of Old Lossco Group; Reorganization triggers ownership changes of Old Lossco under § 382(g) and Old Lossco Group under § 1.1502-92(b); Pre-Change Losses exist] -> [+Relevant Period (Date 6 through ruling date): Taxpayer relies on Schedule 13D/13G filings under § 1.382-2T(k)(1)(i) to track 5-percent shareholders] -> [Date 7: Entity A files Schedule 13G (Filing 1) pursuant to Rule 13d-1(b) as investment adviser; reports a shares representing b% of Taxpayer common stock; expressly disclaims beneficial ownership; no fund >5%] -> [Date 8: Individual A, Entity B, Entity C and Entity D jointly file Schedule 13G (Filing 2); Individual A controls Entities B, C, D; Entity B and Entity C manage investments owned by Entity E and Entity F (h shares = i% combined, <5% each); Entity D manages investments for Entity G (wholly-owned by Entity E, e shares = c%); Entity E/F/G collectively <5%] -> [June 27, 2007: Letter requesting rulings] -> [February 12, 2008: IRS issues PLR-139915-07 ruling Taxpayer may rely on Schedule 13D/13G filings; Entity A is not 5-percent shareholder (no economic ownership); Individual A, Entities B/C/D/E/F/G are not 5-percent shareholders; Taxpayer may rely on absence of 13D/13G filings to determine no § 1.382-3(a)(1)(i) entity exists]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0846017,PLR,133680-08,2008-08-05,,,,,"382.12-16
+9100.22-00","code: 0382.12-16 | title: Controlled Groups
+code: 9100.22-00 | title: Discretionary Extension for Regulatory Elections under §382 or §383 Regs","IRC § 382 IRC § 382(a) IRC § 382(b)(1) IRC § 957(a) IRC § 6110(k)(3)
+Treas. Reg. § 1.382-8 Treas. Reg. § 1.382-8(c)(1) Treas. Reg. § 1.382-8(c)(2) Treas. Reg. § 1.382-8(e)(2) Treas. Reg. § 1.382-8(e)(3) Treas. Reg. § 1.382-8(f) Treas. Reg. § 1.382-8(h) Treas. Reg. § 301.9100-1 Treas. Reg. § 301.9100-1(a) Treas. Reg. § 301.9100-1(c) Treas. Reg. § 301.9100-2 Treas. Reg. § 301.9100-3 Treas. Reg. § 301.9100-3(a) Treas. Reg. § 301.9100-3(b)(1)(i) Treas. Reg. § 301.9100-3(c)","[Elections & Safe Harbors]
+9100 Relief (Extension of Time for Election)",,,,§ 9100 relief - late restore-value election under § 1.382-8(h) for foreign component members,,"[Pre-Date 1: Parent (State X corporation, common parent of consolidated group filing consolidated federal return) controls Electing Subs which are each component members of Parent's controlled group under § 1.382-8(e)(2) and (3); Electing Subs are each CFCs under § 957(a) and have not engaged in U.S. trade or business or filed U.S. tax returns] -> [Date 1: Parent experiences ownership change under § 382; § 1.382-8(c)(1) requires value of stock of each component member be reduced by value of stock owned in other component members; Election under § 1.382-8(h) to restore value of Electing Subs to Parent required to be filed with Parent's income tax return for taxable year that included Date 1] -> [+Tax Return Due Date: For various reasons, Parent and Electing Subs failed to make Election timely] -> [Date 2: Parent's consolidated group had substantial consolidated NOL carryovers] -> [May 5, 2008: IRS issues prior PLR-112935-08 (LTR 200831012) granting extension of time to elect to restore value of other component members of Parent's controlled group] -> [July 30, 2008: Parent submits 9100 relief request under § 301.9100-3 for Parent and Electing Subs (before IRS discovered failure - § 301.9100-3(b)(1)(i))] -> [August 5, 2008: IRS issues PLR-133680-08 granting 9100 relief; 45-day window from letter date to file Election; conditioned on aggregate tax liability not being lower (taking into account time value of money)]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0901001,PLR,100186-08,"Sept 30, 2008",,,,,"382.00-00
+382.12-06","code: 0382.00-00 | title: Limitation on Net Operating Loss Carryforwards and Certain Built-in Losses Following Ownership Changes
+code: 0382.12-06 | title: Fluctuation in Value",IRC § 382 IRC § 382(g) IRC § 382(l)(3)(C) IRC § 6110(k)(3),"[Elections & Safe Harbors]
+Hold Constant Principle (§ 382(l)(3)(C) / Notice 2010-50)",,,,Hold Constant Principle - factoring out fluctuations in relative FMV under § 382(l)(3)(C),,"[Date 1: Taxpayer (privately-held State A loss corporation) issues a shares of common stock at $b/share to founders] -> [Date 2: Taxpayer issues c shares of Series A preferred at $d/share] -> [Date 3: Stock split (ratio e) of Series A preferred and common] -> [Date 4: Taxpayer issues f shares of Series B preferred at $g/share] -> [Date 5: Taxpayer issues h shares of Series C preferred at $i/share] -> [Date 6: Taxpayer issues j shares of Series C preferred at $i/share] -> [Date 7: Entity A sells k shares of Series B to Entity B (5% shareholder); Entity B sells l shares of Series B to Entity C] -> [Date 8: Taxpayer issues m shares of Series D preferred at $n/share] -> [Date 9: Entity D (5% shareholder) sells o shares of common to Entity E] -> [Date 10: Entity D sells p shares of common to Entity F] -> [Date 11: Entity D sells q shares of common to Entity G] -> [Date 12: Taxpayer issues r shares of Series D preferred at $n/share] -> [Date 13: Taxpayer issues r shares of Series D preferred at $n/share] -> [Date 14 (Year 1 Recapitalization): All outstanding common exchanged for Class A common at conversion ratio s; Class B common authorized] -> [Dates 15, 16, 17, 18: Taxpayer issues t, u, v, w shares of Series E preferred respectively at $x/share; non-participating Series B holders converted to Class B common (Series B Conversion at ratio y); non-participating Series C holders converted to Class B common (Series C Conversion at ratio z)] -> [Date 19 (Year 2 Recapitalization): All Class A/B common and Series A/B/C/D preferred converted to single class of new common at ratios aa/bb/cc/dd/ee/ff; Series E converted to new Class B preferred at ratio gg; unit financing commenced] -> [Dates 20, 21, 22, 23: Taxpayer issues hh, ii, jj, kk investment units (each consisting of ll new Class A preferred + mm new Class B preferred) at $nn/unit; non-participating new Class B holders converted to new Class A preferred (Class B Conversion)] -> [Date 24: End of Relevant Period] -> [December 26, 2007: Letter requesting rulings] -> [September 30, 2008: IRS issues PLR-100186-08 holding Taxpayer may apply Hold Constant Principle under § 382(l)(3)(C) to factor out value fluctuations across all testing dates in Relevant Period; value-for-value recapitalizations/conversions disregarded; exchanging shareholder treated as acquiring new stock on date of original acquisition]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,"unparsed_date: Sept 30, 2008"
+0902007,PLR,125807-08,2008-10-07,,,,,"382.00-00
+382.11-09","code: 0382.00-00 | title: Limitation on Net Operating Loss Carryforwards and Certain Built-in Losses Following Ownership Changes
+code: 0382.11-09 | title: 5-Percent Shareholder","IRC § 318 IRC § 382 IRC § 382(g)(1) IRC § 382(k)(1) IRC § 382(k)(7) IRC § 382(l) IRC § 6110(k)(3) Section 13(d)(3) Securities Exchange Act of 1934 § 524(g) Bankruptcy Code
+Treas. Reg. § 1.382-2(a)(1) Treas. Reg. § 1.382-2(a)(3)(i) Treas. Reg. § 1.382-2T(f)(11) Treas. Reg. § 1.382-2T(f)(18) Treas. Reg. § 1.382-2T(g) Treas. Reg. § 1.382-2T(k)(1)(i) Treas. Reg. § 1.382-3(a)(1)(i) Treas. Reg. § 1.382-4 Prop. Treas. Reg. § 1.468B-8","[Elections & Safe Harbors]
+Standard 3-Year Rolling Calculation",,,,Reliance on Schedules 13D/13G filings - investment advisers; bankruptcy emergence,,"[Petition Date: Company's former parent and a domestic subsidiaries (Debtors) file voluntary Chapter 11 petitions; Debtors operate as debtors-in-possession through Effective Date] -> [Date 2: Company's former parent and Securities Firm execute Equity Commitment Agreement contemplating Rights Offering of e shares at $f/share; Securities Firm enters Syndication Agreement with syndicate parties] -> [Effective Date: Debtors emerge from Chapter 11; former parent issues b shares to Company (then wholly-owned sub); all other former parent equity cancelled; Company becomes new parent; Company issues approximately c shares to creditors (other than Type 1) and employees; d shares issued to Type 1 creditor Trust (deferred until contingency resolved); g shares (c + e) outstanding after Equity Commitment and Syndication Agreement implementations; ownership change under § 382(g)(1) occurs] -> [+Shortly after Effective Date: Entity A files Schedule 13D (Entity A1 >5%; Entity A2 = k% <5%); Entity B files Schedule 13G (Entity B1 = n shares >5% after stripping warrants); Entity C files Schedule 13G (Entity C1 = q shares >5%); Entity D files Schedule 13G (Entity D1 and D2 each <5%); Entity E files Schedule 13D (Entity E1 >5%, Entity E2 <5%); Entity F files Schedule 13G (Entity F1 and F2 each <5% after stripping options); none affirm § 13(d)(3) Exchange Act group] -> [Date 1 (after Effective Date): Type 1 contingency resolved; Trust receives d shares; dd shares outstanding; Trust files Schedule 13D reporting >5%] -> [Date 3: Entity A1 warrants become exercisable (expire Date 3 - none exercised)] -> [Date 4: Entity G (with Entity G1, investment adviser sub) files Schedule 13G (ee shares >5% aggregate but no person >5%); Entity H files Schedule 13G (ff shares >5% aggregate held by ~gg investment companies, none individually >5%)] -> [+Ongoing: Company retains stock surveillance company, employee tracking shareholdings, law firm tracking 13D/13G filings; sends ownership questionnaires] -> [June 5, 2008: Letter requesting rulings] -> [October 7, 2008: IRS issues PLR-125807-08 ruling Economic Ownership controls (not Reporting Ownership); Company may rely on 13D/13G (and absence) to identify 5-percent shareholders unless actual knowledge contrary; Company may disregard 13D/13G characterization of items not 'stock' under § 382; investment adviser-related activities (overlapping directors, voting/holding/disposing authority, common custodian, communications, batch/cross trading) do not create § 1.382-3(a)(1)(i) entity]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0926027,CCA,POSTN-105157-09,2009-03-09,,,,,382.00-00,code: 0382.00-00 | title: Limitation on Net Operating Loss Carryforwards and Certain Built-in Losses Following Ownership Changes,IRC § 382 IRC § 382(h)(4),"Rev. Proc. 2009-01, I.R.B. 28
+[Elections & Safe Harbors]
+Standard 3-Year Rolling Calculation",,,,Carry back of recognized built-in losses prohibited under § 382(h)(4),,"[Pre-Date 3: Taxpayer was loss corporation with consolidated group having historic taxable income in tax year ending Date 1] -> [Date 3: Ownership change under § 382 occurs; Taxpayer represented it had net unrealized built-in loss (NUBIL) on this change date] -> [Year 3 (post-change year): Taxpayer recognizes built-in losses in excess of § 382 limitation (excess RBIL)] -> [Date 4: Taxpayer submits letter ruling request seeking three rulings to permit carryback of Year 3 consolidated NOL (including losses in excess of § 382 limit) to tax year ending Date 1] -> [+Subsequent: Taxpayer submits additional correspondence supplementing PLR request; under audit for calendar years Year 1, Year 2, and Year 3] -> [Date 5: Telephone conference - Taxpayer advised Service is adverse to its position; § 382(h)(4) and legislative history require disallowed RBIL be carried forward and not carried back] -> [Date 6: Taxpayer withdraws letter ruling request without submitting written abandonment of carryback claim] -> [March 9, 2009: Office of Chief Counsel issues POSTN-105157-09 to Supervisory Internal Revenue Agent under Rev. Proc. 2009-01 § 7.07(2)(a) advising that Taxpayer's position contrary to § 382(h)(4); recognized built-in loss in excess of § 382 limit must be carried forward and not back; field should make appropriate audit adjustments]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0934002,PLR,102910-09,2009-05-19,,,,,"382.07-05
+382.12-03
+382.12-06
+382.12-14","code: 0382.07-05 | title: Segregation Rules
+code: 0382.12-03 | title: Constructive Ownership of Stock
+code: 0382.12-06 | title: Fluctuation in Value
+code: 0382.12-14 | title: Insolvency Transactions","IRC § 382 IRC § 382(g) IRC § 382(k)(6) IRC § 382(l)(3)(C) IRC § 1504(a)(4) IRC § 6110(k)(3) § 105(a) Bankruptcy Code § 362 Bankruptcy Code
+Treas. Reg. § 1.382-2(a)(3) Treas. Reg. § 1.382-2T(f)(11) Treas. Reg. § 1.382-3(j)(3) Treas. Reg. § 1.382-4(d)(9) Treas. Reg. § 1.1502-91(c)","[Elections & Safe Harbors]
+Hold Constant Principle (§ 382(l)(3)(C) / Notice 2010-50)
+Bankruptcy Stock Trading Order (NOL Preservation)",,,,Hold Constant Principle; bankruptcy stock trading order; RSUs treated as options under § 1.382-4(d)(9),,"[Year 1: Parent Group is loss group within § 1.1502-91(c); Parent has single class of Common outstanding and multiple § 1504(a)(4) preferred classes; only direct public group is sole 5-percent shareholder] -> [Date 1: Parent issues B shares of Series A Preferred at $C/share to public shareholders; convertible into Common at initial ratio of 1:D (subject to anti-dilution and change-of-control adjustments); segregation of new direct public group under § 1.382-3(j)(3)] -> [Date 2: Parent issues E shares of Series B Preferred at $C/share and EE shares of Common at $EEE/share to public shareholders (EEEE Series B shares to First Tier Entity); Series B convertible into Common at minimum 1:F (subject to anti-dilution and 'cash acquisition' adjustments); segregation of new direct public group under § 1.382-3(j)(3)] -> [+Pre-Date 3: Parent sponsors Share Based Plans awarding RSUs; establishes Plan Trust] -> [Date 3: Parent files Chapter 11 petition in U.S. Bankruptcy Court for X District] -> [Date 4: Parent files motion with Bankruptcy Court seeking Stock Trading Order imposing trading restrictions on Parent Stock to protect NOLs and tax attributes; restrictions tied to Substantial Shareholder thresholds (M shares Common (~4%), N% Series A or Series B Preferred)] -> [Date 5: Bankruptcy Court approves and enters Stock Trading Order, effective as of Date 4; Prohibited Transactions null and void ab initio under §§ 362 and 105(a) automatic stay; P-day advance notice + O-day Parent objection window; Terms of Enforcement include compelled rescission/disposition and transfer of excess proceeds to § 501(c)(3) organizations] -> [+Subsequent: Date 6 - Series B mandatory conversion date (each share converts into F-to-G shares of Common subject to anti-dilution)] -> [January 16, 2009: Letter requesting rulings] -> [May 19, 2009: IRS issues PLR-102910-09 ruling Taxpayer may apply Hold Constant Principle on Date 1 testing date and subsequent dates; preferred-to-Common conversions disregarded with hold-constant carry-over; cash for fractional shares disregarded; converted Common allocated to public groups in same proportion as surrendered preferred; RSUs treated as options under § 1.382-4(d)(9) only pre-vesting; Prohibited Transactions not treated as acquisitions for § 382 purposes provided Terms of Enforcement complied with]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+0949029,PLR,129251-09,2009-08-19,,,,,"1502.98-00
+9100.22-00","code: 1502.98-00 | title: Discretionary Extension for Regulatory Elections under §382 or §383 Regs
+code: 9100.22-00 | title: Discretionary Extension for Regulatory Elections under §382 or §383 Regs","IRC § 1504(a)(1) IRC § 6110(k)(3) IRC § 6501(a)
+Treas. Reg. § 1.1502-91(d)(1)(ii) Treas. Reg. § 1.1502-91(d)(2)(ii) Treas. Reg. § 1.1502-91(d)(4) Treas. Reg. § 1.1502-91(d)(4)(i) Treas. Reg. § 1.1502-96(e) Treas. Reg. § 1.1502-96(e)(3) Treas. Reg. § 301.9100-1 Treas. Reg. § 301.9100-1(a) Treas. Reg. § 301.9100-1(b) Treas. Reg. § 301.9100-1(c) Treas. Reg. § 301.9100-2 Treas. Reg. § 301.9100-3 Treas. Reg. § 301.9100-3(a) Treas. Reg. § 301.9100-3(b)(1)(i) Treas. Reg. § 301.9100-3(b)(1)(v) Treas. Reg. § 301.9100-3(c)","[Elections & Safe Harbors]
+9100 Relief (Extension of Time for Election)",,,,§ 9100 relief - late § 1.1502-91(d)(4) election to treat loss subgroup parent requirement as satisfied,,"[Pre-DateA: Sub1 and Sub2 are unrelated to Parent; members of Seller consolidated group; Sub1 has $x NOL carryovers and Sub2 has $y NOL carryovers] -> [DateA: Parent (State A corporation, common parent of consolidated group filing calendar-year returns) purchases all stock of Sub1 and Sub2 from Seller; Sub1 and Sub2 simultaneously become Parent Group members; loss subgroup parent requirement under § 1504(a)(1) not satisfied immediately after acquisition] -> [+Post-DateA: Parent directly holds all stock in Sub1 and Sub2 continuously] -> [DateB: Parent timely files Year1 consolidated return; § 1.1502-91(d)(4) Election to treat loss subgroup parent requirement as satisfied for Sub1 and Sub2 (required to be filed under § 1.1502-96(e) with timely Year1 return) was not filed for various reasons] -> [+Post-DateB: Subsequently discovered that Election had not been filed; failure has not affected income tax positions or NOL carryover utilization reported on Year1, Year2, and Year3 returns; IRS has not contacted Parent regarding failure] -> [June 12, 2009: Parent submits 9100 relief request under § 301.9100-3 (before IRS discovery - § 301.9100-3(b)(1)(i)); reasonable reliance on qualified tax professional who failed to make/advise Election (§ 301.9100-3(b)(1)(v))] -> [+Subsequent: Additional information submitted July 21, 2009, and August 5, 2009] -> [August 19, 2009: IRS issues PLR-129251-09 granting 9100 relief; 60-day window from letter date to file Election; conditioned on aggregate tax liability not being lower (taking into account time value of money); statute of limitations on assessment for Parent Group's Year1 will expire no earlier than DateC]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+1003008,PLR,129260-09,2009-10-15,,,,,"382.12-13
+9100.22-00","code: 0382.12-13 | title: Section 382(l)(5) Opt-Out Elections / Protests
+code: 9100.22-00 | title: Discretionary Extension for Regulatory Elections under §382 or §383 Regs","IRC § 382 IRC § 382(a) IRC § 382(g) IRC § 382(l)(5) IRC § 382(l)(5)(H) IRC § 6110(k)(3)
+Treas. Reg. § 1.382-9(i) Treas. Reg. § 301.9100-1 Treas. Reg. § 301.9100-1(a) Treas. Reg. § 301.9100-1(c) Treas. Reg. § 301.9100-2 Treas. Reg. § 301.9100-3 Treas. Reg. § 301.9100-3(a) Treas. Reg. § 301.9100-3(b)(1)(i) Treas. Reg. § 301.9100-3(b)(1)(v) Treas. Reg. § 301.9100-3(c)","[Elections & Safe Harbors]
+9100 Relief (Extension of Time for Election)
+Section 382(l)(5) Bankruptcy Exception",,,,§ 9100 relief - late § 382(l)(5)(H) election out of bankruptcy rule,,"[Pre-Date 1: Taxpayer is loss corporation under jurisdiction of court in title 11 case] -> [Date 1: Taxpayer undergoes ownership change as defined by § 382(g); immediately before this ownership change Taxpayer was under court jurisdiction in title 11 case (triggering availability of § 382(l)(5) exception if requirements met)] -> [Date 2: Taxpayer undergoes second ownership change] -> [+Tax Return Due Date for Year Including Date 1: § 1.382-9(i) Election not to have § 382(l)(5) apply was required to be filed by due date (including extensions) of Taxpayer's return for taxable year including Date 1; for various reasons valid Election was not filed] -> [+Post-Due Date: Discovered that Election had not been filed; Taxpayer reasonably relied on qualified tax professional who failed to make/advise Election (§ 301.9100-3(b)(1)(v))] -> [June 10, 2009: Taxpayer submits 9100 relief request under § 301.9100-3 (before IRS discovery - § 301.9100-3(b)(1)(i))] -> [+Subsequent: Additional information submitted August 17, 2009] -> [October 15, 2009: IRS issues PLR-129260-09 granting 9100 relief; 45-day window from letter date to file Election out of § 382(l)(5); conditioned on aggregate tax liability not being lower (taking into account time value of money)]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+1005019,PLR,131058-09,2009-10-27,,,,,"382.00-00
+1502.98-00","code: 0382.00-00 | title: Limitation on Net Operating Loss Carryforwards and Certain Built-in Losses Following Ownership Changes
+code: 1502.98-00 | title: Discretionary Extension for Regulatory Elections under §382 or §383 Regs","IRC § 382 IRC § 382(l)(3)(C) IRC § 6110(k)(3)
+Treas. Reg. § 1.382-2(a)(3)(i) Treas. Reg. § 1.382-2T(c)(1) Treas. Reg. § 1.382-2T(e)(1) Treas. Reg. § 1.382-2T(f)(14) Treas. Reg. § 1.382-2T(f)(18)(iv) Treas. Reg. § 1.382-2T(f)(24) Treas. Reg. § 1.382-2T(m)(4)(i)(A) Treas. Reg. § 1.1502-91(c)(1)","Rev. Proc. 2009-1, 2009-1 I.R.B. 1 Tax Reform Act of 1986
+[Elections & Safe Harbors]
+Hold Constant Principle (§ 382(l)(3)(C) / Notice 2010-50)",,,,Hold Constant Principle - higher tier entities and indirect ownership shifts under § 382(l)(3)(C),,"[Pre-May 5, 1986: Parent is common parent of consolidated group engaged in Business A; group is a loss group under § 1.1502-91(c)(1); First Tier Entity A owns all Parent stock; Higher Tier Entity B and Higher Tier Entity C identified as higher tier entities under § 1.382-2T(f)(14)] -> [+Post-May 5, 1986: Parent experiences multiple owner shifts under § 1.382-2T(e)(1) through indirect ownership changes via First Tier Entity A and/or Higher Tier Entity B; changes in proportionate ownership occur due to fluctuations in relative FMV of different stock classes under § 1.382-2T(f)(18)(iv)] -> [June 26, 2009: Parent submits ruling request seeking application of Hold Constant Principle under § 382(l)(3)(C)] -> [October 27, 2009: IRS issues PLR-131058-09 permitting Parent and consolidated group members to apply Hold Constant Principle across testing dates since May 5, 1986; value-for-value recapitalizations/conversions disregarded]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+1010009,PLR,128082-09,2009-12-04,,,,,"382.12-06
+382.12-08","code: 0382.12-06 | title: Fluctuation in Value
+code: 0382.12-08 | title: Title 11 or Similar Case","IRC § 382 IRC § 382(k)(6) IRC § 382(l)(3)(C) IRC § 501(c)(3) IRC § 1504(a)(4) IRC § 6110(k)(3) § 105(a) Bankruptcy Code § 362 Bankruptcy Code
+Treas. Reg. § 1.382-2(a)(3) Treas. Reg. § 1.382-2(a)(3)(i) Treas. Reg. § 1.382-3(a)(1)(i) Treas. Reg. § 1.382-4(d) Treas. Reg. § 1.1502-91(c)","Rev. Proc. 2009-1, 2009-1 I.R.B. 1
+[Elections & Safe Harbors]
+Hold Constant Principle (§ 382(l)(3)(C) / Notice 2010-50)
+Bankruptcy Stock Trading Order (NOL Preservation)",,,,Hold Constant Principle in bankruptcy; trust preferred exchange; stock trading order enforcement,,"[Year 1: Parent Group's first taxable year as loss group under § 1.1502-91(c) (with respect to Year 2 testing dates)] -> [Date 1 (in Year 2): Series A preferred issued, convertible into Common at W shares per Series A] -> [Date 2: Private Placement - Series B and Series C preferred issued to Entity 1, Entity 2 and other unrelated institutional investors pursuant to investment/securities purchase agreements; Common and warrants also issued; aggregate proceeds ≥ $X required as closing condition] -> [Date 3: Mandatory conversion of Series B and Series C into Common on final day of quarter following shareholder/regulatory approvals] -> [Date 4: Receiver appointed for Sub2 and immediately sells substantially all Sub2 assets to Buyer; Parent and Sub1 commence Ch. 11 cases in Bankruptcy Court for District X; Exchange Event triggers automatic exchange of trust preferred securities for Series D] -> [Date 5: Parent files motion with Bankruptcy Court for Stock Trading Order imposing trading restrictions on Parent Stock to protect NOLs] -> [Date 6: Bankruptcy Court approves and enters Stock Trading Order effective as of Date 5; restrictions tied to Substantial Equityholder thresholds (N% Common, O% Series A, N% Series D)] -> [Date 7: Taxpayer learns Certain Persons violated or potentially violated Stock Trading Order through acquisition of Parent Stock; Taxpayer issues enforcement letters; transactions unwound under Terms of Enforcement] -> [Date 8: End of representation period regarding outstanding classes of stock] -> [June 4, 2009: Taxpayer submits ruling request] -> [December 4, 2009: IRS issues PLR-128082-09 granting Hold Constant Principle, ruling Private Placement investors are not a coordinated § 1.382-3(a)(1)(i) group, and unwound Prohibited Transactions disregarded for § 382]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+1015023,PLR,139528-09,2009-12-30,,,,,382.12-06,code: 0382.12-06 | title: Fluctuation in Value,"IRC § 382 IRC § 382(g) IRC § 382(l)(3)(C) IRC § 6110(k)(3)
+Treas. Reg. § 1.83-3(d) Treas. Reg. § 1.83-7(b) Treas. Reg. § 1.1502-91(a)","Rev. Proc. 2009-1, 2009-1 I.R.B. 1
+[Elections & Safe Harbors]
+Hold Constant Principle (§ 382(l)(3)(C) / Notice 2010-50)",,,,Hold Constant Principle - common stock value decline relative to preferred under § 382(l)(3)(C),,"[Year 1: Taxpayer formed as State A corporation; Taxpayer's affiliated group has been loss group under § 1.1502-91(a) since formation] -> [Date 1: Taxpayer has a shares Common outstanding (closing market price $b) and c shares Series A preferred outstanding; same day Taxpayer issues d shares Series B preferred for aggregate $e (convertible into Common at $f per share; PIK dividends in additional Series B for first i years); Employee Stock Options outstanding] -> [+Post-Date 1: Market conditions cause Taxpayer's Common to decline in market value relative to Series B preferred; subsequent further deterioration in Common's market value; Taxpayer issues g additional Series B shares as PIK dividends; Taxpayer redeems approximately h shares of Common] -> [Date 2: End of representation period regarding Taxpayer's equity] -> [August 28, 2009: Taxpayer submits ruling request under §§ 382(g) and 382(l)(3)(C)] -> [December 30, 2009: IRS issues PLR-139528-09 permitting Hold Constant Principle to factor out FMV fluctuations across classes]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+201016001,PLR,100357-10,2010-01-27,,,,,"382.12-00
+382.12-16
+9100.22-00","code: 0382.12-00 | title: Operating Rules
+code: 0382.12-16 | title: Controlled Groups
+code: 9100.22-00 | title: Discretionary Extension for Regulatory Elections under §382 or §383 Regs","IRC § 382
+IRC § 382(a)
+IRC § 382(b)(1)
+IRC § 6110(k)(3)
+Treas. Reg. § 1.382-8
+Treas. Reg. § 1.382-8(c)(1)
+Treas. Reg. § 1.382-8(c)(2)
+Treas. Reg. § 1.382-8(f)
+Treas. Reg. § 1.382-8(h)
+Treas. Reg. § 301.9100-1
+Treas. Reg. § 301.9100-1(a)
+Treas. Reg. § 301.9100-1(c)
+Treas. Reg. § 301.9100-2
+Treas. Reg. § 301.9100-3
+Treas. Reg. § 301.9100-3(a)
+Treas. Reg. § 301.9100-3(b)(1)(v)","[Elections & Safe Harbors]
+9100 Relief (Extension of Time for Election)",,,,§ 9100 relief - late restore-value election under § 1.382-8(h),,"[Date 1: Target (loss corporation; common parent of consolidated group; a% owner of Foreign Sub) and Foreign Sub become component members of controlled group under § 1.382-8] -> [Date 2: Target undergoes § 382 ownership change; Target's value reduced under § 1.382-8(c)(1) by value of Foreign Sub stock owned] -> [Date 3: Close of Target's taxable year; § 1.382-8(h) Election to restore value was required to be filed with timely consolidated return but not filed (Target reasonably relied on qualified tax professional who failed to make/advise Election under § 301.9100-3(b)(1)(v))] -> [November 4, 2009: Successor-in-Interest on behalf of Target submits 9100 relief request under § 301.9100-3] -> [+Subsequent: Additional information submitted December 9, December 29, 2009, and January 6, 2010] -> [January 20, 2010: IRS issues PLR-100357-10 granting 9100 relief; 45-day window from letter date to file Election; conditioned on aggregate tax liability not being lower]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+201016047,PLR,149513-09,2010-01-25,,,,,"382.12-00
+382.12-16
+9100.22-00","code: 0382.12-00 | title: Operating Rules
+code: 0382.12-16 | title: Controlled Groups
+code: 9100.22-00 | title: Discretionary Extension for Regulatory Elections under §382 or §383 Regs","IRC § 382
+IRC § 382(a)
+IRC § 382(b)(1)
+IRC § 6110(k)(3)
+Treas. Reg. § 1.382-8
+Treas. Reg. § 1.382-8(c)(1)
+Treas. Reg. § 1.382-8(c)(2)
+Treas. Reg. § 1.382-8(f)
+Treas. Reg. § 1.382-8(h)
+Treas. Reg. § 301.9100-1
+Treas. Reg. § 301.9100-1(a)
+Treas. Reg. § 301.9100-1(c)
+Treas. Reg. § 301.9100-2
+Treas. Reg. § 301.9100-3
+Treas. Reg. § 301.9100-3(a)
+Treas. Reg. § 301.9100-3(b)(1)(v)","[Elections & Safe Harbors]
+9100 Relief (Extension of Time for Election)",,,,§ 9100 relief - late restore-value election under § 1.382-8(h),,"[Date 1: Target (loss corporation; separate-return filer; a% owner of Foreign Sub) and Foreign Sub become component members of controlled group under § 1.382-8] -> [Date 2: Target undergoes § 382 ownership change; Target's value reduced under § 1.382-8(c)(1) by value of Foreign Sub stock owned] -> [Date 3: Close of Target's taxable year; § 1.382-8(h) Election to restore value was required to be filed with timely separate return but not filed (Target reasonably relied on qualified tax professional who failed to make/advise Election under § 301.9100-3(b)(1)(v))] -> [November 4, 2009: Successor-in-Interest on behalf of Target submits 9100 relief request under § 301.9100-3] -> [+Subsequent: Additional information submitted December 9, December 29, 2009, and January 6, 2010 (including Tax Professional affidavit)] -> [January 20, 2010: IRS issues PLR-149513-09 granting 9100 relief; 45-day window from letter date to file Election; conditioned on aggregate tax liability not being lower]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+201027030,PLR,148104-09,2010-04-13,,,,,"382.07-00
+382.12-06","code: 0382.07-00 | title: Ownership Change
+code: 0382.12-06 | title: Fluctuation in Value","IRC § 318
+IRC § 382
+IRC § 382(k)(6)
+IRC § 382(k)(7)
+IRC § 382(l)
+IRC § 382(l)(3)(C)
+IRC § 1504(a)(4)
+IRC § 6110(k)(3)
+Section 13(d)(3) Securities Exchange Act of 1934
+Treas. Reg. § 1.382-2(a)(3)
+Treas. Reg. § 1.382-2T(f)(18)(iii)
+Treas. Reg. § 1.382-2T(k)(1)
+Treas. Reg. § 1.382-3(a)(1)(i)
+Treas. Reg. § 1.382-4(d)
+Treas. Reg. § 1.441-2(a)(1)
+Treas. Reg. § 1.1502-1(h)
+Treas. Reg. § 1.1502-75(d)(3)
+Treas. Reg. § 1.1502-91(c)
+Treas. Reg. § 1.1502-91(c)(1)","Rev. Proc. 2009-1, 2009-1 I.R.B. 1
+[Elections & Safe Harbors]
+Hold Constant Principle (§ 382(l)(3)(C) / Notice 2010-50)",,,,Joint Filers as single shareholder; § 1.1502-91(c)(1) loss group,,"[Date 1: Former Owner distributes pro rata to its shareholders all LLC interests, Former Parent stock, S1 stock, and cash in bankruptcy reorganization; LLC (taxed as partnership) owns Former Parent, which owns S1] -> [Date 1.1: Former Parent Group begins filing consolidated returns; loss group from inception] -> [Date 1.5: Penny Warrants issued in connection with financing (treated as Common from grant date)] -> [Date 2: Conversion Transaction - LLC forms Parent which forms Merger LLC; Merger LLC merges into LLC with LLC surviving as disregarded entity wholly owned by Parent; reverse acquisition under § 1.1502-75(d)(3); Parent becomes common parent of continuing Former Parent Group] -> [Date 3: Parent's Common registered and begins trading on Stock Exchange; Stock Tracking Employee monitoring begins] -> [Date 4: Parent issues voting convertible Preferred for $B (convertible into Common at $C/share; Common trading at $D)] -> [+Through Date 4.5: Parent employs stock surveillance company] -> [Date 5: All Preferred redeemed in exchange for Convertible Exchange Notes of $E aggregate principal (Common trading at $H, J shares outstanding); additional Penny Warrants issued] -> [Dates 5.5 and 5.6: Additional Penny Warrants issued in connection with financings] -> [Date A: Joint Filers file initial Schedule 13G reporting >5% Common ownership (replacing Nominee filing posture)] -> [Date 6: Stock Tracking Employee and VP of Finance & Taxation conduct telephone conversation with AA (Joint Filers' internal accountant) re: Nominee status and Joint Filer coordination] -> [Date 7: AA email confirms Nominee was never economic owner and each Joint Filer's investment decision was independent] -> [Date B: Joint Filers file Schedule 13G/A] -> [Date C: Joint Filers file Schedule 13G/A] -> [Date 8: End of Section 382 Analysis period (Accounting Firm identifies 15 testing dates)] -> [Date 9: Effective date of amendment/limited waiver to Taxpayer Notes (Document A) extending maturities and increasing rates] -> [Date D: Joint Filers file Schedule 13G reporting disposition of all stock previously held] -> [October 27, 2009: Taxpayer submits ruling request (supplemental submissions February 23 and March 23, 2010)] -> [March 29, 2010: IRS issues PLR-148104-09 granting Hold Constant Principle, ruling Nominee was not Economic Owner under § 382(k)(7), and Joint Filers do not constitute § 1.382-3(a)(1)(i) entity]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+201030003,PLR,105015-10,2010-04-28,,,,,"382.02-05
+9100.22-00","code: 0382.02-05 | title: Closing of the Books
+code: 9100.22-00 | title: Discretionary Extension for Regulatory Elections under §382 or §383 Regs","IRC § 382(g)
+IRC § 382(g)(1)
+IRC § 6110(k)(3)
+IRC § 6501(a)
+Treas. Reg. § 1.382-11(a)
+Treas. Reg. § 1.382-6(a)
+Treas. Reg. § 1.382-6(b)
+Treas. Reg. § 1.382-6(b)(1)
+Treas. Reg. § 1.382-6(b)(2)
+Treas. Reg. § 1.382-6(b)(3)(i)
+Treas. Reg. § 1.382-6(d)
+Treas. Reg. § 1.1502-21(c)
+Treas. Reg. § 1.1502-91(c)(1)
+Treas. Reg. § 1.1502-92(b)(1)(i)
+Treas. Reg. § 301.9100-1
+Treas. Reg. § 301.9100-1(a)
+Treas. Reg. § 301.9100-1(c)
+Treas. Reg. § 301.9100-2
+Treas. Reg. § 301.9100-3
+Treas. Reg. § 301.9100-3(a)
+Treas. Reg. § 301.9100-3(b)(1)(i)
+Treas. Reg. § 301.9100-3(b)(1)(v)","[Elections & Safe Harbors]
+Closing-of-the-Books Election (Treas. Reg. § 1.382-6(b))
+9100 Relief (Extension of Time for Election)",,,,§ 9100 relief - late closing-of-the-books election,,"[Date 1: Taxpayer (common parent of affiliated consolidated group; loss group under § 1.1502-91(c)(1)) undergoes § 382(g)(1) ownership change as result of change date transaction] -> [Date 2: Taxpayer files consolidated group's income tax return electronically for change year; § 1.382-6(b) closing-of-the-books Election not included on § 1.382-11(a) information statement] -> [Date 3: Due date (including extensions) of group's income tax return for change year - statutory deadline for closing-of-the-books Election lapses; failure attributed to qualified tax professional reliance under § 301.9100-3(b)(1)(v)] -> [December 29, 2009: Taxpayer submits 9100 relief request under §§ 301.9100-1 through 301.9100-3; period of limitations under § 6501(a) not expired; IRS had not discovered failure] -> [+Subsequent: Additional information submitted by facsimile March 18, 2010] -> [April 26, 2010: IRS issues PLR-105015-10 granting 9100 relief; 90-day window from letter date to file Election and amend/file affected returns; conditioned on aggregate tax liability not being lower and closing books as of change date]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+201039013,PLR,113764-10,2010-07-06,,,,,"382.00-00
+382.07-00
+382.07-05
+382.12-00
+382.12-06","code: 0382.00-00 | title: Limitation on Net Operating Loss Carryforwards and Certain Built-in Losses Following Ownership Changes
+code: 0382.07-00 | title: Ownership Change
+code: 0382.07-05 | title: Segregation Rules
+code: 0382.12-00 | title: Operating Rules
+code: 0382.12-06 | title: Fluctuation in Value","IRC § 368
+IRC § 368(a)(1)(E)
+IRC § 382
+IRC § 382(k)(6)
+IRC § 1504(a)(4)
+IRC § 6110(k)(3)
+Rule 13d-1(d) of Regulation 13D-G
+Treas. Reg. § 1.305-7(b)(1)
+Treas. Reg. § 1.382-2T(c)(1)
+Treas. Reg. § 1.382-2T(k)(1)
+Treas. Reg. § 1.382-2T(k)(2)
+Treas. Reg. § 1.382-3(j)(3)
+Treas. Reg. § 1.382-4(d)","Notice 2010-50, 2010-27 I.R.B.
+Rev. Proc. 2010-1, 2010-1 I.R.B. 1
+[Elections & Safe Harbors]
+Hold Constant Principle (§ 382(l)(3)(C) / Notice 2010-50)
+Cash Issuance Exception (Treas. Reg. § 1.382-3(j)(3))",,,,Hold Constant Principle under Notice 2010-50,,"[Date 1: Taxpayer (publicly traded State A corp; common parent of affiliated group filing consolidated return) has outstanding single class of Common and multiple classes of § 1504(a)(4) preferred] -> [Date 2: Taxpayer completes $a private Offering of Series 1 Preferred Stock to Group A (including Person A and Person B) via b depository shares (convertible into Common at $c/share); same day issues Series 2 Preferred Stock to direct public groups via depository shares (convertible at set price); cash issuance exception under § 1.382-3(j)(3) applied to both issuances] -> [Date 3: Additional issuance of Series 2 Preferred Stock to direct public groups under cash issuance exception] -> [Date 4: Reset triggered under anti-dilution adjustment mechanism in investor agreements; conversion price for Series 1 Preferred reset from $c to $d per share] -> [Date 5: In connection with Reset, Taxpayer exchanges originally issued Series 1 Preferred for equal number of shares of New Series 1 Preferred with identical terms except reset conversion price; treated as § 368(a)(1)(E) reorganization or otherwise tax-free under § 1.305-7(b)(1)] -> [Date 6: Series 1 Exchange - Taxpayer issues newly created Security A and warrants exercisable at $e/share to Group A in exchange for all New Series 1 Preferred held by Group A; treated as § 368(a)(1)(E) reorganization] -> [Date 7: Series 2 Exchange - Taxpayer issues Common in exchange for Series 2 Preferred and certain other non-§ 382(k)(6) preferred; treated as § 368(a)(1)(E) reorganization] -> [Date 8: Majority of Common holders consent to increase authorized Common; each Security A warrant held by Group A cancelled as result] -> [Date 9: Conversion - Security A held by Group A converted into Common pursuant to its terms; treated as § 368(a)(1)(E) reorganization] -> [March 26, 2010: Taxpayer submits ruling request invoking Hold Constant Principle as defined in Notice 2010-50] -> [June 29, 2010: IRS issues PLR-113764-10 applying Notice 2010-50 Hold Constant Principle, allocating exchange shares to direct public groups, and treating Series 1 and Series 2 Preferred as registered stock under § 1.382-2T(k)(1)]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+201043019,PLR,113794-10,2010-07-30,,,,,"382.00-00
+382.12-00
+382.12-06","code: 0382.00-00 | title: Limitation on Net Operating Loss Carryforwards and Certain Built-in Losses Following Ownership Changes
+code: 0382.12-00 | title: Operating Rules
+code: 0382.12-06 | title: Fluctuation in Value","IRC § 382
+IRC § 382(k)(6)
+IRC § 382(l)(3)(C)
+IRC § 857
+IRC § 1504(a)(4)
+IRC § 6110(k)(3)
+Treas. Reg. § 1.382-2(a)(3)
+Treas. Reg. § 1.382-2T(k)(1)
+Treas. Reg. § 1.382-4(d)
+Treas. Reg. § 1.1502-91(c)
+Treas. Reg. § 1.1502-91(c)(1)","Notice 2010-50, 2010-27 I.R.B.
+Rev. Proc. 2010-1, 2010-1 I.R.B. 1
+[Elections & Safe Harbors]
+Hold Constant Principle (§ 382(l)(3)(C) / Notice 2010-50)",,,,Hold Constant Principle under Notice 2010-50,,"[Date 2: Parent's REIT status under § 857 terminates retroactively; Parent becomes taxable as Subchapter C corporation due to failure to meet REIT distribution requirement for taxable year ended Date 3] -> [Date 3: End of Parent's taxable year that failed REIT distribution requirement] -> [Date 4: Parent Group becomes loss group within meaning of § 1.1502-91(c)(1)] -> [Date 1: Parent issues D shares of Series C Preferred Stock (Preferred C) for $E/share with net proceeds of $F; Preferred C is non-voting, non-convertible, § 1504(a)(4)-qualifying] -> [Date 5: Parent issues G shares of Series D Preferred Stock (Preferred D) to Company 1 and Company 2 for $E/share with net proceeds of $H; Preferred D convertible into Common, votes with Common on as-converted basis; Company 1 and Company 2 become Parent's only two 5% shareholders] -> [Date 6: End of period during which Common was publicly traded on Exchange] -> [Date 7: Common delisted from Exchange due to declining trading price] -> [Date 8: All outstanding options granted at exercise prices ≥ estimated FMV of underlying stock at grant date] -> [Date 10: B shares of Common outstanding with closing trading price of $C per share] -> [Date 9: Earliest date Preferred C becomes redeemable at Parent's option for cash equal to Preferred C Liquidation Preference] -> [Date 11 (≥3 years after Date 5): Expected earliest date for prospective Conversion Transaction (Preferred C and Preferred D to be exchanged for Common in arm's-length value-for-value exchange)] -> [March 26, 2010: Parent submits ruling request seeking Hold Constant Principle application under § 382(l)(3)(C)] -> [July 23, 2010: IRS issues PLR-113794-10 permitting reasonable method employing Hold Constant Principle since Date 5, subject to Notice 2010-50 consistency period; value-for-value Preferred D conversion disregarded]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+201124018,PLR,150119-10,2011-03-18,,,,,"382.00-00
+382.12-00
+382.12-06","code: 0382.00-00 | title: Limitation on Net Operating Loss Carryforwards and Certain Built-in Losses Following Ownership Changes
+code: 0382.12-00 | title: Operating Rules
+code: 0382.12-06 | title: Fluctuation in Value","IRC § 305
+IRC § 6110(k)(3)","Notice 2010-50, 2010-27 I.R.B.
+[Elections & Safe Harbors]
+Hold Constant Principle (§ 382(l)(3)(C) / Notice 2010-50)",,,,Supplemental ruling - Hold Constant Principle,,"[Pre-Prior Ruling: All legend abbreviations, factual summary, representations from PLR-113794-10 incorporated by reference (Parent's REIT termination on Date 2, loss group status from Date 4, Preferred C issuance on Date 1, Preferred D issuance to Company 1 and Company 2 on Date 5, Common delisting on Date 7)] -> [July 23, 2010: IRS issues Prior Letter Ruling (PLR-113794-10) addressing prospective Conversion Transaction and Hold Constant Principle methodology under Notice 2010-50] -> [+Post-Prior Ruling: Conversion Transaction not yet consummated; consideration structure changes from solely Common to cash and/or Common (Revised Conversion Transaction); Preferred C shareholders offered cash+Common or Common-only; Preferred D shareholders to receive cash and Common; no shareholder receives solely cash] -> [Date 12: Date through which accrued and unpaid dividends calculated for pro rata allocation of $S aggregate cash and T shares aggregate Common to Preferred C and Preferred D shareholders based on liquidation preference] -> [December 6, 2010: Taxpayer submits supplemental ruling request to amend Prior Letter Ruling reflecting Revised Conversion Transaction and modified Representations (8) and (9)] -> [March 14, 2011: IRS issues PLR-150119-10 reaffirming Prior Letter Ruling and modifying ruling (2) - to extent of value-for-value conversion of Preferred D into Common, conversion disregarded under Hold Constant Principle and exchanged Common retains hold-constant characteristics of surrendered Preferred D]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+201138007,PLR,108277-11,2011-06-24,,,,,"382.00-00
+382.12-00
+382.12-13
+9100.00-00
+9100.22-00","code: 0382.00-00 | title: Limitation on Net Operating Loss Carryforwards and Certain Built-in Losses Following Ownership Changes
+code: 0382.12-00 | title: Operating Rules
+code: 0382.12-13 | title: Section 382(l)(5) Opt-Out Elections / Protests
+code: 9100.00-00 | title: Relief for Late-Filed Regulatory Elections (General Discretionary Authority)
+code: 9100.22-00 | title: Discretionary Extension for Regulatory Elections under §382 or §383 Regs","IRC § 382(a)
+IRC § 382(g)
+IRC § 382(l)(5)
+IRC § 382(l)(5)(H)
+IRC § 6110(k)(3)
+Treas. Reg. § 1.382-9(i)
+Treas. Reg. § 301.9100-1
+Treas. Reg. § 301.9100-1(a)
+Treas. Reg. § 301.9100-1(c)
+Treas. Reg. § 301.9100-2
+Treas. Reg. § 301.9100-3
+Treas. Reg. § 301.9100-3(a)
+Treas. Reg. § 301.9100-3(b)(1)(i)","[Elections & Safe Harbors]
+Section 382(l)(5) Bankruptcy Exception
+9100 Relief (Extension of Time for Election)",,,,§ 9100 relief - late § 382(l)(5)(H) election out of bankruptcy rule,,"[Pre-Date 1: Taxpayer (loss corporation) under jurisdiction of court in title 11 case] -> [Date 1: Taxpayer undergoes § 382(g) ownership change while under title 11 court jurisdiction] -> [+Same Taxable Year: § 1.382-9(i) election out of § 382(l)(5) due by extended return due date; not timely filed due to qualified tax professional failure] -> [+Subsequent Date (post-due date): Failure to file Election discovered] -> [+Subsequent Date: February 17, 2011 - Taxpayer submits 9100 relief request before IRS discovery; reliance on qualified tax professional] -> [+Subsequent Date: June 28, 2011 - 9100 Relief granted; 45-day window to file Election]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+201143017,PLR,149611-10,2011-07-25,,,,,"382.12-13
+9100.22-00","code: 0382.12-13 | title: Section 382(l)(5) Opt-Out Elections / Protests
+code: 9100.22-00 | title: Discretionary Extension for Regulatory Elections under §382 or §383 Regs","IRC § 382(a)
+IRC § 382(g)
+IRC § 382(l)(5)
+IRC § 382(l)(5)(H)
+IRC § 6110(k)(3)
+IRC § 6662
+Treas. Reg. § 1.382-9(i)
+Treas. Reg. § 1.1502-75(d)(1)
+Treas. Reg. § 1.1502-75(d)(3)
+Treas. Reg. § 1.1502-92(b)(1)(i)
+Treas. Reg. § 301.9100-1
+Treas. Reg. § 301.9100-1(a)
+Treas. Reg. § 301.9100-1(c)
+Treas. Reg. § 301.9100-2
+Treas. Reg. § 301.9100-3
+Treas. Reg. § 301.9100-3(a)
+Treas. Reg. § 301.9100-3(b)(1)(i)","[Elections & Safe Harbors]
+Section 382(l)(5) Bankruptcy Exception
+9100 Relief (Extension of Time for Election)",,,,§ 9100 relief - late § 382(l)(5)(H) election out of bankruptcy rule,,"[Pre-Date A: Taxpayer is common parent of Taxpayer Group (consolidated loss group with Subsidiary 1 and Subsidiary 2); under jurisdiction of court in title 11 case] -> [Date A: New Parent acquires all Taxpayer stock (non-reverse acquisition); Taxpayer Group terminates under § 1.1502-75(d)(1); § 382(g)/§ 1.1502-92(b)(1)(i) ownership change] -> [+Same Taxable Year (ending Date A): § 1.382-9(i) election out of § 382(l)(5) due by extended return due date; not timely filed] -> [+Subsequent Date (post-due date): Failure to file Election discovered] -> [+Subsequent Date: December 2, 2010 - Taxpayer submits 9100 relief request before IRS discovery; reliance on qualified tax professional] -> [+Subsequent Date: July 26, 2011 - 9100 Relief granted; 45-day window to file Election]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+201335012,PLR,149149-12,2013-05-24,,,,,"382.00-00
+382.12-00
+382.12-16
+9100.22-00","code: 0382.00-00 | title: Limitation on Net Operating Loss Carryforwards and Certain Built-in Losses Following Ownership Changes
+code: 0382.12-00 | title: Operating Rules
+code: 0382.12-16 | title: Controlled Groups
+code: 9100.22-00 | title: Discretionary Extension for Regulatory Elections under §382 or §383 Regs","IRC § 382
+IRC § 382(a)
+IRC § 382(b)(1)
+IRC § 382(g)
+IRC § 6110(k)(3)
+IRC § 6662
+Treas. Reg. § 1.382-8
+Treas. Reg. § 1.382-8(c)(1)
+Treas. Reg. § 1.382-8(c)(2)
+Treas. Reg. § 1.382-8(f)
+Treas. Reg. § 1.382-8(h)
+Treas. Reg. § 301.9100-1
+Treas. Reg. § 301.9100-1(a)
+Treas. Reg. § 301.9100-1(c)
+Treas. Reg. § 301.9100-2
+Treas. Reg. § 301.9100-3
+Treas. Reg. § 301.9100-3(a)
+Treas. Reg. § 301.9100-3(b)(1)(i)","[Elections & Safe Harbors]
+Section 1.382-8(h) Controlled Group Value Restoration Election
+9100 Relief (Extension of Time for Election)",,,,§ 9100 relief - late restore-value election under § 1.382-8(h),,"[Pre-Date 1: Parent is common parent of consolidated group (Parent Group) including Sub 1 and Electing Subsidiary; Sub 1 (loss corporation) wholly owns Electing Subsidiary (non-loss)] -> [Date 1: Sub 1 undergoes § 382(g) ownership change; Sub 1's value reduced under § 1.382-8(c)(1) by value of Electing Subsidiary stock owned] -> [+Post-Date 1: Sub 1 must file separate federal income tax return; § 382 limitation calculated separately] -> [+Same Taxable Year (ending Date 2): § 1.382-8(h) election to restore value to Electing Subsidiary due with Parent's consolidated return; not timely filed] -> [+Subsequent Date: November 14, 2012 - Substitute Agent submits 9100 relief request before IRS discovery; reliance on qualified tax professional] -> [+Subsequent Date: May 8, 2013 - 9100 Relief granted; 45-day window for Parent (by Substitute Agent) to file Election]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+1403007,PLR,117766-13,"Sept 19, 2013",,,,,"382.00-00
+382.11-00
+382.11-09","code: 0382.00-00 | title: Limitation on Net Operating Loss Carryforwards and Certain Built-in Losses Following Ownership Changes
+code: 0382.11-00 | title: Definitions and Special Rules
+code: 0382.11-09 | title: 5-Percent Shareholder","IRC § 318
+IRC § 382
+IRC § 382(k)(1)
+IRC § 382(l)
+IRC § 6110(k)(3)
+Section 13(d)(3) Securities Exchange Act of 1934
+Treas. Reg. § 1.382-2(a)(1)
+Treas. Reg. § 1.382-3(a)(1)(i)","[Elections & Safe Harbors]
+SEC Filing Reliance Safe Harbor (Schedule 13D/13G)",,,,Reliance on Schedule 13D/13G filings to identify 5% shareholders,,"[Pre-Date 1: Company is loss corporation under § 382(k)(1)/§ 1.382-2(a)(1) with publicly traded, widely held single class of common stock; uses stock surveillance company and SEC Schedule 13D/13G filings to monitor 5-percent shareholders] -> [Date 1: Testing period begins] -> [+During Testing Period -> Date 3: Entity A files Schedule 13G identifying itself as parent holding company/control person; reports a% (>5%) beneficial ownership distributed across b Related Entities; states no single person's interest exceeds 5%; does not affirm § 13(d)(3) group existence] -> [Date 2: Testing period ends] -> [+Subsequent Date: April 12, 2013 - Company submits PLR request regarding reliance on Entity A's Schedule 13G filings] -> [+Subsequent Date: July 15, 2013 - Supplemental letter submitted] -> [+Subsequent Date: September 19, 2013 - Rulings issued confirming Company can rely on Entity A's Schedule 13G filings to identify Economic Owners and absence of § 1.382-3(a)(1)(i) entity absent actual knowledge to contrary]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,"unparsed_date: Sept 19, 2013"
+1418038,PLR,140945-13,2013-12-31,,,,,"382.02-05
+9100.22-00","code: 0382.02-05 | title: Closing of the Books
+code: 9100.22-00 | title: Discretionary Extension for Regulatory Elections under §382 or §383 Regs","IRC § 382
+IRC § 382(a)
+IRC § 382(g)
+IRC § 6110(k)(3)
+IRC § 6662
+Treas. Reg. § 1.382-11(a)
+Treas. Reg. § 1.382-6(a)
+Treas. Reg. § 1.382-6(b)
+Treas. Reg. § 1.382-6(b)(1)
+Treas. Reg. § 1.382-6(b)(2)
+Treas. Reg. § 1.382-6(d)
+Treas. Reg. § 301.9100-1
+Treas. Reg. § 301.9100-1(a)
+Treas. Reg. § 301.9100-1(c)
+Treas. Reg. § 301.9100-2
+Treas. Reg. § 301.9100-3
+Treas. Reg. § 301.9100-3(a)
+Treas. Reg. § 301.9100-3(b)(1)(i)","[Elections & Safe Harbors]
+Closing-of-the-Books Election (Treas. Reg. § 1.382-6(b))
+9100 Relief (Extension of Time for Election)",,,,§ 9100 relief - late closing-of-the-books election,,"[Date 1: Taxpayer experiences § 382(g) ownership change; § 382(a) limitation attaches to offset of post-change taxable income by pre-change losses] -> [+Year 1 (Taxable Year of Ownership Change): § 1.382-6(b)(2) closing-of-the-books election due by extended return due date; Taxpayer did not file due to qualified tax professional failure] -> [+Subsequent Date: Taxpayer files Year 1 return and all subsequent returns on basis that Election had been made] -> [+Subsequent Date: September 6, 2013 - Taxpayer submits 9100 relief request before IRS discovery] -> [+Subsequent Dates: December 6, 2013 and December 19, 2013 - Supplemental letters submitted] -> [+Subsequent Date: December 31, 2013 - 9100 Relief granted; 60-day window to file Election and amend return]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+201435003,PLR,116763-13,2014-05-21,,,,,"382.05-00
+382.12-08","code: 0382.05-00 | title: Value of Old Loss Corporation
+code: 0382.12-08 | title: Title 11 or Similar Case","IRC § 368(a)
+IRC § 382
+IRC § 382(g)(1)
+IRC § 382(g)(2)
+IRC § 382(l)(4)
+IRC § 382(l)(5)
+IRC § 382(l)(5)(H)
+IRC § 382(l)(6)
+IRC § 483
+IRC § 1504(a)(2)
+IRC § 6110(k)(3)
+Treas. Reg. § 1.382-2T
+Treas. Reg. § 1.382-2T(e)
+Treas. Reg. § 1.382-9(d)(2)(i)
+Treas. Reg. § 1.382-9(j)
+Treas. Reg. § 1.382-9(j)(1)
+Treas. Reg. § 1.382-9(j)(2)
+Treas. Reg. § 1.468B-9","[Elections & Safe Harbors]
+Section 382(l)(5) Bankruptcy Exception
+Section 382(l)(6) Bankruptcy Valuation",,,,§ 382(l)(5) bankruptcy reorganization; Disputed Claims Reserve,,[>18mo pre-Date 1: Sub 2 Subgroup obtains financing from E Lenders for Asset purchase] -> [+Within 18mo pre-Date 1: Sub 2 Subgroup obtains F Lender financing; older E Lender loans modified] -> [+~e months pre-Date 1: Sub 2 Subgroup transfers Assets to Sub 1 via intercompany sale; Sub 1 assumes Loans; Sub 2 Subgroup released] -> [Date 1: Parent and substantially all domestic subs (Debtors) commence Chapter 11 cases] -> [Date 2: Parent enters Merger Agreement with Target (reverse triangular merger)] -> [Date 3: Bankruptcy Court confirms the Plan] -> [Date 4: Plan becomes effective; Merger consummated; Ownership Change of Taxpayer Group],,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+201451015,PLR,112673-14,2014-09-17,,,,,382.07-05,code: 0382.07-05 | title: Segregation Rules,"IRC § 382
+IRC § 6110(k)(3)
+Rule 10b-18 Securities Exchange Act of 1934
+Rule 10b5-1 Securities Exchange Act of 1934
+Treas. Reg. § 1.382-2T(f)(13)
+Treas. Reg. § 1.382-2T(f)(9)
+Treas. Reg. § 1.382-2T(g)
+Treas. Reg. § 1.382-3(j)(14)(iii)(A)
+Treas. Reg. § 1.382-3(j)(14)(v)(A)
+Treas. Reg. § 1.382-3(j)(14)(v)(B)","[Elections & Safe Harbors]
+Small Redemption Exception (Treas. Reg. § 1.382-3(j)(14))",,,,Stock repurchases by Foreign Parent under Rule 10b-18 / Rule 10b5-1,,[Year c: Foreign Parent begins recurring annual stock repurchases - M% repurchased] -> [+Subsequent Fiscal Year -> Year d: N% repurchased] -> [+Subsequent Fiscal Year -> Year e: O% repurchased] -> [+Subsequent Fiscal Year -> Year f: P% repurchased] -> [+Subsequent Fiscal Year -> Year g: Q% repurchased] -> [+Subsequent Fiscal Year -> Year h: R% repurchased] -> [+Subsequent Fiscal Year -> Year i: Consulting Firm report recommends primary use of distributions over buybacks; repurchases spike to S%] -> [+Subsequent Fiscal Year -> Year j: T% total repurchases including private V% purchase from Shareholder A] -> [+Subsequent Fiscal Year -> Year k: U% total repurchases including private W% purchase from Shareholder B] -> [+Subsequent Date -> Date a: Testing snapshot - approx. b% of Foreign Parent owned by public groups],,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+201511012,PLR,122082-14,2014-11-18,,,,,"1502.98-00
+9100.22-00","code: 1502.98-00 | title: Discretionary Extension for Regulatory Elections under §382 or §383 Regs
+code: 9100.22-00 | title: Discretionary Extension for Regulatory Elections under §382 or §383 Regs","IRC § 355
+IRC § 368(a)(1)(D)
+IRC § 382
+IRC § 6110(k)(3)
+IRC § 6662
+Treas. Reg. § 1.1502-95(c)
+Treas. Reg. § 1.1502-95(f)
+Treas. Reg. § 1.1502-95(f)(3)
+Treas. Reg. § 301.9100-1
+Treas. Reg. § 301.9100-1(a)
+Treas. Reg. § 301.9100-1(c)
+Treas. Reg. § 301.9100-2
+Treas. Reg. § 301.9100-3
+Treas. Reg. § 301.9100-3(a)
+Treas. Reg. § 301.9100-3(b)(1)(i)","[Elections & Safe Harbors]
+9100 Relief (Extension of Time for Election)",,,,§ 9100 relief - late § 1.1502-95(c) apportionment election,,"[Pre-Date 1: Parent owns 100% of Sub; Parent Group has consolidated § 382 limitation] -> [Date 1: Spin-Off - Parent distributes Sub to shareholders under §§ 368(a)(1)(D) and 355; Sub becomes common parent of own group] -> [+Same Taxable Year: § 1.1502-95(c) apportionment election ($R of limitation) due with Parent's return; not timely filed] -> [+Subsequent Date: May 30, 2014 - Parent and Sub submit PLR request for 9100 relief] -> [+Subsequent Date: November 18, 2014 - 9100 Relief granted; 60-day window to file Election]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+201629007,CCA,POSTF-102708-15,2016-02-29,,,,,"382.08-00
+382.08-01","code: 0382.08-00 | title: Built-in Gains and Losses and Section 338 Gains
+code: 0382.08-01 | title: Net Unrealized Built-in Gain","IRC § 108(a)(1)(B)
+IRC § 108(d)(3)
+IRC § 382
+IRC § 382(a)
+IRC § 382(b)(1)
+IRC § 382(g)(1)
+IRC § 382(h)(1)(A)
+IRC § 382(h)(3)(A)
+IRC § 382(h)(3)(B)
+IRC § 382(h)(6)(A)
+IRC § 382(h)(6)(B)
+IRC § 382(h)(6)(C)
+IRC § 382(k)(1)
+IRC § 382(k)(6)(C)
+IRC § 455
+Temp. Treas. Reg. § 1.382-7T
+Treas. Reg. § 1.382-11(a)
+Treas. Reg. § 1.382-7
+Treas. Reg. § 1.451-5
+Treas. Reg. § 1.1374-3
+Treas. Reg. § 1.1374-3(a)
+Treas. Reg. § 1.1374-3(a)(1)
+Treas. Reg. § 1.1374-3(a)(2)
+Treas. Reg. § 1.1374-3(a)(3)","Notice 2003-65, 2003-2 C.B. 747
+Rev. Proc. 2004-34, 2004-1 C.B. 991
+T.D. 9330, 2007-2 C.B. 239
+[Elections & Safe Harbors]
+Closing-of-the-Books Election (Treas. Reg. § 1.382-6(b))
+Notice 2003-65: 382 Approach (NUBIG/NUBIL)",,,,Treatment of Deferred Revenue (prepaid income) in NUBIG/NUBIL under § 382(h) and Notice 2003-65,,[Pre-Change Date: Lossco (parent of consolidated group with Subsidiary) sells Cards entitling holders to Services; receives $b million prepaid income deferred under Rev. Proc. 2004-34] -> [Change Date: Reverse merger - Buyer (Taxpayer's wholly owned sub) acquires all Lossco stock via Merger Sub into Lossco; Lossco shareholders receive $c cash; Buyer pays off $d million of Lossco debt; $e million of bank debt forgiven (excluded under § 108(a)(1)(B)); NOL reduced from $f to $g million; Ownership Change] -> [+Same Taxable Year: Lossco files Treas. Reg. § 1.382-11(a) statement; makes closing-of-the-books election; applies 382 Approach to compute NUBIG including $b million Deferred Revenue in Step 1],,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+201648004,PLR,107142-16,2016-08-23,,,,,"382.01-00
+382.12-08","code: 382.01-00 | title: [UNMAPPED — review]
+code: 0382.12-08 | title: Title 11 or Similar Case","IRC § 368(a)(3)(A)
+IRC § 382
+IRC § 382(g)
+IRC § 382(l)(5)
+IRC § 382(l)(5)(A)(ii)
+IRC § 382(l)(5)(E)(ii)
+IRC § 382(l)(5)(G)
+IRC § 1504(a)(2)
+IRC § 6110(k)(3)
+Treas. Reg. § 1.382-9(b)(2)
+Treas. Reg. § 1.382-9(d)(2)(iv)
+Treas. Reg. § 1.382-9(d)(4)
+Treas. Reg. § 1.382-9(d)(5)(ii)(G)","[Elections & Safe Harbors]
+Section 382(l)(5) Bankruptcy Exception",,,,§ 382(l)(5) bankruptcy ruling - state insurance guaranty Funds treated as qualified creditors,,"[Date 1: Parent files for Chapter 11 bankruptcy] -> [Date 2: LossCo placed under Order of Liquidation by Court] -> [+Since Date 2: Participating Funds pay LossCo Claims; claimants assign/subrogate claims to paying Funds under state law] -> [Date 3: Pursuant to bankruptcy reorganization, Parent becomes common parent of Group] -> [Date 4: LossCo measurement snapshot - estimated assets $a (incl. $b invested assets); estimated liabilities $c; insolvent] -> [+Proposed Transaction (post-ruling): LossCo recapitalizes to d common shares held by Parent; LossCo redeems all Parent's shares for $e and simultaneously issues d new shares to Participating Funds cancelling $g of indebtedness each; Ownership Change occurs]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+201734003,PLR,109017-17,2017-05-31,,,,,"382.02-05
+9100.22-00","code: 0382.02-05 | title: Closing of the Books
+code: 9100.22-00 | title: Discretionary Extension for Regulatory Elections under §382 or §383 Regs","IRC § 38
+IRC § 53
+IRC § 382
+IRC § 382(a)
+IRC § 382(b)(3)(A)
+IRC § 382(g)
+IRC § 383
+IRC § 383(a)
+IRC § 904(c)
+IRC § 6110(k)(3)
+IRC § 6501(a)
+IRC § 6662
+Treas. Reg. § 1.382-11(a)
+Treas. Reg. § 1.382-6
+Treas. Reg. § 1.382-6(b)
+Treas. Reg. § 1.382-6(b)(1)
+Treas. Reg. § 1.382-6(b)(2)
+Treas. Reg. § 1.382-6(b)(2)(i)
+Treas. Reg. § 1.382-6(b)(3)(i)
+Treas. Reg. § 1.382-6(e)
+Treas. Reg. § 1.1502-91
+Treas. Reg. § 1.1502-91(a)(2)
+Treas. Reg. § 1.1502-91(c)
+Treas. Reg. § 1.1502-91(c)(1)
+Treas. Reg. § 1.1502-91(e)
+Treas. Reg. § 1.1502-91(f)
+Treas. Reg. § 1.1502-92
+Treas. Reg. § 1.1502-93
+Treas. Reg. § 1.1502-98
+Treas. Reg. § 301.9100-1
+Treas. Reg. § 301.9100-1(a)
+Treas. Reg. § 301.9100-1(c)
+Treas. Reg. § 301.9100-2
+Treas. Reg. § 301.9100-3
+Treas. Reg. § 301.9100-3(a)
+Treas. Reg. § 301.9100-3(b)(1)(i)
+Treas. Reg. § 301.9100-3(b)(1)(v)","[Elections & Safe Harbors]
+Closing-of-the-Books Election (Treas. Reg. § 1.382-6(b))
+9100 Relief (Extension of Time for Election)",,,,§ 9100 relief - late closing-of-the-books election under § 1.382-6(b) (consolidated group),,"[Date 1: Parent Group experiences § 382(g) ownership change; §§ 382(a) and 383(a) limitations attach] -> [+Year 1 (Taxable Year): § 1.382-6(b) closing-of-the-books election due by extended return due date; Parent did not file due to qualified tax professional failure] -> [+Subsequent Date: March 13, 2017 - Parent submits 9100 relief request before IRS discovery] -> [+Subsequent Date: May 31, 2017 - 9100 Relief granted; 60-day window to file Election]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+202024013,PLR,129128-19,2020-03-13,,,,,382.07-05,code: 0382.07-05 | title: Segregation Rules,"IRC § 351
+IRC § 382
+IRC § 6110(k)(3)
+Treas. Reg. § 1.382-3(j)(14)
+Treas. Reg. § 1.1502-91(c)(1)","[Elections & Safe Harbors]
+Small Redemption Exception (Treas. Reg. § 1.382-3(j)(14))",,,,§ 382 re-domiciliation - small redemption limitation under § 1.382-3(j)(14),,[Year 1: Old Parent board determines to re-domicile worldwide group to another non-U.S. jurisdiction] -> [Date 1 (in Year 1): New Parent incorporated solely to facilitate re-domiciliation; holds only nominal assets] -> [Year 2 (Jan 1): LossCo Group is a loss group under Treas. Reg. § 1.1502-91(c)(1); Old Parent did not redeem any shares between Jan 1 Year 2 and Re-Domicile Transaction] -> [Date 2 (in Year 2): Re-Domicile Transaction - Old Parent shareholders contribute shares to New Parent 1-for-1 (§ 351 exchange); Old Parent becomes wholly-owned sub of New Parent] -> [+Immediately after Date 2: New Parent transfers Old Parent to FSub1 for note; FSub2 (holding LossCo) transferred from Old Parent to FSub1] -> [Time Period 3 (post-Re-Domicile): Shareholder A Repurchase by New Parent] -> [Time Period 4 (post-Time Period 3): Public Redemption triggered by unanticipated drop in New Parent trading price; no plan with Shareholder A Repurchase],,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+202131005,PLR,118554-20,2021-05-05,,,,,"382.11-05
+382.11-07","code: 0382.11-05 | title: Preferred Stock
+code: 0382.11-07 | title: Treating Interests As Stock","IRC § 382
+IRC § 382(k)(6)(A)
+IRC § 6110(k)(3)
+Treas. Reg. § 1.382-2T(f)(18)","[Elections & Safe Harbors]
+Standard 3-Year Rolling Calculation",,,,§ 382 characterization of perpetual preferred (Instrument I) - bifurcation as stock and non-stock,,"[Date 1 (Issue Date): Taxpayer issues a units of Instrument I and Instrument II to Shareholder A for $b to fund Target acquisition] -> [+Same Date: Purchase price allocated between Instrument I and Instrument II establishing Issue Price for Instrument I] -> [+Same Date: Instrument I terms set - perpetual, fixed c% cumulative dividend, $d liquidation right, $e call price upon/after Date 3, f% effective yield through Date 3 (including amortization of redemption premium)] -> [+Same Date: Transfer restrictions established - J% of Instrument I units cannot be transferred to carry out Action I; I% can be] -> [Date 2: Taxpayer acquires Target stock using Instrument I/II proceeds] -> [+Subsequent Date -> Date 3: Instrument I becomes callable at $e plus accrued and unpaid dividends; Taxpayer expects to redeem on this date]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+202142007,PLR,105863-21,2021-07-29,,,,,"382.00-00
+9100.22-00","code: 0382.00-00 | title: Limitation on Net Operating Loss Carryforwards and Certain Built-in Losses Following Ownership Changes
+code: 9100.22-00 | title: Discretionary Extension for Regulatory Elections under §382 or §383 Regs","IRC § 382
+IRC § 382(a)
+IRC § 382(g)
+IRC § 6110(k)(3)
+IRC § 6662
+Treas. Reg. § 1.382-11(a)
+Treas. Reg. § 1.382-6(b)
+Treas. Reg. § 1.382-6(b)(1)
+Treas. Reg. § 1.382-6(b)(2)
+Treas. Reg. § 1.382-6(b)(2)(i)
+Treas. Reg. § 1.382-6(b)(3)(i)
+Treas. Reg. § 301.9100-1
+Treas. Reg. § 301.9100-1(a)
+Treas. Reg. § 301.9100-1(c)
+Treas. Reg. § 301.9100-2
+Treas. Reg. § 301.9100-3
+Treas. Reg. § 301.9100-3(a)
+Treas. Reg. § 301.9100-3(b)(1)(i)","[Elections & Safe Harbors]
+Closing-of-the-Books Election (Treas. Reg. § 1.382-6(b))
+9100 Relief (Extension of Time for Election)",,,,§ 9100 relief - late closing-of-the-books election under § 1.382-6(b),,"[Date 1: Parent Group experiences § 382(g) ownership change; § 382(a) limitation attaches] -> [+Date 2 (Taxable Year Ending): § 1.382-6(b) closing-of-the-books election due by extended return due date; Parent did not file] -> [+Subsequent Date: March 11, 2021 - Parent submits 9100 relief request before IRS discovery] -> [+Subsequent Date: July 29, 2021 - 9100 Relief granted; 75-day window to file Election]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,
+202342007,PLR,103871-23,2023-07-25,,,,,"382.12-08
+382.12-13
+9100.22-00","code: 0382.12-08 | title: Title 11 or Similar Case
+code: 0382.12-13 | title: Section 382(l)(5) Opt-Out Elections / Protests
+code: 9100.22-00 | title: Discretionary Extension for Regulatory Elections under §382 or §383 Regs","IRC § 382(a)
+IRC § 382(g)
+IRC § 382(l)(5)
+IRC § 382(l)(5)(G)
+IRC § 6110(k)(3)
+IRC § 6662
+Treas. Reg. § 1.382-9(i)
+Treas. Reg. § 1.1502-91(c)(1)
+Treas. Reg. § 1.1502-92(b)
+Treas. Reg. § 301.9100-1
+Treas. Reg. § 301.9100-1(a)
+Treas. Reg. § 301.9100-1(c)
+Treas. Reg. § 301.9100-2
+Treas. Reg. § 301.9100-3
+Treas. Reg. § 301.9100-3(a)
+Treas. Reg. § 301.9100-3(b)(1)(i)
+Treas. Reg. § 301.9100-3(b)(1)(v)","[Elections & Safe Harbors]
+Section 382(l)(5) Bankruptcy Exception
+9100 Relief (Extension of Time for Election)",,,,§ 9100 relief - late § 382(l)(5)(G) election out of bankruptcy rule,,"[Pre-Date 2: Parent, Subsidiary 1, and Subsidiary 2 each under jurisdiction of court in title 11 case] -> [Date 2: Parent Group (loss group under Treas. Reg. § 1.1502-91(c)(1)) undergoes § 382(g)/§ 1.1502-92(b) ownership change] -> [+Same Taxable Year -> Date 1 (Taxable Year Ending): § 382(l)(5)(G) election out of (l)(5) due by extended return due date for Parent Group; not timely filed] -> [+Subsequent Date (post-Date 1): Failure to file Election discovered] -> [+Subsequent Date: February 3, 2023 - Parent submits 9100 relief request before IRS discovery; reliance on qualified tax professional] -> [+Subsequent Date: July 25, 2023 - 9100 Relief granted; 75-day window to file Election]",,,needs_vector_normalization; needs_reextraction_for_pivot_and_reps,

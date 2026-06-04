@@ -1,0 +1,33 @@
+uilc_code,title,is_382_core,is_382_adjacent
+0382.00-00,Limitation on Net Operating Loss Carryforwards and Certain Built-in Losses Following Ownership Changes,Yes,No
+0382.02-05,Closing of the Books,Yes,No
+0382.05-00,Value of Old Loss Corporation,Yes,No
+0382.07-00,Ownership Change,Yes,No
+0382.07-02,Owner Shift,Yes,No
+0382.07-03,Equity Structure Shift,Yes,No
+0382.07-05,Segregation Rules,Yes,No
+0382.08-00,Built-in Gains and Losses and Section 338 Gains,Yes,No
+0382.08-01,Net Unrealized Built-in Gain,Yes,No
+0382.08-02,Net Unrealized Built-in Loss,Yes,No
+0382.09-01,3-Year Period,Yes,No
+0382.11-00,Definitions and Special Rules,Yes,No
+0382.11-05,Preferred Stock,Yes,No
+0382.11-07,Treating Interests As Stock,Yes,No
+0382.11-09,5-Percent Shareholder,Yes,No
+0382.12-00,Operating Rules,Yes,No
+0382.12-03,Constructive Ownership of Stock,Yes,No
+0382.12-06,Fluctuation in Value,Yes,No
+0382.12-08,Title 11 or Similar Case,Yes,No
+0382.12-09,Reduction for Interest Payment,Yes,No
+0382.12-10,Reduction of Carryovers,Yes,No
+0382.12-13,Section 382(l)(5) Opt-Out Elections / Protests,Yes,No
+0382.12-14,Insolvency Transactions,Yes,No
+0382.12-16,Controlled Groups,Yes,No
+0368.00-00,"Corporate Reorganizations (Definitions of A, B, C, D, E, F, G mergers)",No,Yes
+0351.00-00,Transfer to Corporation Controlled by Transferor,No,Yes
+0331.00-00,Gain or Loss to Shareholders in Corporate Liquidations,No,Yes
+0108.00-00,Income from Discharge of Indebtedness (COD Income / Attribute Reduction),No,Yes
+0061.22-00,Gross Income / Plan of Liquidation Composite,No,Yes
+9100.00-00,Relief for Late-Filed Regulatory Elections (General Discretionary Authority),No,Yes
+9100.22-00,Discretionary Extension for Regulatory Elections under §382 or §383 Regs,No,Yes
+1502.98-00,Discretionary Extension for Regulatory Elections under §382 or §383 Regs,No,Yes
