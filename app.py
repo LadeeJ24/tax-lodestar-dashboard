@@ -47,6 +47,62 @@ TEXT_SEARCH_FIELDS = [
     "compelled_representations",
 ]
 
+# -----------------------------------------------------------------------------
+# Doctrinal Queries — the "why" canon. Each doctrine maps to:
+#   - uilc_codes: IRS's own classification (most reliable)
+#   - citations:  regulation / statute strings to look for in key_authorities_cited
+#                 or primary_code_sections (catches rulings without UILC tagging)
+#   - phrases:    fallback doctrinal language to scan across all text fields
+# A ruling matches if ANY of these hit (OR logic across all three signal types).
+# -----------------------------------------------------------------------------
+DOCTRINAL_QUERIES = {
+    "presumption_no_cross_ownership": {
+        "label": "Presumption of no cross-ownership",
+        "description": (
+            "Rulings touching the rebuttable presumption (Treas. Reg. § 1.382-2T(j)(1)(iii)) "
+            "that public-group members are not cross-owners, and the \"actual knowledge\" override "
+            "in § 1.382-2T(k). Includes Schedule 13D/13G reliance rulings (the practical mechanism "
+            "taxpayers use to satisfy the actual-knowledge inquiry)."
+        ),
+        "uilc_codes": ["0382.11-09", "0382.11-00"],
+        "citations": ["1.382-2T(j)", "1.382-2T(k)", "382(k)(6)"],
+        "phrases": [
+            "actual knowledge", "cross-ownership", "cross ownership",
+            "presumption", "duty of inquiry", "schedule 13d", "schedule 13g",
+            "5-percent shareholder", "5% shareholder", "five-percent shareholder",
+            "no ownership change",
+        ],
+        "year_range": None,
+    },
+    "section_382_l_5": {
+        "label": "§382(l)(5) bankruptcy exception",
+        "description": (
+            "Rulings invoking the §382(l)(5) bankruptcy-emergence exception (no limitation if "
+            "qualified creditors + old shareholders own ≥50% post-emergence)."
+        ),
+        "uilc_codes": ["0382.07-00", "0382.07-02", "0382.07-03"],
+        "citations": ["382(l)(5)", "§382(l)(5)", "section 382(l)(5)", "1.382-9"],
+        "phrases": [
+            "382(l)(5)", "qualified creditor", "bankruptcy exception",
+            "title 11", "plan of reorganization",
+        ],
+        "year_range": None,
+    },
+    "actual_knowledge_2008_2020": {
+        "label": "Actual knowledge (2008–2020)",
+        "description": (
+            "Rulings during 2008–2020 addressing the \"actual knowledge\" inquiry under "
+            "§ 1.382-2T(k) — i.e., when the loss corporation knows facts that override the "
+            "presumption of no cross-ownership."
+        ),
+        "uilc_codes": ["0382.11-09"],
+        "citations": ["1.382-2T(k)", "1.382-2T(j)"],
+        "phrases": ["actual knowledge", "duty of inquiry"],
+        "year_range": (2008, 2020),
+    },
+}
+
+
 DISPLAY_ORDER = [
     "ruling_number",
     "document_type",
@@ -81,10 +137,19 @@ def load_data():
     uilc = pd.read_csv(UILC_CSV, dtype=str).fillna("")
     vocab = pd.read_csv(VOCAB_CSV, dtype=str).fillna("")
 
-    # Parse date_released into proper datetime where possible
-    rulings["date_parsed"] = pd.to_datetime(
+    # Parse date_released into proper datetime where possible.
+    # Some rows are non-ISO (e.g., "Sept 19, 2013") — try multiple formats.
+    parsed = pd.to_datetime(
         rulings["date_released"], errors="coerce", format="%Y-%m-%d"
     )
+    # Fallback: try pandas' flexible parser on the rows that failed
+    mask = parsed.isna() & (rulings["date_released"].astype(str).str.len() > 0)
+    if mask.any():
+        flexible = pd.to_datetime(
+            rulings.loc[mask, "date_released"], errors="coerce"
+        )
+        parsed.loc[mask] = flexible
+    rulings["date_parsed"] = parsed
     rulings["year"] = rulings["date_parsed"].dt.year
 
     # Build a single haystack column per ruling for fast text search
@@ -139,6 +204,10 @@ st.sidebar.markdown("---")
 
 st.sidebar.subheader("Filters")
 
+# Initialize session state
+if "active_doctrine" not in st.session_state:
+    st.session_state["active_doctrine"] = None
+
 # Search box — supports comma-separated terms (OR) and "AND" for intersection
 search_query = st.sidebar.text_input(
     "Search text (any field)",
@@ -182,11 +251,78 @@ st.sidebar.caption(
 )
 
 # -----------------------------------------------------------------------------
+# Doctrinal Query matcher — runs ONLY if active_doctrine is set
+# -----------------------------------------------------------------------------
+def normalize_uilc(code: str) -> str:
+    code = str(code).strip()
+    if "." not in code:
+        return code
+    left, right = code.split(".", 1)
+    if left.isdigit() and len(left) < 4:
+        left = left.zfill(4)
+    if "-" not in right:
+        right = right + "-00"
+    return f"{left}.{right}"
+
+
+def match_doctrine(row, doctrine):
+    """Returns (matched: bool, signals: list[str]) explaining WHY it matched."""
+    signals = []
+
+    # UILC match
+    target_codes = {normalize_uilc(c) for c in doctrine["uilc_codes"]}
+    row_codes = {normalize_uilc(c) for c in parse_uilc_codes(row.get("uilc_on_document", ""))}
+    uilc_hits = target_codes & row_codes
+    if uilc_hits:
+        signals.extend(f"UILC {c}" for c in sorted(uilc_hits))
+
+    # Citation match — search in key_authorities_cited + primary_code_sections + uilc_dictionary_mapping
+    cite_blob = " ".join([
+        str(row.get("key_authorities_cited", "")),
+        str(row.get("primary_code_sections", "")),
+        str(row.get("uilc_dictionary_mapping", "")),
+    ]).lower()
+    for cite in doctrine["citations"]:
+        if cite.lower() in cite_blob:
+            signals.append(f"cite: {cite}")
+
+    # Phrase match — search across all narrative fields
+    haystack = row.get("_haystack", "")
+    for phrase in doctrine["phrases"]:
+        if phrase.lower() in haystack:
+            signals.append(f'“{phrase}”')
+
+    return (len(signals) > 0, signals)
+
+
+# -----------------------------------------------------------------------------
 # Apply filters
 # -----------------------------------------------------------------------------
 filtered = rulings.copy()
+active_doctrine_key = st.session_state.get("active_doctrine")
+active_doctrine = DOCTRINAL_QUERIES.get(active_doctrine_key) if active_doctrine_key else None
 
-# Text search — supports AND and OR (commas)
+# When a doctrinal query is active, it overrides the text search but still respects
+# doc-type, year, and UILC sidebar filters
+doctrine_match_signals = {}  # ruling_number -> list of signals
+if active_doctrine:
+    matches = []
+    for _, row in filtered.iterrows():
+        ok, signals = match_doctrine(row, active_doctrine)
+        if ok:
+            matches.append(row["ruling_number"])
+            doctrine_match_signals[row["ruling_number"]] = signals
+    filtered = filtered[filtered["ruling_number"].isin(matches)]
+
+    # Apply doctrine's year_range if specified (and user hasn't narrowed further)
+    if active_doctrine["year_range"]:
+        dy_lo, dy_hi = active_doctrine["year_range"]
+        filtered = filtered[
+            (filtered["year"].isna()) |
+            ((filtered["year"] >= dy_lo) & (filtered["year"] <= dy_hi))
+        ]
+
+# Text search — supports AND and OR (commas) — still runs even when a doctrine is active
 search_terms_or = []
 search_terms_and = []
 if search_query.strip():
@@ -244,8 +380,10 @@ if selected_uilc:
     mask = filtered["uilc_on_document"].apply(has_any_selected_uilc)
     filtered = filtered[mask]
 
-# Highlight terms = whatever the user typed
+# Highlight terms = whatever the user typed + any phrases from the active doctrine
 highlight_list = search_terms_or + search_terms_and
+if active_doctrine:
+    highlight_list = highlight_list + active_doctrine["phrases"]
 
 # -----------------------------------------------------------------------------
 # Main pane
@@ -274,40 +412,42 @@ else:
     col4.metric("Year span", "—")
 
 # -----------------------------------------------------------------------------
-# Quick canned queries
+# Doctrinal Queries — first-class, evidence-based
 # -----------------------------------------------------------------------------
 st.markdown("---")
-st.subheader("Try a needle-in-haystack query")
+st.subheader("Doctrinal queries")
+st.caption(
+    "These search by **UILC code + regulation citation + doctrinal phrase** — not just summary text. "
+    "They surface rulings even when the summary uses surface descriptions (e.g., \"Schedule 13D/13G filings\") "
+    "rather than naming the doctrine."
+)
 
 canned_col1, canned_col2, canned_col3 = st.columns(3)
 if canned_col1.button(
     "1️⃣ Presumption of no cross-ownership",
     use_container_width=True,
-    help="Rulings discussing the §382 actual-knowledge presumption (Treas. Reg. § 1.382-2T(k))",
+    help=DOCTRINAL_QUERIES["presumption_no_cross_ownership"]["description"],
 ):
-    st.session_state["preset_search"] = "actual knowledge, no ownership, presumption, cross-ownership"
+    st.session_state["active_doctrine"] = "presumption_no_cross_ownership"
 
 if canned_col2.button(
-    "2️⃣ §382(l)(5) rulings",
+    "2️⃣ §382(l)(5) bankruptcy exception",
     use_container_width=True,
-    help="Rulings invoking the §382(l)(5) bankruptcy exception",
+    help=DOCTRINAL_QUERIES["section_382_l_5"]["description"],
 ):
-    st.session_state["preset_search"] = "382(l)(5)"
+    st.session_state["active_doctrine"] = "section_382_l_5"
 
 if canned_col3.button(
     "3️⃣ Actual knowledge, 2008–2020",
     use_container_width=True,
-    help="Rulings addressing actual knowledge during 2008-2020",
+    help=DOCTRINAL_QUERIES["actual_knowledge_2008_2020"]["description"],
 ):
-    st.session_state["preset_search"] = "actual knowledge"
-    st.session_state["preset_years"] = (2008, 2020)
+    st.session_state["active_doctrine"] = "actual_knowledge_2008_2020"
 
-if st.session_state.get("preset_search"):
-    st.info(
-        f"💡 Canned query loaded: **{st.session_state['preset_search']}**. "
-        "Copy this into the sidebar **Search text** box and adjust the year filter if needed. "
-        "(Streamlit doesn't let me write back into sidebar inputs from a button — click and paste.)"
-    )
+if st.session_state.get("active_doctrine"):
+    if st.button("✕ Clear doctrinal query", type="secondary"):
+        st.session_state["active_doctrine"] = None
+        st.rerun()
 
 st.markdown("---")
 
@@ -328,13 +468,63 @@ else:
 
     st.subheader(f"Results — {len(filtered)} ruling(s)")
 
+    # Active doctrine banner with match-quality breakdown
+    if active_doctrine and doctrine_match_signals:
+        # Count how many rulings matched via UILC vs cite vs phrase only
+        uilc_only = cite_only = phrase_only = multi = 0
+        for rn in filtered["ruling_number"]:
+            sigs = doctrine_match_signals.get(rn, [])
+            has_uilc = any(s.startswith("UILC") for s in sigs)
+            has_cite = any(s.startswith("cite:") for s in sigs)
+            has_phrase = any(s.startswith("\u201c") for s in sigs)
+            score = sum([has_uilc, has_cite, has_phrase])
+            if score > 1:
+                multi += 1
+            elif has_uilc:
+                uilc_only += 1
+            elif has_cite:
+                cite_only += 1
+            elif has_phrase:
+                phrase_only += 1
+        st.info(
+            f"🎯 **Doctrine:** {active_doctrine['label']}  \n"
+            f"• {multi} ruling(s) matched on multiple signal types (strongest evidence)  \n"
+            f"• {uilc_only} matched via UILC code only  \n"
+            f"• {cite_only} matched via citation only  \n"
+            f"• {phrase_only} matched via doctrinal phrase only (weakest — may be false positives)"
+        )
+
     # Render each ruling as a card
     for _, row in filtered.iterrows():
+        # Build a header badge from doctrine signals if available
+        header_badge = ""
+        if active_doctrine:
+            sigs = doctrine_match_signals.get(row["ruling_number"], [])
+            if sigs:
+                # Show concise signal types in the header
+                types = []
+                if any(s.startswith("UILC") for s in sigs):
+                    types.append("🏷️ UILC")
+                if any(s.startswith("cite:") for s in sigs):
+                    types.append("📜 cite")
+                if any(s.startswith("\u201c") for s in sigs):
+                    types.append("💬 phrase")
+                if types:
+                    header_badge = "  —  " + " + ".join(types)
+
         with st.expander(
             f"**{row['ruling_number']}** · {row['document_type']} · "
-            f"{row['date_released']} · {row['subject_summary'][:120]}",
+            f"{row['date_released']} · {row['subject_summary'][:120]}{header_badge}",
             expanded=False,
         ):
+            # Show "why it matched" first if a doctrine is active
+            if active_doctrine:
+                sigs = doctrine_match_signals.get(row["ruling_number"], [])
+                if sigs:
+                    st.markdown(
+                        f"**🎯 Why this matched:** " + " · ".join(sigs)
+                    )
+                    st.markdown("")
             # Top row of metadata
             meta_col1, meta_col2, meta_col3 = st.columns(3)
             meta_col1.markdown(f"**Document type:** {row['document_type']}")
