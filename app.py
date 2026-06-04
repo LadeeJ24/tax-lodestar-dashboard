@@ -141,8 +141,21 @@ DISPLAY_ORDER = [
 # -----------------------------------------------------------------------------
 # Data loading
 # -----------------------------------------------------------------------------
+# Use file mtime as part of the cache key so that updates to CSVs invalidate
+# the cache automatically on Streamlit Cloud (where the container is long-lived).
+def _data_version() -> str:
+    import os
+    parts = []
+    for p in (RULINGS_CSV, UILC_CSV, VOCAB_CSV):
+        try:
+            parts.append(f"{p}:{os.path.getmtime(p):.0f}")
+        except OSError:
+            parts.append(f"{p}:missing")
+    return "|".join(parts)
+
+
 @st.cache_data
-def load_data():
+def load_data(_version: str):
     rulings = pd.read_csv(RULINGS_CSV, dtype=str).fillna("")
     uilc = pd.read_csv(UILC_CSV, dtype=str).fillna("")
     vocab = pd.read_csv(VOCAB_CSV, dtype=str).fillna("")
@@ -169,7 +182,7 @@ def load_data():
 
     return rulings, uilc, vocab
 
-rulings, uilc, vocab = load_data()
+rulings, uilc, vocab = load_data(_data_version())
 
 # -----------------------------------------------------------------------------
 # Helper functions
@@ -401,7 +414,7 @@ if active_doctrine:
 st.title("Tax Lodestar")
 st.markdown(
     "**Subchapter C ruling analytics prototype.** "
-    "Search across 68 §382 IRS rulings (PLRs, FSAs, CCAs, TAMs) "
+    f"Search across {len(rulings)} §382 IRS rulings (PLRs, FSAs, CCAs, TAMs) "
     "to find patterns the raw IRS database can't surface."
 )
 
