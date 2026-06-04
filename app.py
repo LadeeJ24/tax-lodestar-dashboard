@@ -165,6 +165,17 @@ DOCTRINAL_QUERIES = {
             "no actual knowledge",
             "tax-free reorganization",
         ],
+        # Per-rep tagging: each phrase above maps 1:1 to a short label. Order is
+        # preserved so the rendered checkmark row reads as a stable 5-column matrix
+        # across all rulings. This converts "OR match over 5 phrases" into structured
+        # per-rep attributes the user can scan at a glance.
+        "rep_labels": [
+            "loss corp",          # §382(k)(1) definition
+            "single class",       # only one class of outstanding stock
+            "no other interests", # no other stock-like obligations
+            "no actual knowledge",# of other 5%-owners
+            "tax-free reorg",     # §368(a) qualification
+        ],
         "year_range": None,
     },
 }
@@ -408,10 +419,25 @@ active_doctrine = DOCTRINAL_QUERIES.get(active_doctrine_key) if active_doctrine_
 # When a doctrinal query is active, it overrides the text search but still respects
 # doc-type, year, and UILC sidebar filters
 doctrine_match_signals = {}  # ruling_number -> list of signals
+doctrine_per_rep_hits = {}   # ruling_number -> {rep_label: bool} (only for rep-package doctrines)
 if active_doctrine:
     matches = []
     for _, row in filtered.iterrows():
         ok, signals = match_doctrine(row, active_doctrine)
+        # If this doctrine declares rep_labels, also compute per-rep hits so
+        # the UI can render a structured checkmark row instead of just a count.
+        if active_doctrine.get("rep_labels"):
+            full_text_lc = str(row.get("_full_text", "")).lower()
+            meta_text_lc = str(row.get("_meta_haystack", "")).lower()
+            phrases = active_doctrine["phrases"]
+            labels = active_doctrine["rep_labels"]
+            per_rep = {}
+            for label, phrase in zip(labels, phrases):
+                p_lc = phrase.lower()
+                # Prefer full-text hit; fall back to metadata so paraphrase-only
+                # rulings still register (will be flagged in the weaker tier).
+                per_rep[label] = (p_lc in full_text_lc) or (p_lc in meta_text_lc)
+            doctrine_per_rep_hits[row["ruling_number"]] = per_rep
         if ok:
             matches.append(row["ruling_number"])
             doctrine_match_signals[row["ruling_number"]] = signals
@@ -614,13 +640,60 @@ else:
             f"• **{uilc_only}** via UILC code only (broadest — review carefully)"
         )
 
+    # -------------------------------------------------------------------------
+    # Rep matrix: only renders for doctrines that declare rep_labels (e.g., the
+    # standard §382 representations doctrine). Shows, at a glance, which of the
+    # N controlled-vocabulary reps each ruling carries. This is the scannable
+    # view of the rep package — 5/5 vs 1/5 visible without expanding any card.
+    # -------------------------------------------------------------------------
+    if active_doctrine and active_doctrine.get("rep_labels") and doctrine_per_rep_hits:
+        rep_labels = active_doctrine["rep_labels"]
+        matrix_rows = []
+        for _, row in filtered.iterrows():
+            rn = row["ruling_number"]
+            per_rep = doctrine_per_rep_hits.get(rn, {})
+            n_hits = sum(1 for label in rep_labels if per_rep.get(label))
+            entry = {
+                "Ruling": rn,
+                "Score": f"{n_hits}/{len(rep_labels)}",
+            }
+            for label in rep_labels:
+                entry[label] = "✅" if per_rep.get(label) else "—"
+            matrix_rows.append((n_hits, entry))
+        # Sort by score descending so full-package rulings rise to the top
+        matrix_rows.sort(key=lambda x: -x[0])
+        matrix_df = pd.DataFrame([e for _, e in matrix_rows])
+        with st.expander(
+            f"📊 Rep matrix — which of the {len(rep_labels)} reps each ruling carries "
+            f"(click to expand)",
+            expanded=True,
+        ):
+            st.caption(
+                "Each column is one of the standard §382 reps. ✅ means the rep "
+                "phrase appears verbatim in the ruling text (or metadata fallback). "
+                "Rulings sorted by completeness of the rep package."
+            )
+            st.dataframe(
+                matrix_df,
+                use_container_width=True,
+                hide_index=True,
+            )
+
     # Render each ruling as a card
     for _, row in filtered.iterrows():
         # Build a header badge from doctrine signals if available
         header_badge = ""
         if active_doctrine:
             sigs = doctrine_match_signals.get(row["ruling_number"], [])
-            if sigs:
+            # If this is a rep-package doctrine, the header badge becomes an
+            # N/M score — more informative than a generic signal-type label.
+            if active_doctrine.get("rep_labels"):
+                per_rep = doctrine_per_rep_hits.get(row["ruling_number"], {})
+                rep_labels = active_doctrine["rep_labels"]
+                n_hits = sum(1 for label in rep_labels if per_rep.get(label))
+                if n_hits:
+                    header_badge = f"  —  ✅ {n_hits}/{len(rep_labels)} reps"
+            elif sigs:
                 # Show concise signal types in the header, strongest first
                 types = []
                 if any(s.startswith("full-text phrase") for s in sigs):
@@ -644,6 +717,16 @@ else:
             # Show "why it matched" first if a doctrine is active
             if active_doctrine:
                 sigs = doctrine_match_signals.get(row["ruling_number"], [])
+                # For rep-package doctrines, lead with a per-rep checkmark row;
+                # this is the structured view that turns retrieval into a tag table.
+                if active_doctrine.get("rep_labels"):
+                    per_rep = doctrine_per_rep_hits.get(row["ruling_number"], {})
+                    rep_labels = active_doctrine["rep_labels"]
+                    parts = [
+                        f"{'✅' if per_rep.get(label) else '❌'} {label}"
+                        for label in rep_labels
+                    ]
+                    st.markdown("**🔖 Reps carried:** " + "  ·  ".join(parts))
                 if sigs:
                     st.markdown(
                         f"**🎯 Why this matched:** " + " · ".join(sigs)
