@@ -181,6 +181,177 @@ DOCTRINAL_QUERIES = {
 }
 
 
+# -----------------------------------------------------------------------------
+# Doctrinal Neighborhood — the cross-section interaction graph
+# -----------------------------------------------------------------------------
+# This is the product’s strategic claim: §382 does not live alone. A real
+# M&A tax partner working a §382 question is simultaneously running attribution
+# under §318, watching for plain-vanilla preferred under §1504(a)(4), tracking
+# carryover under §381, paralleling the §383/§384 limitations, and worrying
+# about §165(g) worthless-stock and §163(j) interest carryforward interactions.
+# The neighborhood map below is the controlled-vocabulary picture of that.
+#
+# Schema:
+#   NEIGHBORHOOD["sections"][section_id] = {
+#       label, statute_label, role ("hub"|"satellite"), one_liner
+#   }
+#   NEIGHBORHOOD["interactions"] = list of dicts with from_, to, label, explanation
+#
+# Adding a new section or interaction is a one-line edit; the UI rebuilds itself.
+NEIGHBORHOOD = {
+    "sections": {
+        "382": {
+            "label": "§382",
+            "statute_label": "§382 — NOL limitation after ownership change",
+            "role": "hub",
+            "one_liner": (
+                "Caps a loss corporation's ability to use pre-change NOLs after a\n"
+                "“ownership change” (more-than-50%-point shift in 5%-shareholder\n"
+                "ownership over a 3-year testing period). The whole neighborhood\n"
+                "orbits this section."
+            ),
+        },
+        "318": {
+            "label": "§318",
+            "statute_label": "§318 — Constructive ownership (attribution)",
+            "role": "satellite",
+            "one_liner": (
+                "Attribution rules that determine who constructively owns what.\n"
+                "Every §382 ownership-change calculation runs through §318\n"
+                "(modified) to identify the 5%-shareholders being tested."
+            ),
+        },
+        "1504": {
+            "label": "§1504(a)(4)",
+            "statute_label": "§1504(a)(4) — Plain-vanilla preferred stock",
+            "role": "satellite",
+            "one_liner": (
+                "Defines plain-vanilla preferred stock (non-voting, limited and\n"
+                "preferred as to dividends, non-convertible, non-participating).\n"
+                "§382 excludes this class from the ownership-change calculation."
+            ),
+        },
+        "381": {
+            "label": "§381",
+            "statute_label": "§381 — Carryover of tax attributes",
+            "role": "satellite",
+            "one_liner": (
+                "Governs which tax attributes (NOLs, credits, E&P, methods)\n"
+                "carry over in a tax-free acquisition or liquidation. §381 says\n"
+                "the attributes carry; §382 caps how much you can use."
+            ),
+        },
+        "383": {
+            "label": "§383",
+            "statute_label": "§383 — Limitation on credits and capital losses",
+            "role": "satellite",
+            "one_liner": (
+                "Parallel limitation to §382, applied to general business credits,\n"
+                "foreign tax credits, minimum tax credits, and capital loss\n"
+                "carryforwards. Same ownership-change trigger as §382."
+            ),
+        },
+        "384": {
+            "label": "§384",
+            "statute_label": "§384 — Built-in loss limitation (SRLY-style)",
+            "role": "satellite",
+            "one_liner": (
+                "Limits the use of acquired built-in losses against pre-acquisition\n"
+                "gains of an acquiring group. Conceptually parallel to §382(h)\n"
+                "NUBIL/NUBIG — same underlying loss, different limitation regime."
+            ),
+        },
+        "165g": {
+            "label": "§165(g)",
+            "statute_label": "§165(g) — Worthless securities (subsidiary stock)",
+            "role": "satellite",
+            "one_liner": (
+                "Ordinary-loss treatment when stock of an affiliated subsidiary\n"
+                "becomes worthless. Worthlessness may itself trigger a §382\n"
+                "ownership change in the parent (deemed disposition)."
+            ),
+        },
+        "163j": {
+            "label": "§163(j)",
+            "statute_label": "§163(j) — Business interest expense limitation",
+            "role": "satellite",
+            "one_liner": (
+                "Caps deductibility of net business interest. Disallowed interest\n"
+                "carryforwards are loss-corporation attributes that get caught\n"
+                "by the §382 limitation post-ownership-change."
+            ),
+        },
+    },
+    # Interactions are intentionally directional: from_ is the section whose
+    # rule operates ON to_. "382 -> 318" means "§382 uses §318 attribution."
+    "interactions": [
+        {
+            "from_": "382", "to": "318",
+            "label": "uses attribution",
+            "explanation": (
+                "§382's ownership-change calculation borrows §318(a) attribution\n"
+                "(with modifications under §382(l)(3) and the regulations) to\n"
+                "determine 5%-shareholder ownership across the testing period."
+            ),
+        },
+        {
+            "from_": "382", "to": "1504",
+            "label": "excludes plain-vanilla preferred",
+            "explanation": (
+                "§1504(a)(4) preferred stock is excluded from the §382 ownership-\n"
+                "change calculation. A misclassification flips the ownership math."
+            ),
+        },
+        {
+            "from_": "381", "to": "382",
+            "label": "attributes carry; §382 caps usage",
+            "explanation": (
+                "§381 governs WHICH attributes survive a tax-free acquisition;\n"
+                "§382 then determines HOW MUCH of those carryforwards can be used\n"
+                "each year. The two sections work as a pair on every carryover."
+            ),
+        },
+        {
+            "from_": "383", "to": "382",
+            "label": "parallel cap on credits / cap losses",
+            "explanation": (
+                "§383 mirrors §382 for general business credits, foreign tax credits,\n"
+                "minimum tax credits, and capital loss carryforwards. Same ownership-\n"
+                "change trigger; computed off the same §382 limitation base."
+            ),
+        },
+        {
+            "from_": "384", "to": "382",
+            "label": "parallel BIL limitation (§382(h) sibling)",
+            "explanation": (
+                "§384 limits built-in losses of one corporation from offsetting\n"
+                "pre-acquisition gains of another in an affiliated/SRLY context.\n"
+                "Often analyzed alongside §382(h) NUBIL on the same transaction."
+            ),
+        },
+        {
+            "from_": "165g", "to": "382",
+            "label": "worthlessness may trigger ownership change",
+            "explanation": (
+                "A §165(g)(3) worthless-subsidiary deduction in the parent can be\n"
+                "treated as a deemed disposition. If significant, that disposition\n"
+                "contributes to a §382 ownership change at the parent level."
+            ),
+        },
+        {
+            "from_": "163j", "to": "382",
+            "label": "interest carryforwards caught by §382",
+            "explanation": (
+                "Disallowed business interest carryforwards under §163(j) are\n"
+                "“loss-corporation” attributes for §382 purposes (Notice 2018-28,\n"
+                "§1.382-2(a)(8)). After an ownership change they are subject to\n"
+                "the §382 annual limitation."
+            ),
+        },
+    ],
+}
+
+
 DISPLAY_ORDER = [
     "ruling_number",
     "document_type",
@@ -544,6 +715,89 @@ if len(years_in_filter):
     col4.metric("Year span", f"{int(years_in_filter.min())}–{int(years_in_filter.max())}")
 else:
     col4.metric("Year span", "—")
+
+# -----------------------------------------------------------------------------
+# Doctrinal Neighborhood Map — the cross-section interaction picture
+# -----------------------------------------------------------------------------
+st.markdown("---")
+st.subheader("📍 Doctrinal neighborhood")
+st.caption(
+    "§382 does not live alone. An M&A tax partner working a §382 question is "
+    "simultaneously running attribution under §318, watching for plain-vanilla "
+    "preferred under §1504(a)(4), tracking carryover under §381, paralleling the "
+    "§383 and §384 limitations, and worrying about §165(g) worthless-stock and "
+    "§163(j) interest-carryforward interactions. This map shows the controlled-"
+    "vocabulary picture of that neighborhood."
+)
+
+# Render the neighborhood as a directed graph via Streamlit's native DOT support.
+# The hub (§382) sits center; satellites radiate around it. Edge labels carry
+# the doctrinal interaction (not just "uses" but WHAT it uses).
+def _build_neighborhood_dot(nh: dict) -> str:
+    lines = [
+        "digraph neighborhood {",
+        '  rankdir=LR;',
+        '  bgcolor="transparent";',
+        '  node [fontname="Helvetica", fontsize=14, style="filled,rounded", shape=box, margin="0.25,0.15"];',
+        '  edge [fontname="Helvetica", fontsize=10, color="#555555", fontcolor="#333333"];',
+        "",
+        "  // Sections (nodes)",
+    ]
+    for sid, s in nh["sections"].items():
+        if s["role"] == "hub":
+            fill, border, fontcolor, penwidth = "#01696F", "#01696F", "white", "2"
+        else:
+            fill, border, fontcolor, penwidth = "#F9F8F5", "#D4D1CA", "#28251D", "1"
+        # Use the statute_label so the box tells the user what the section IS,
+        # not just its number.
+        node_label = s["label"]
+        lines.append(
+            f'  "{sid}" [label="{node_label}", '
+            f'fillcolor="{fill}", color="{border}", fontcolor="{fontcolor}", penwidth={penwidth}];'
+        )
+    lines.append("")
+    lines.append("  // Interactions (edges)")
+    for ix in nh["interactions"]:
+        # Escape any double quotes in labels defensively.
+        edge_label = ix["label"].replace('"', '\\"')
+        lines.append(
+            f'  "{ix["from_"]}" -> "{ix["to"]}" [label="  {edge_label}  "];'
+        )
+    lines.append("}")
+    return "\n".join(lines)
+
+with st.expander("🗺️ View neighborhood map (graph)", expanded=True):
+    st.graphviz_chart(_build_neighborhood_dot(NEIGHBORHOOD), use_container_width=True)
+    st.caption(
+        "Edges are directional: an arrow from A → B means A's rule operates on B "
+        "(e.g., “§381 → §382” means §381 hands attributes to §382, which caps them)."
+    )
+
+# Tabular view: the same interactions as a sortable, scannable data table.
+# This is the view a partner uses to actually READ the neighborhood; the graph
+# above is the at-a-glance picture.
+with st.expander("📋 View interactions as a table", expanded=False):
+    _interactions_df = pd.DataFrame([
+        {
+            "From": NEIGHBORHOOD["sections"][ix["from_"]]["label"],
+            "→": "→",
+            "To": NEIGHBORHOOD["sections"][ix["to"]]["label"],
+            "Interaction": ix["label"],
+            "Explanation": ix["explanation"].replace("\n", " "),
+        }
+        for ix in NEIGHBORHOOD["interactions"]
+    ])
+    st.dataframe(_interactions_df, use_container_width=True, hide_index=True)
+
+# Section legend: lets a partner click each satellite section and read what it is
+# and why it matters to §382. This is the part that turns the map from “pretty "
+# picture” into a teaching surface.
+with st.expander("ℹ️ Section legend (what each statute does)", expanded=False):
+    for sid, s in NEIGHBORHOOD["sections"].items():
+        role_marker = "🎯" if s["role"] == "hub" else "·"
+        st.markdown(f"**{role_marker} {s['statute_label']}**")
+        st.markdown(s["one_liner"].replace("\n", " "))
+        st.markdown("")
 
 # -----------------------------------------------------------------------------
 # Doctrinal Queries — first-class, evidence-based
