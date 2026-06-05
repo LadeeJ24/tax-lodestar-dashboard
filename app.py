@@ -281,6 +281,28 @@ NEIGHBORHOOD = {
                 "by the §382 limitation post-ownership-change."
             ),
         },
+        "1502": {
+            "label": "§1.1502-91+",
+            "statute_label": "Reg. §1.1502-91 through -99 — Consolidated §382",
+            "role": "satellite",
+            "one_liner": (
+                "Applies §382 to consolidated groups: limitation computed at the\n"
+                "loss-subgroup level, apportioned across members, with SRLY-§382\n"
+                "overlap rules under §1.1502-21(g) and special fold-in mechanics\n"
+                "when a loss member joins a new group."
+            ),
+        },
+        "461": {
+            "label": "§461",
+            "statute_label": "§461 — Fixed-and-determinable test (all-events)",
+            "role": "satellite",
+            "one_liner": (
+                "Governs WHEN a liability is fixed and determinable enough to be\n"
+                "deductible. Feeds tax basis balance sheet classification, which\n"
+                "in turn drives §382(h) NUBIL/NUBIG and §1.1502 attribute math.\n"
+                "An upstream input to the whole §382 calculation, not a peer rule."
+            ),
+        },
     },
     # Interactions are intentionally directional: from_ is the section whose
     # rule operates ON to_. "382 -> 318" means "§382 uses §318 attribution."
@@ -346,6 +368,46 @@ NEIGHBORHOOD = {
                 "“loss-corporation” attributes for §382 purposes (Notice 2018-28,\n"
                 "§1.382-2(a)(8)). After an ownership change they are subject to\n"
                 "the §382 annual limitation."
+            ),
+        },
+        {
+            "from_": "1502", "to": "382",
+            "label": "consolidated-group application of §382",
+            "explanation": (
+                "Reg. §1.1502-91 through -99 apply §382 within a consolidated\n"
+                "group: limitation computed at the loss-subgroup level and\n"
+                "apportioned across members. SRLY and §382 overlap is resolved\n"
+                "by §1.1502-21(g) (SRLY does not apply where §382 already limits)."
+            ),
+        },
+        {
+            "from_": "1502", "to": "384",
+            "label": "SRLY-style limitations in consol. context",
+            "explanation": (
+                "Consolidated regulations coordinate §384's built-in loss\n"
+                "limitation with the SRLY rules and with §382(h) NUBIL when\n"
+                "a loss member joins or leaves a consolidated group."
+            ),
+        },
+        {
+            "from_": "461", "to": "382",
+            "label": "fixed-and-determinable test feeds NUBIL/NUBIG",
+            "explanation": (
+                "§461(h) all-events test determines when a liability is fixed and\n"
+                "determinable. That classification governs whether a liability\n"
+                "counts as a deductible item on the tax basis balance sheet,\n"
+                "which in turn drives the §382(h) NUBIL/NUBIG computation. §461\n"
+                "is an upstream input to §382, not a peer rule."
+            ),
+        },
+        {
+            "from_": "461", "to": "1502",
+            "label": "feeds investment-basis adjustments",
+            "explanation": (
+                "§461 fixed-and-determinable classification flows into\n"
+                "§1.1502-32 investment basis adjustments. Contingent liabilities\n"
+                "not yet fixed under §461(h) don't reduce stock basis until they\n"
+                "become fixed — affecting consolidated-group §382 calculations."
             ),
         },
     ],
