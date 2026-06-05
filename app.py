@@ -831,6 +831,12 @@ _current_label = (
 )
 _picker_index = _picker_options.index(_current_label)
 
+# Give the picker a stable widget key so Streamlit manages its state directly.
+# We then read the widget's value out of session_state and write it to the
+# canonical 'active_doctrine' slot, triggering a rerun via st.rerun() when the
+# value actually changes. This is the correct pattern for widget-driven state
+# in Streamlit: setting session_state inside the script does NOT auto-rerun,
+# so the previous implementation silently lagged by one rerun.
 _picked_label = st.selectbox(
     "Doctrine",
     options=_picker_options,
@@ -840,13 +846,17 @@ _picked_label = st.selectbox(
         "This is the controlled-vocabulary index of §382 doctrines — not a free-text search."
     ),
     label_visibility="collapsed",
+    key="doctrine_picker",
 )
 
-# Sync picker selection back to session_state so downstream filtering logic is unchanged.
-if _picked_label == NO_DOCTRINE_LABEL:
-    st.session_state["active_doctrine"] = None
-else:
-    st.session_state["active_doctrine"] = _label_to_key[_picked_label]
+# Sync picker selection back to the canonical key. If the value differs from
+# what's already in session_state, force a rerun so downstream filter logic
+# (which runs ABOVE this widget in the script) sees the new value on the
+# next pass.
+_new_active = None if _picked_label == NO_DOCTRINE_LABEL else _label_to_key[_picked_label]
+if st.session_state.get("active_doctrine") != _new_active:
+    st.session_state["active_doctrine"] = _new_active
+    st.rerun()
 
 # Show the selected doctrine's description inline — previously hidden in tooltip.
 _active_key_for_caption = st.session_state.get("active_doctrine")
