@@ -549,49 +549,72 @@ else:
 # Doctrinal Queries — first-class, evidence-based
 # -----------------------------------------------------------------------------
 st.markdown("---")
-st.subheader("Doctrinal queries")
+st.subheader("Doctrinal lens")
 st.caption(
-    "These search by **UILC code + regulation citation + doctrinal phrase** — not just summary text. "
-    "They surface rulings even when the summary uses surface descriptions (e.g., \"Schedule 13D/13G filings\") "
-    "rather than naming the doctrine."
+    "Pick a doctrine to filter the corpus to rulings that actually carry it. "
+    "Matching uses **UILC code + regulation citation + doctrinal phrase** — not just summary text — "
+    "so rulings surface even when the summary uses surface descriptions "
+    "(e.g., \"Schedule 13D/13G filings\") rather than naming the doctrine. "
+    "Once narrowed, use the search box in the sidebar to drill into facts "
+    "(e.g., `SEC filings`, `written inquiries`, `shareholder X`)."
 )
 
-# Row 1
-canned_col1, canned_col2 = st.columns(2)
-if canned_col1.button(
-    "1️⃣ Presumption rebuttal — § 1.382-2T(j)(2)(iii)(B)(1)",
-    use_container_width=True,
-    help=DOCTRINAL_QUERIES["presumption_no_cross_ownership"]["description"],
-):
-    st.session_state["active_doctrine"] = "presumption_no_cross_ownership"
+# Build picker options from the canonical DOCTRINAL_QUERIES dict so adding a new
+# doctrine requires no UI changes — the picker scales automatically.
+NO_DOCTRINE_LABEL = "— No doctrinal lens (show all rulings) —"
+_doctrine_keys = list(DOCTRINAL_QUERIES.keys())
+_picker_options = [NO_DOCTRINE_LABEL] + [
+    DOCTRINAL_QUERIES[k]["label"] for k in _doctrine_keys
+]
+_label_to_key = {DOCTRINAL_QUERIES[k]["label"]: k for k in _doctrine_keys}
 
-if canned_col2.button(
-    "2️⃣ §382(l)(5) bankruptcy exception",
-    use_container_width=True,
-    help=DOCTRINAL_QUERIES["section_382_l_5"]["description"],
-):
-    st.session_state["active_doctrine"] = "section_382_l_5"
+# Default the picker to whatever is currently active in session_state, if any.
+_current_key = st.session_state.get("active_doctrine")
+_current_label = (
+    DOCTRINAL_QUERIES[_current_key]["label"]
+    if _current_key and _current_key in DOCTRINAL_QUERIES
+    else NO_DOCTRINE_LABEL
+)
+_picker_index = _picker_options.index(_current_label)
 
-# Row 2
-canned_col3, canned_col4 = st.columns(2)
-if canned_col3.button(
-    "3️⃣ Actual knowledge, 2008–2020",
-    use_container_width=True,
-    help=DOCTRINAL_QUERIES["actual_knowledge_2008_2020"]["description"],
-):
-    st.session_state["active_doctrine"] = "actual_knowledge_2008_2020"
+_picked_label = st.selectbox(
+    "Doctrine",
+    options=_picker_options,
+    index=_picker_index,
+    help=(
+        "Type to filter (e.g., `presumption`, `bankruptcy`, `(l)(5)`, `representations`). "
+        "This is the controlled-vocabulary index of §382 doctrines — not a free-text search."
+    ),
+    label_visibility="collapsed",
+)
 
-if canned_col4.button(
-    "4️⃣ Standard §382 representations (5-rep package)",
-    use_container_width=True,
-    help=DOCTRINAL_QUERIES["standard_382_representations"]["description"],
-):
-    st.session_state["active_doctrine"] = "standard_382_representations"
+# Sync picker selection back to session_state so downstream filtering logic is unchanged.
+if _picked_label == NO_DOCTRINE_LABEL:
+    st.session_state["active_doctrine"] = None
+else:
+    st.session_state["active_doctrine"] = _label_to_key[_picked_label]
 
-if st.session_state.get("active_doctrine"):
-    if st.button("✕ Clear doctrinal query", type="secondary"):
-        st.session_state["active_doctrine"] = None
-        st.rerun()
+# Show the selected doctrine's description inline — previously hidden in tooltip.
+_active_key_for_caption = st.session_state.get("active_doctrine")
+if _active_key_for_caption:
+    _doc = DOCTRINAL_QUERIES[_active_key_for_caption]
+    with st.expander("ℹ️ About this doctrine", expanded=False):
+        st.markdown(_doc["description"])
+        # Show the controlled vocabulary that drives matching for transparency.
+        if _doc.get("citations"):
+            st.markdown("**Citations matched:** " + ", ".join(f"`{c}`" for c in _doc["citations"]))
+        if _doc.get("phrases"):
+            st.markdown("**Doctrinal phrases matched:** " + ", ".join(f"`{p}`" for p in _doc["phrases"]))
+        if _doc.get("uilc_codes"):
+            st.markdown("**UILC codes matched:** " + ", ".join(f"`{c}`" for c in _doc["uilc_codes"]))
+        if _doc.get("rep_labels"):
+            st.markdown(
+                "**Rep tags:** " + ", ".join(f"`{lab}`" for lab in _doc["rep_labels"])
+                + "  \n*Each matched ruling is scored on which of these reps it carries.*"
+            )
+
+# (No separate "clear" button needed — selecting the first option in the picker
+# above clears the doctrinal lens.)
 
 st.markdown("---")
 
